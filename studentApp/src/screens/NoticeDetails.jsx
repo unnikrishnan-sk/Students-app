@@ -6,6 +6,7 @@ import { getData } from '../http/api'
 import ProfileNavbar from '../components/ProfileNavbar'
 import { left_icon } from '../assets'
 import { FadeInView } from '../contants/common'
+import NoticeComp from '../components/NoticeComp'
 
 const NoticeDetails = () => {
 
@@ -32,7 +33,7 @@ const NoticeDetails = () => {
     }}>
         <ProfileNavbar backBtn={left_icon} title="Notifications"/>
         <View style={{
-            paddingHorizontal: WIDTH*0.05,
+            paddingHorizontal: WIDTH*0.04,
             paddingTop: HEIGHT*0.02,
             // marginTop: HEIGHT*0.01,
             // borderWidth: 1,
@@ -45,7 +46,9 @@ const NoticeDetails = () => {
             color: setColors.black,
             paddingBottom: HEIGHT*0.02
         }}>Your Notifications will appear here</Text>
-        {notices && notices.length>0 ? (notices?.map((item)=>(
+
+        <NoticeComp notices={notices}/>
+        {/* {notices && notices.length>0 ? (notices?.map((item)=>(
             <FadeInView key={item.id}>
             <View
             style={{
@@ -66,7 +69,7 @@ const NoticeDetails = () => {
         ))
      ) : (
             <Text>No Notifications </Text>
-        )}
+        )} */}
         </View>
     </View>
   )

@@ -10,11 +10,9 @@ import ExamComp from '../components/ExamComp'
 import { getData } from '../http/api'
 
 const Exams = () => {
-
     const [exams,setExams] = useState();
     const [isAdmin, examRedux] = useSelector((state)=> [state?.isAdmin?.admin, state?.isAdmin?.exam])
     const navigation = useNavigation();
-    console.log(exams);
 
     useEffect(()=>{
         const unsubscribe = getExamsData();
@@ -24,65 +22,25 @@ const Exams = () => {
     const getExamsData = async () =>{
         const examDta = await getData('Exams');
         setExams(examDta)
-        console.log("exams here",examDta);
     }
 
   return (
-    <View style={{
-        backgroundColor: setColors.white,
-        height: HEIGHT,
-        // borderWidth: 1
-    }}>
+    <View style={{ backgroundColor: setColors.white,height: HEIGHT }}>
         <ProfileNavbar backBtn={left_icon} title="Examination"/>
-        <View style={{
-            // borderWidth: 1
-        }}>
+        <View>
         <ScrollView 
         showsVerticalScrollIndicator={false}
-        contentContainerStyle={{
-            // backgroundColor: setColors.white,
-            paddingBottom: HEIGHT*0.35
-        }}
-        style={{
-            // borderWidth:1,
-            borderTopRightRadius: WIDTH*0.03,
-            backgroundColor: '#FFFFFF',
-            paddingTop: HEIGHT*0.02,
-            paddingHorizontal: WIDTH*0.05
-        }}>
-            {/* <View style={{
-                borderWidth: 1
-            }}> */}
+        contentContainerStyle={{ paddingBottom: HEIGHT*0.35 }}
+        style={{ borderTopRightRadius: WIDTH*0.03, backgroundColor: '#FFFFFF', paddingTop: HEIGHT*0.005, paddingHorizontal: WIDTH*0.04 }}>
            { isAdmin && <Pressable 
             onPress={()=>navigation.navigate('addexam')}
-            style={{
-                // borderWidth: 1,
-                paddingVertical: HEIGHT*0.01,
-                width: WIDTH*0.25,
-                alignItems: 'center',
-                borderRadius: WIDTH*0.03,
-                backgroundColor: setColors.violetShade,
-                // marginLeft: WIDTH*0.05
-            }}>
-                <Text style={{
-                    color: setColors.white,
-                    fontWeight: '600'
-                }}>Add Exams</Text>
+            style={{ paddingVertical: HEIGHT*0.01, width: WIDTH*0.25, alignItems: 'center', borderRadius: WIDTH*0.03, backgroundColor: setColors.violetShade, }}>
+                <Text style={{ color: setColors.white, fontWeight: '600' }}>Add Exams</Text>
             </Pressable> }
-
-            <Text style={{
-                fontSize: 16,
-                fontWeight: '500',
-                marginTop: HEIGHT*0.02,
-                color: setColors.violetShade
-            }}>Examination List</Text>
-
-<FlatList contentContainerStyle={{marginTop: HEIGHT*0.02, }} showsVerticalScrollIndicator={false} data={exams} ListEmptyComponent={()=> <Text>No Exams to show here</Text>}  showsHorizontalScrollIndicator={false} renderItem={({item}) => <ExamComp data={item} />} keyExtractor={item => item.id}/>
-
-{/* </View> */}
+            <Text style={{ fontSize: 16, fontWeight: '500', marginTop: HEIGHT*0.01, color: setColors.violetShade }}>Examination List</Text>
+        <FlatList contentContainerStyle={{marginTop: HEIGHT*0.005, }} showsVerticalScrollIndicator={false} data={exams} ListEmptyComponent={()=> <Text>No Exams to show here</Text>}  showsHorizontalScrollIndicator={false} renderItem={({item}) => <ExamComp data={item} />} keyExtractor={item => item.id}/>
         </ScrollView>
         </View>
-        {/* <Text>Exams</Text> */}
     </View>
   )
 }

@@ -1,0 +1,1 @@
+export const baseUrl = 'https://console.firebase.google.com/project/studentapp-a6a5a/messaging'

@@ -8,12 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* studentAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* studentAppTests.m */; };
-		0C80B921A6F3F58F76C31292 /* libPods-studentApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-studentApp.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
-		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
-		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		327F591FE9894A6742CE1BE3 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 63EA2ECD791A47409CFDD5C9 /* PrivacyInfo.xcprivacy */; };
-		7699B88040F8A987B510C191 /* libPods-studentApp-studentAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-studentApp-studentAppTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		84CA052C2CD0BD9400B675CB /* FBReactNativeSpec-generated.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84CAE1862CD0BD8F00B675CB /* FBReactNativeSpec-generated.mm */; };
 		84CA052D2CD0BD9400B675CB /* ComponentDescriptors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84CAE1892CD0BD8F00B675CB /* ComponentDescriptors.cpp */; };
@@ -114,7 +109,6 @@
 		84CA058C2CD0BD9400B675CB /* IsAppEncrypted.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CAE8D62CD0BD8F00B675CB /* IsAppEncrypted.m */; };
 		84CA058D2CD0BD9400B675CB /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 84CAE8D92CD0BD8F00B675CB /* LICENSE */; };
 		84CA058E2CD0BD9400B675CB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 84CAE8DA2CD0BD8F00B675CB /* README.md */; };
-		84CA058F2CD0BD9400B675CB /* ForwardingConsoleMethods.def in Resources */ = {isa = PBXBuildFile; fileRef = 84CAF2E32CD0BD8F00B675CB /* ForwardingConsoleMethods.def */; };
 		84CA05902CD0BD9500B675CB /* ForwardingConsoleMethods.def in Resources */ = {isa = PBXBuildFile; fileRef = 84CAFEE62CD0BD8F00B675CB /* ForwardingConsoleMethods.def */; };
 		84CA05912CD0BD9500B675CB /* hermes in Resources */ = {isa = PBXBuildFile; fileRef = 84CA00722CD0BD8F00B675CB /* hermes */; };
 		84CA05922CD0BD9500B675CB /* hermes-lit in Resources */ = {isa = PBXBuildFile; fileRef = 84CA00732CD0BD8F00B675CB /* hermes-lit */; };
@@ -244,26 +238,14 @@
 		84CA060E2CD0BD9500B675CB /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 84CA02B22CD0BD8F00B675CB /* LICENSE */; };
 		84CA060F2CD0BD9500B675CB /* LICENSE-examples in Resources */ = {isa = PBXBuildFile; fileRef = 84CA02B32CD0BD8F00B675CB /* LICENSE-examples */; };
 		84CA06102CD0BD9500B675CB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 84CA02B42CD0BD8F00B675CB /* README.md */; };
-		84CA06112CD0BD9500B675CB /* boost.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA02B62CD0BD8F00B675CB /* boost.debug.xcconfig */; };
-		84CA06122CD0BD9500B675CB /* boost.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA02B72CD0BD8F00B675CB /* boost.release.xcconfig */; };
 		84CA06132CD0BD9500B675CB /* ResourceBundle-boost_privacy-boost-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84CA02B82CD0BD8F00B675CB /* ResourceBundle-boost_privacy-boost-Info.plist */; };
 		84CA06142CD0BD9500B675CB /* DoubleConversion-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA02BA2CD0BD8F00B675CB /* DoubleConversion-dummy.m */; };
-		84CA06152CD0BD9500B675CB /* DoubleConversion.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA02BD2CD0BD8F00B675CB /* DoubleConversion.debug.xcconfig */; };
-		84CA06162CD0BD9500B675CB /* DoubleConversion.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA02BF2CD0BD8F00B675CB /* DoubleConversion.release.xcconfig */; };
-		84CA06172CD0BD9500B675CB /* FBLazyVector.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA02C12CD0BD8F00B675CB /* FBLazyVector.debug.xcconfig */; };
-		84CA06182CD0BD9500B675CB /* FBLazyVector.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA02C22CD0BD8F00B675CB /* FBLazyVector.release.xcconfig */; };
 		84CA06192CD0BD9500B675CB /* fmt-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA02C42CD0BD8F00B675CB /* fmt-dummy.m */; };
-		84CA061A2CD0BD9500B675CB /* fmt.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA02C62CD0BD8F00B675CB /* fmt.debug.xcconfig */; };
-		84CA061B2CD0BD9500B675CB /* fmt.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA02C72CD0BD8F00B675CB /* fmt.release.xcconfig */; };
 		84CA061C2CD0BD9500B675CB /* glog-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA02C92CD0BD8F00B675CB /* glog-dummy.m */; };
-		84CA061D2CD0BD9500B675CB /* glog.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA02CC2CD0BD8F00B675CB /* glog.debug.xcconfig */; };
-		84CA061E2CD0BD9500B675CB /* glog.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA02CE2CD0BD8F00B675CB /* glog.release.xcconfig */; };
 		84CA061F2CD0BD9500B675CB /* ResourceBundle-glog_privacy-glog-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84CA02CF2CD0BD8F00B675CB /* ResourceBundle-glog_privacy-glog-Info.plist */; };
 		84CA06202CD0BD9500B675CB /* hermes-engine-xcframeworks-input-files.xcfilelist in Resources */ = {isa = PBXBuildFile; fileRef = 84CA02D12CD0BD8F00B675CB /* hermes-engine-xcframeworks-input-files.xcfilelist */; };
 		84CA06212CD0BD9500B675CB /* hermes-engine-xcframeworks-output-files.xcfilelist in Resources */ = {isa = PBXBuildFile; fileRef = 84CA02D22CD0BD8F00B675CB /* hermes-engine-xcframeworks-output-files.xcfilelist */; };
 		84CA06222CD0BD9500B675CB /* hermes-engine-xcframeworks.sh in Resources */ = {isa = PBXBuildFile; fileRef = 84CA02D32CD0BD8F00B675CB /* hermes-engine-xcframeworks.sh */; };
-		84CA06232CD0BD9500B675CB /* hermes-engine.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA02D42CD0BD8F00B675CB /* hermes-engine.debug.xcconfig */; };
-		84CA06242CD0BD9500B675CB /* hermes-engine.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA02D52CD0BD8F00B675CB /* hermes-engine.release.xcconfig */; };
 		84CA06252CD0BD9500B675CB /* Pods-studentApp-acknowledgements.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 84CA02D72CD0BD8F00B675CB /* Pods-studentApp-acknowledgements.markdown */; };
 		84CA06262CD0BD9500B675CB /* Pods-studentApp-acknowledgements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84CA02D82CD0BD8F00B675CB /* Pods-studentApp-acknowledgements.plist */; };
 		84CA06272CD0BD9500B675CB /* Pods-studentApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA02D92CD0BD8F00B675CB /* Pods-studentApp-dummy.m */; };
@@ -277,8 +259,6 @@
 		84CA062F2CD0BD9500B675CB /* Pods-studentApp-resources-Release-input-files.xcfilelist in Resources */ = {isa = PBXBuildFile; fileRef = 84CA02E12CD0BD8F00B675CB /* Pods-studentApp-resources-Release-input-files.xcfilelist */; };
 		84CA06302CD0BD9500B675CB /* Pods-studentApp-resources-Release-output-files.xcfilelist in Resources */ = {isa = PBXBuildFile; fileRef = 84CA02E22CD0BD8F00B675CB /* Pods-studentApp-resources-Release-output-files.xcfilelist */; };
 		84CA06312CD0BD9500B675CB /* Pods-studentApp-resources.sh in Resources */ = {isa = PBXBuildFile; fileRef = 84CA02E32CD0BD8F00B675CB /* Pods-studentApp-resources.sh */; };
-		84CA06322CD0BD9500B675CB /* Pods-studentApp.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA02E42CD0BD8F00B675CB /* Pods-studentApp.debug.xcconfig */; };
-		84CA06332CD0BD9500B675CB /* Pods-studentApp.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA02E52CD0BD8F00B675CB /* Pods-studentApp.release.xcconfig */; };
 		84CA06342CD0BD9500B675CB /* Pods-studentApp-studentAppTests-acknowledgements.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 84CA02E72CD0BD8F00B675CB /* Pods-studentApp-studentAppTests-acknowledgements.markdown */; };
 		84CA06352CD0BD9500B675CB /* Pods-studentApp-studentAppTests-acknowledgements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84CA02E82CD0BD8F00B675CB /* Pods-studentApp-studentAppTests-acknowledgements.plist */; };
 		84CA06362CD0BD9500B675CB /* Pods-studentApp-studentAppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA02E92CD0BD8F00B675CB /* Pods-studentApp-studentAppTests-dummy.m */; };
@@ -292,200 +272,75 @@
 		84CA063E2CD0BD9500B675CB /* Pods-studentApp-studentAppTests-resources-Release-input-files.xcfilelist in Resources */ = {isa = PBXBuildFile; fileRef = 84CA02F12CD0BD8F00B675CB /* Pods-studentApp-studentAppTests-resources-Release-input-files.xcfilelist */; };
 		84CA063F2CD0BD9500B675CB /* Pods-studentApp-studentAppTests-resources-Release-output-files.xcfilelist in Resources */ = {isa = PBXBuildFile; fileRef = 84CA02F22CD0BD8F00B675CB /* Pods-studentApp-studentAppTests-resources-Release-output-files.xcfilelist */; };
 		84CA06402CD0BD9500B675CB /* Pods-studentApp-studentAppTests-resources.sh in Resources */ = {isa = PBXBuildFile; fileRef = 84CA02F32CD0BD8F00B675CB /* Pods-studentApp-studentAppTests-resources.sh */; };
-		84CA06412CD0BD9500B675CB /* Pods-studentApp-studentAppTests.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA02F42CD0BD8F00B675CB /* Pods-studentApp-studentAppTests.debug.xcconfig */; };
-		84CA06422CD0BD9500B675CB /* Pods-studentApp-studentAppTests.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA02F52CD0BD8F00B675CB /* Pods-studentApp-studentAppTests.release.xcconfig */; };
 		84CA06432CD0BD9500B675CB /* RCT-Folly-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA02F72CD0BD8F00B675CB /* RCT-Folly-dummy.m */; };
-		84CA06442CD0BD9500B675CB /* RCT-Folly.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA02FA2CD0BD8F00B675CB /* RCT-Folly.debug.xcconfig */; };
-		84CA06452CD0BD9500B675CB /* RCT-Folly.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA02FC2CD0BD8F00B675CB /* RCT-Folly.release.xcconfig */; };
 		84CA06462CD0BD9500B675CB /* ResourceBundle-RCT-Folly_privacy-RCT-Folly-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84CA02FD2CD0BD8F00B675CB /* ResourceBundle-RCT-Folly_privacy-RCT-Folly-Info.plist */; };
 		84CA06472CD0BD9500B675CB /* RCTDeprecation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA02FF2CD0BD8F00B675CB /* RCTDeprecation-dummy.m */; };
-		84CA06482CD0BD9500B675CB /* RCTDeprecation.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03022CD0BD8F00B675CB /* RCTDeprecation.debug.xcconfig */; };
-		84CA06492CD0BD9500B675CB /* RCTDeprecation.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03042CD0BD8F00B675CB /* RCTDeprecation.release.xcconfig */; };
-		84CA064A2CD0BD9500B675CB /* RCTRequired.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03062CD0BD8F00B675CB /* RCTRequired.debug.xcconfig */; };
-		84CA064B2CD0BD9500B675CB /* RCTRequired.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03072CD0BD8F00B675CB /* RCTRequired.release.xcconfig */; };
 		84CA064C2CD0BD9500B675CB /* RCTTypeSafety-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA03092CD0BD8F00B675CB /* RCTTypeSafety-dummy.m */; };
-		84CA064D2CD0BD9500B675CB /* RCTTypeSafety.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA030C2CD0BD8F00B675CB /* RCTTypeSafety.debug.xcconfig */; };
-		84CA064E2CD0BD9500B675CB /* RCTTypeSafety.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA030E2CD0BD8F00B675CB /* RCTTypeSafety.release.xcconfig */; };
-		84CA064F2CD0BD9500B675CB /* React.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03102CD0BD8F00B675CB /* React.debug.xcconfig */; };
-		84CA06502CD0BD9500B675CB /* React.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03112CD0BD8F00B675CB /* React.release.xcconfig */; };
-		84CA06512CD0BD9500B675CB /* React-callinvoker.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03132CD0BD8F00B675CB /* React-callinvoker.debug.xcconfig */; };
-		84CA06522CD0BD9500B675CB /* React-callinvoker.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03142CD0BD8F00B675CB /* React-callinvoker.release.xcconfig */; };
 		84CA06532CD0BD9500B675CB /* React-Core-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA03162CD0BD8F00B675CB /* React-Core-dummy.m */; };
-		84CA06542CD0BD9500B675CB /* React-Core.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03192CD0BD8F00B675CB /* React-Core.debug.xcconfig */; };
-		84CA06552CD0BD9500B675CB /* React-Core.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA031B2CD0BD8F00B675CB /* React-Core.release.xcconfig */; };
 		84CA06562CD0BD9500B675CB /* ResourceBundle-React-Core_privacy-React-Core-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84CA031C2CD0BD8F00B675CB /* ResourceBundle-React-Core_privacy-React-Core-Info.plist */; };
 		84CA06572CD0BD9500B675CB /* React-CoreModules-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA031E2CD0BD8F00B675CB /* React-CoreModules-dummy.m */; };
-		84CA06582CD0BD9500B675CB /* React-CoreModules.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03202CD0BD8F00B675CB /* React-CoreModules.debug.xcconfig */; };
-		84CA06592CD0BD9500B675CB /* React-CoreModules.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03212CD0BD8F00B675CB /* React-CoreModules.release.xcconfig */; };
 		84CA065A2CD0BD9500B675CB /* React-cxxreact-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA03232CD0BD8F00B675CB /* React-cxxreact-dummy.m */; };
-		84CA065B2CD0BD9500B675CB /* React-cxxreact.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03252CD0BD8F00B675CB /* React-cxxreact.debug.xcconfig */; };
-		84CA065C2CD0BD9500B675CB /* React-cxxreact.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03262CD0BD8F00B675CB /* React-cxxreact.release.xcconfig */; };
 		84CA065D2CD0BD9500B675CB /* ResourceBundle-React-cxxreact_privacy-React-cxxreact-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03272CD0BD8F00B675CB /* ResourceBundle-React-cxxreact_privacy-React-cxxreact-Info.plist */; };
 		84CA065E2CD0BD9500B675CB /* React-debug-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA03292CD0BD8F00B675CB /* React-debug-dummy.m */; };
-		84CA065F2CD0BD9500B675CB /* React-debug.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA032C2CD0BD8F00B675CB /* React-debug.debug.xcconfig */; };
-		84CA06602CD0BD9500B675CB /* React-debug.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA032E2CD0BD8F00B675CB /* React-debug.release.xcconfig */; };
 		84CA06612CD0BD9500B675CB /* React-defaultsnativemodule-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA03302CD0BD8F00B675CB /* React-defaultsnativemodule-dummy.m */; };
-		84CA06622CD0BD9500B675CB /* React-defaultsnativemodule.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03332CD0BD8F00B675CB /* React-defaultsnativemodule.debug.xcconfig */; };
-		84CA06632CD0BD9500B675CB /* React-defaultsnativemodule.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03352CD0BD8F00B675CB /* React-defaultsnativemodule.release.xcconfig */; };
 		84CA06642CD0BD9500B675CB /* React-domnativemodule-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA03372CD0BD8F00B675CB /* React-domnativemodule-dummy.m */; };
-		84CA06652CD0BD9500B675CB /* React-domnativemodule.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA033A2CD0BD8F00B675CB /* React-domnativemodule.debug.xcconfig */; };
-		84CA06662CD0BD9500B675CB /* React-domnativemodule.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA033C2CD0BD8F00B675CB /* React-domnativemodule.release.xcconfig */; };
 		84CA06672CD0BD9500B675CB /* React-Fabric-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA033E2CD0BD8F00B675CB /* React-Fabric-dummy.m */; };
-		84CA06682CD0BD9500B675CB /* React-Fabric.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03412CD0BD8F00B675CB /* React-Fabric.debug.xcconfig */; };
-		84CA06692CD0BD9500B675CB /* React-Fabric.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03432CD0BD8F00B675CB /* React-Fabric.release.xcconfig */; };
 		84CA066A2CD0BD9500B675CB /* React-FabricComponents-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA03452CD0BD8F00B675CB /* React-FabricComponents-dummy.m */; };
-		84CA066B2CD0BD9500B675CB /* React-FabricComponents.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03482CD0BD8F00B675CB /* React-FabricComponents.debug.xcconfig */; };
-		84CA066C2CD0BD9500B675CB /* React-FabricComponents.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA034A2CD0BD8F00B675CB /* React-FabricComponents.release.xcconfig */; };
 		84CA066D2CD0BD9500B675CB /* React-FabricImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA034C2CD0BD8F00B675CB /* React-FabricImage-dummy.m */; };
-		84CA066E2CD0BD9500B675CB /* React-FabricImage.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA034E2CD0BD8F00B675CB /* React-FabricImage.debug.xcconfig */; };
-		84CA066F2CD0BD9500B675CB /* React-FabricImage.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA034F2CD0BD8F00B675CB /* React-FabricImage.release.xcconfig */; };
 		84CA06702CD0BD9500B675CB /* React-featureflags-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA03512CD0BD8F00B675CB /* React-featureflags-dummy.m */; };
-		84CA06712CD0BD9500B675CB /* React-featureflags.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03542CD0BD8F00B675CB /* React-featureflags.debug.xcconfig */; };
-		84CA06722CD0BD9500B675CB /* React-featureflags.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03562CD0BD8F00B675CB /* React-featureflags.release.xcconfig */; };
 		84CA06732CD0BD9500B675CB /* React-featureflagsnativemodule-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA03582CD0BD8F00B675CB /* React-featureflagsnativemodule-dummy.m */; };
-		84CA06742CD0BD9500B675CB /* React-featureflagsnativemodule.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA035B2CD0BD8F00B675CB /* React-featureflagsnativemodule.debug.xcconfig */; };
-		84CA06752CD0BD9500B675CB /* React-featureflagsnativemodule.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA035D2CD0BD8F00B675CB /* React-featureflagsnativemodule.release.xcconfig */; };
 		84CA06762CD0BD9500B675CB /* React-graphics-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA035F2CD0BD8F00B675CB /* React-graphics-dummy.m */; };
-		84CA06772CD0BD9500B675CB /* React-graphics.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03622CD0BD8F00B675CB /* React-graphics.debug.xcconfig */; };
-		84CA06782CD0BD9500B675CB /* React-graphics.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03642CD0BD8F00B675CB /* React-graphics.release.xcconfig */; };
 		84CA06792CD0BD9500B675CB /* React-hermes-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA03662CD0BD8F00B675CB /* React-hermes-dummy.m */; };
-		84CA067A2CD0BD9500B675CB /* React-hermes.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03682CD0BD8F00B675CB /* React-hermes.debug.xcconfig */; };
-		84CA067B2CD0BD9500B675CB /* React-hermes.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03692CD0BD8F00B675CB /* React-hermes.release.xcconfig */; };
 		84CA067C2CD0BD9500B675CB /* React-idlecallbacksnativemodule-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA036B2CD0BD8F00B675CB /* React-idlecallbacksnativemodule-dummy.m */; };
-		84CA067D2CD0BD9500B675CB /* React-idlecallbacksnativemodule.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA036E2CD0BD8F00B675CB /* React-idlecallbacksnativemodule.debug.xcconfig */; };
-		84CA067E2CD0BD9500B675CB /* React-idlecallbacksnativemodule.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03702CD0BD8F00B675CB /* React-idlecallbacksnativemodule.release.xcconfig */; };
 		84CA067F2CD0BD9500B675CB /* React-ImageManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA03722CD0BD8F00B675CB /* React-ImageManager-dummy.m */; };
-		84CA06802CD0BD9500B675CB /* React-ImageManager.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03752CD0BD8F00B675CB /* React-ImageManager.debug.xcconfig */; };
-		84CA06812CD0BD9500B675CB /* React-ImageManager.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03772CD0BD8F00B675CB /* React-ImageManager.release.xcconfig */; };
 		84CA06822CD0BD9500B675CB /* React-jserrorhandler-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA03792CD0BD8F00B675CB /* React-jserrorhandler-dummy.m */; };
-		84CA06832CD0BD9500B675CB /* React-jserrorhandler.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA037B2CD0BD8F00B675CB /* React-jserrorhandler.debug.xcconfig */; };
-		84CA06842CD0BD9500B675CB /* React-jserrorhandler.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA037C2CD0BD8F00B675CB /* React-jserrorhandler.release.xcconfig */; };
 		84CA06852CD0BD9500B675CB /* React-jsi-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA037E2CD0BD8F00B675CB /* React-jsi-dummy.m */; };
-		84CA06862CD0BD9600B675CB /* React-jsi.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03812CD0BD8F00B675CB /* React-jsi.debug.xcconfig */; };
-		84CA06872CD0BD9600B675CB /* React-jsi.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03832CD0BD8F00B675CB /* React-jsi.release.xcconfig */; };
 		84CA06882CD0BD9600B675CB /* React-jsiexecutor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA03852CD0BD8F00B675CB /* React-jsiexecutor-dummy.m */; };
-		84CA06892CD0BD9600B675CB /* React-jsiexecutor.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03872CD0BD8F00B675CB /* React-jsiexecutor.debug.xcconfig */; };
-		84CA068A2CD0BD9600B675CB /* React-jsiexecutor.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03882CD0BD8F00B675CB /* React-jsiexecutor.release.xcconfig */; };
 		84CA068B2CD0BD9600B675CB /* React-jsinspector-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA038A2CD0BD8F00B675CB /* React-jsinspector-dummy.m */; };
-		84CA068C2CD0BD9600B675CB /* React-jsinspector.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA038D2CD0BD8F00B675CB /* React-jsinspector.debug.xcconfig */; };
-		84CA068D2CD0BD9600B675CB /* React-jsinspector.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA038F2CD0BD8F00B675CB /* React-jsinspector.release.xcconfig */; };
-		84CA068E2CD0BD9600B675CB /* React-jsitracing.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03912CD0BD8F00B675CB /* React-jsitracing.debug.xcconfig */; };
-		84CA068F2CD0BD9600B675CB /* React-jsitracing.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03922CD0BD8F00B675CB /* React-jsitracing.release.xcconfig */; };
 		84CA06902CD0BD9600B675CB /* React-logger-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA03942CD0BD8F00B675CB /* React-logger-dummy.m */; };
-		84CA06912CD0BD9600B675CB /* React-logger.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03962CD0BD8F00B675CB /* React-logger.debug.xcconfig */; };
-		84CA06922CD0BD9600B675CB /* React-logger.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03972CD0BD8F00B675CB /* React-logger.release.xcconfig */; };
 		84CA06932CD0BD9600B675CB /* React-Mapbuffer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA03992CD0BD8F00B675CB /* React-Mapbuffer-dummy.m */; };
-		84CA06942CD0BD9600B675CB /* React-Mapbuffer.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA039B2CD0BD8F00B675CB /* React-Mapbuffer.debug.xcconfig */; };
-		84CA06952CD0BD9600B675CB /* React-Mapbuffer.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA039C2CD0BD8F00B675CB /* React-Mapbuffer.release.xcconfig */; };
 		84CA06962CD0BD9600B675CB /* React-microtasksnativemodule-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA039E2CD0BD8F00B675CB /* React-microtasksnativemodule-dummy.m */; };
-		84CA06972CD0BD9600B675CB /* React-microtasksnativemodule.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03A12CD0BD8F00B675CB /* React-microtasksnativemodule.debug.xcconfig */; };
-		84CA06982CD0BD9600B675CB /* React-microtasksnativemodule.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03A32CD0BD8F00B675CB /* React-microtasksnativemodule.release.xcconfig */; };
 		84CA06992CD0BD9600B675CB /* react-native-date-picker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA03A52CD0BD8F00B675CB /* react-native-date-picker-dummy.m */; };
-		84CA069A2CD0BD9600B675CB /* react-native-date-picker.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03A72CD0BD8F00B675CB /* react-native-date-picker.debug.xcconfig */; };
-		84CA069B2CD0BD9600B675CB /* react-native-date-picker.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03A82CD0BD8F00B675CB /* react-native-date-picker.release.xcconfig */; };
 		84CA069C2CD0BD9600B675CB /* react-native-safe-area-context-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA03AA2CD0BD8F00B675CB /* react-native-safe-area-context-dummy.m */; };
-		84CA069D2CD0BD9600B675CB /* react-native-safe-area-context.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03AC2CD0BD8F00B675CB /* react-native-safe-area-context.debug.xcconfig */; };
-		84CA069E2CD0BD9600B675CB /* react-native-safe-area-context.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03AD2CD0BD8F00B675CB /* react-native-safe-area-context.release.xcconfig */; };
 		84CA069F2CD0BD9600B675CB /* React-nativeconfig-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA03AF2CD0BD8F00B675CB /* React-nativeconfig-dummy.m */; };
-		84CA06A02CD0BD9600B675CB /* React-nativeconfig.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03B12CD0BD8F00B675CB /* React-nativeconfig.debug.xcconfig */; };
-		84CA06A12CD0BD9600B675CB /* React-nativeconfig.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03B22CD0BD8F00B675CB /* React-nativeconfig.release.xcconfig */; };
 		84CA06A22CD0BD9600B675CB /* React-NativeModulesApple-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA03B42CD0BD8F00B675CB /* React-NativeModulesApple-dummy.m */; };
-		84CA06A32CD0BD9600B675CB /* React-NativeModulesApple.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03B72CD0BD8F00B675CB /* React-NativeModulesApple.debug.xcconfig */; };
-		84CA06A42CD0BD9600B675CB /* React-NativeModulesApple.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03B92CD0BD8F00B675CB /* React-NativeModulesApple.release.xcconfig */; };
 		84CA06A52CD0BD9600B675CB /* React-perflogger-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA03BB2CD0BD8F00B675CB /* React-perflogger-dummy.m */; };
-		84CA06A62CD0BD9600B675CB /* React-perflogger.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03BD2CD0BD8F00B675CB /* React-perflogger.debug.xcconfig */; };
-		84CA06A72CD0BD9600B675CB /* React-perflogger.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03BE2CD0BD8F00B675CB /* React-perflogger.release.xcconfig */; };
 		84CA06A82CD0BD9600B675CB /* React-performancetimeline-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA03C02CD0BD8F00B675CB /* React-performancetimeline-dummy.m */; };
-		84CA06A92CD0BD9600B675CB /* React-performancetimeline.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03C22CD0BD8F00B675CB /* React-performancetimeline.debug.xcconfig */; };
-		84CA06AA2CD0BD9600B675CB /* React-performancetimeline.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03C32CD0BD8F00B675CB /* React-performancetimeline.release.xcconfig */; };
-		84CA06AB2CD0BD9600B675CB /* React-RCTActionSheet.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03C52CD0BD8F00B675CB /* React-RCTActionSheet.debug.xcconfig */; };
-		84CA06AC2CD0BD9600B675CB /* React-RCTActionSheet.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03C62CD0BD8F00B675CB /* React-RCTActionSheet.release.xcconfig */; };
 		84CA06AD2CD0BD9600B675CB /* React-RCTAnimation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA03C82CD0BD8F00B675CB /* React-RCTAnimation-dummy.m */; };
-		84CA06AE2CD0BD9600B675CB /* React-RCTAnimation.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03CA2CD0BD8F00B675CB /* React-RCTAnimation.debug.xcconfig */; };
-		84CA06AF2CD0BD9600B675CB /* React-RCTAnimation.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03CB2CD0BD8F00B675CB /* React-RCTAnimation.release.xcconfig */; };
 		84CA06B02CD0BD9600B675CB /* React-RCTAppDelegate-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA03CD2CD0BD8F00B675CB /* React-RCTAppDelegate-dummy.m */; };
-		84CA06B12CD0BD9600B675CB /* React-RCTAppDelegate.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03D02CD0BD8F00B675CB /* React-RCTAppDelegate.debug.xcconfig */; };
-		84CA06B22CD0BD9600B675CB /* React-RCTAppDelegate.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03D22CD0BD8F00B675CB /* React-RCTAppDelegate.release.xcconfig */; };
 		84CA06B32CD0BD9600B675CB /* React-RCTBlob-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA03D42CD0BD8F00B675CB /* React-RCTBlob-dummy.m */; };
-		84CA06B42CD0BD9600B675CB /* React-RCTBlob.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03D62CD0BD8F00B675CB /* React-RCTBlob.debug.xcconfig */; };
-		84CA06B52CD0BD9600B675CB /* React-RCTBlob.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03D72CD0BD8F00B675CB /* React-RCTBlob.release.xcconfig */; };
 		84CA06B62CD0BD9600B675CB /* React-RCTFabric-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA03D92CD0BD8F00B675CB /* React-RCTFabric-dummy.m */; };
-		84CA06B72CD0BD9600B675CB /* React-RCTFabric.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03DC2CD0BD8F00B675CB /* React-RCTFabric.debug.xcconfig */; };
-		84CA06B82CD0BD9600B675CB /* React-RCTFabric.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03DE2CD0BD8F00B675CB /* React-RCTFabric.release.xcconfig */; };
 		84CA06B92CD0BD9600B675CB /* React-RCTImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA03E02CD0BD8F00B675CB /* React-RCTImage-dummy.m */; };
-		84CA06BA2CD0BD9600B675CB /* React-RCTImage.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03E22CD0BD8F00B675CB /* React-RCTImage.debug.xcconfig */; };
-		84CA06BB2CD0BD9600B675CB /* React-RCTImage.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03E32CD0BD8F00B675CB /* React-RCTImage.release.xcconfig */; };
 		84CA06BC2CD0BD9600B675CB /* React-RCTLinking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA03E52CD0BD8F00B675CB /* React-RCTLinking-dummy.m */; };
-		84CA06BD2CD0BD9600B675CB /* React-RCTLinking.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03E72CD0BD8F00B675CB /* React-RCTLinking.debug.xcconfig */; };
-		84CA06BE2CD0BD9600B675CB /* React-RCTLinking.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03E82CD0BD8F00B675CB /* React-RCTLinking.release.xcconfig */; };
 		84CA06BF2CD0BD9600B675CB /* React-RCTNetwork-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA03EA2CD0BD8F00B675CB /* React-RCTNetwork-dummy.m */; };
-		84CA06C02CD0BD9600B675CB /* React-RCTNetwork.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03EC2CD0BD8F00B675CB /* React-RCTNetwork.debug.xcconfig */; };
-		84CA06C12CD0BD9600B675CB /* React-RCTNetwork.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03ED2CD0BD8F00B675CB /* React-RCTNetwork.release.xcconfig */; };
 		84CA06C22CD0BD9600B675CB /* React-RCTSettings-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA03EF2CD0BD8F00B675CB /* React-RCTSettings-dummy.m */; };
-		84CA06C32CD0BD9600B675CB /* React-RCTSettings.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03F12CD0BD8F00B675CB /* React-RCTSettings.debug.xcconfig */; };
-		84CA06C42CD0BD9600B675CB /* React-RCTSettings.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03F22CD0BD8F00B675CB /* React-RCTSettings.release.xcconfig */; };
 		84CA06C52CD0BD9600B675CB /* React-RCTText-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA03F42CD0BD8F00B675CB /* React-RCTText-dummy.m */; };
-		84CA06C62CD0BD9600B675CB /* React-RCTText.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03F62CD0BD8F00B675CB /* React-RCTText.debug.xcconfig */; };
-		84CA06C72CD0BD9600B675CB /* React-RCTText.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03F72CD0BD8F00B675CB /* React-RCTText.release.xcconfig */; };
 		84CA06C82CD0BD9600B675CB /* React-RCTVibration-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA03F92CD0BD8F00B675CB /* React-RCTVibration-dummy.m */; };
-		84CA06C92CD0BD9600B675CB /* React-RCTVibration.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03FB2CD0BD8F00B675CB /* React-RCTVibration.debug.xcconfig */; };
-		84CA06CA2CD0BD9600B675CB /* React-RCTVibration.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA03FC2CD0BD8F00B675CB /* React-RCTVibration.release.xcconfig */; };
 		84CA06CB2CD0BD9600B675CB /* React-rendererconsistency-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA03FE2CD0BD8F00B675CB /* React-rendererconsistency-dummy.m */; };
-		84CA06CC2CD0BD9600B675CB /* React-rendererconsistency.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA04002CD0BD8F00B675CB /* React-rendererconsistency.debug.xcconfig */; };
-		84CA06CD2CD0BD9600B675CB /* React-rendererconsistency.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA04012CD0BD8F00B675CB /* React-rendererconsistency.release.xcconfig */; };
 		84CA06CE2CD0BD9600B675CB /* React-rendererdebug-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA04032CD0BD8F00B675CB /* React-rendererdebug-dummy.m */; };
-		84CA06CF2CD0BD9600B675CB /* React-rendererdebug.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA04062CD0BD8F00B675CB /* React-rendererdebug.debug.xcconfig */; };
-		84CA06D02CD0BD9600B675CB /* React-rendererdebug.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA04082CD0BD8F00B675CB /* React-rendererdebug.release.xcconfig */; };
-		84CA06D12CD0BD9600B675CB /* React-rncore.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA040A2CD0BD8F00B675CB /* React-rncore.debug.xcconfig */; };
-		84CA06D22CD0BD9600B675CB /* React-rncore.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA040B2CD0BD8F00B675CB /* React-rncore.release.xcconfig */; };
 		84CA06D32CD0BD9600B675CB /* React-RuntimeApple-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA040D2CD0BD8F00B675CB /* React-RuntimeApple-dummy.m */; };
-		84CA06D42CD0BD9600B675CB /* React-RuntimeApple.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA040F2CD0BD8F00B675CB /* React-RuntimeApple.debug.xcconfig */; };
-		84CA06D52CD0BD9600B675CB /* React-RuntimeApple.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA04102CD0BD8F00B675CB /* React-RuntimeApple.release.xcconfig */; };
 		84CA06D62CD0BD9600B675CB /* React-RuntimeCore-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA04122CD0BD8F00B675CB /* React-RuntimeCore-dummy.m */; };
-		84CA06D72CD0BD9600B675CB /* React-RuntimeCore.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA04142CD0BD8F00B675CB /* React-RuntimeCore.debug.xcconfig */; };
-		84CA06D82CD0BD9600B675CB /* React-RuntimeCore.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA04152CD0BD8F00B675CB /* React-RuntimeCore.release.xcconfig */; };
-		84CA06D92CD0BD9600B675CB /* React-runtimeexecutor.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA04172CD0BD8F00B675CB /* React-runtimeexecutor.debug.xcconfig */; };
-		84CA06DA2CD0BD9600B675CB /* React-runtimeexecutor.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA04182CD0BD8F00B675CB /* React-runtimeexecutor.release.xcconfig */; };
 		84CA06DB2CD0BD9600B675CB /* React-RuntimeHermes-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA041A2CD0BD8F00B675CB /* React-RuntimeHermes-dummy.m */; };
-		84CA06DC2CD0BD9600B675CB /* React-RuntimeHermes.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA041C2CD0BD8F00B675CB /* React-RuntimeHermes.debug.xcconfig */; };
-		84CA06DD2CD0BD9600B675CB /* React-RuntimeHermes.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA041D2CD0BD8F00B675CB /* React-RuntimeHermes.release.xcconfig */; };
 		84CA06DE2CD0BD9600B675CB /* React-runtimescheduler-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA041F2CD0BD8F00B675CB /* React-runtimescheduler-dummy.m */; };
-		84CA06DF2CD0BD9600B675CB /* React-runtimescheduler.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA04212CD0BD8F00B675CB /* React-runtimescheduler.debug.xcconfig */; };
-		84CA06E02CD0BD9600B675CB /* React-runtimescheduler.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA04222CD0BD8F00B675CB /* React-runtimescheduler.release.xcconfig */; };
 		84CA06E12CD0BD9600B675CB /* React-utils-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA04242CD0BD8F00B675CB /* React-utils-dummy.m */; };
-		84CA06E22CD0BD9600B675CB /* React-utils.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA04272CD0BD8F00B675CB /* React-utils.debug.xcconfig */; };
-		84CA06E32CD0BD9600B675CB /* React-utils.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA04292CD0BD8F00B675CB /* React-utils.release.xcconfig */; };
 		84CA06E42CD0BD9600B675CB /* ReactCodegen-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA042B2CD0BD8F00B675CB /* ReactCodegen-dummy.m */; };
-		84CA06E52CD0BD9600B675CB /* ReactCodegen.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA042E2CD0BD8F00B675CB /* ReactCodegen.debug.xcconfig */; };
-		84CA06E62CD0BD9600B675CB /* ReactCodegen.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA04302CD0BD8F00B675CB /* ReactCodegen.release.xcconfig */; };
 		84CA06E72CD0BD9600B675CB /* ReactCommon-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA04322CD0BD8F00B675CB /* ReactCommon-dummy.m */; };
-		84CA06E82CD0BD9600B675CB /* ReactCommon.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA04352CD0BD8F00B675CB /* ReactCommon.debug.xcconfig */; };
-		84CA06E92CD0BD9600B675CB /* ReactCommon.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA04372CD0BD8F00B675CB /* ReactCommon.release.xcconfig */; };
 		84CA06EA2CD0BD9600B675CB /* RNScreens-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA04392CD0BD8F00B675CB /* RNScreens-dummy.m */; };
-		84CA06EB2CD0BD9600B675CB /* RNScreens.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA043B2CD0BD8F00B675CB /* RNScreens.debug.xcconfig */; };
-		84CA06EC2CD0BD9600B675CB /* RNScreens.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA043C2CD0BD8F00B675CB /* RNScreens.release.xcconfig */; };
 		84CA06ED2CD0BD9600B675CB /* SocketRocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA043E2CD0BD8F00B675CB /* SocketRocket-dummy.m */; };
-		84CA06EE2CD0BD9600B675CB /* SocketRocket.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA04402CD0BD8F00B675CB /* SocketRocket.debug.xcconfig */; };
-		84CA06EF2CD0BD9600B675CB /* SocketRocket.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA04412CD0BD8F00B675CB /* SocketRocket.release.xcconfig */; };
 		84CA06F02CD0BD9600B675CB /* Yoga-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA04432CD0BD8F00B675CB /* Yoga-dummy.m */; };
-		84CA06F12CD0BD9600B675CB /* Yoga.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA04462CD0BD8F00B675CB /* Yoga.debug.xcconfig */; };
-		84CA06F22CD0BD9600B675CB /* Yoga.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84CA04482CD0BD8F00B675CB /* Yoga.release.xcconfig */; };
 		84CA06F32CD0BD9600B675CB /* Manifest.lock in Resources */ = {isa = PBXBuildFile; fileRef = 84CA044B2CD0BD8F00B675CB /* Manifest.lock */; };
 		84CA06F42CD0BD9600B675CB /* resources-to-copy-studentApp.txt in Resources */ = {isa = PBXBuildFile; fileRef = 84CA044D2CD0BD8F00B675CB /* resources-to-copy-studentApp.txt */; };
-		84CA06F52CD0BD9600B675CB /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84CA04502CD0BD8F00B675CB /* AppDelegate.mm */; };
 		84CA06F62CD0BD9600B675CB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84CA04512CD0BD8F00B675CB /* Images.xcassets */; };
-		84CA06F72CD0BD9600B675CB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84CA04522CD0BD8F00B675CB /* Info.plist */; };
-		84CA06F82CD0BD9600B675CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84CA04532CD0BD8F00B675CB /* LaunchScreen.storyboard */; };
 		84CA06F92CD0BD9600B675CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA04542CD0BD8F00B675CB /* main.m */; };
 		84CA06FA2CD0BD9600B675CB /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 84CA04552CD0BD8F00B675CB /* PrivacyInfo.xcprivacy */; };
-		84CA06FB2CD0BD9600B675CB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84CA04572CD0BD8F00B675CB /* Info.plist */; };
 		84CA06FC2CD0BD9600B675CB /* studentAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA04582CD0BD8F00B675CB /* studentAppTests.m */; };
 		84CA06FD2CD0BD9600B675CB /* .xcode.env in Resources */ = {isa = PBXBuildFile; fileRef = 84CA045A2CD0BD8F00B675CB /* .xcode.env */; };
 		84CA06FE2CD0BD9600B675CB /* .xcode.env.local in Resources */ = {isa = PBXBuildFile; fileRef = 84CA045B2CD0BD8F00B675CB /* .xcode.env.local */; };
 		84CA06FF2CD0BD9600B675CB /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 84CA045C2CD0BD8F00B675CB /* Podfile */; };
 		84CA07002CD0BD9600B675CB /* Podfile.lock in Resources */ = {isa = PBXBuildFile; fileRef = 84CA045D2CD0BD8F00B675CB /* Podfile.lock */; };
 		84CA07012CD0BD9600B675CB /* studentApp.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = 84CA045F2CD0BD8F00B675CB /* studentApp.xcworkspace */; };
-		84CA07032CD0BE6600B675CB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84CA07022CD0BE6600B675CB /* GoogleService-Info.plist */; };
+		A7024FC881269F9635BAD312 /* libPods-studentApp-studentAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AFA71ECDE6340BDAF798E07 /* libPods-studentApp-studentAppTests.a */; };
+		D558F94689203F03F353A4B1 /* libPods-studentApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EBDC8237B7EF6AD499B14269 /* libPods-studentApp.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -495,6 +350,279 @@
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
 			remoteInfo = studentApp;
+		};
+		84C698442CE36140006DA9F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84CA044C2CD0BD8F00B675CB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 514D7742C6CBB0BDBD9984AEE97DDFDE;
+			remoteInfo = "BoringSSL-GRPC";
+		};
+		84C698462CE36140006DA9F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84CA044C2CD0BD8F00B675CB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 15B2AAC35D0FDBFDEB69A9FC675DC516;
+			remoteInfo = "BoringSSL-GRPC-openssl_grpc";
+		};
+		84C698482CE36140006DA9F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84CA044C2CD0BD8F00B675CB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 81418C93A311F0492F62A8F88C3BD66B;
+			remoteInfo = FirebaseAppCheckInterop;
+		};
+		84C6984A2CE36140006DA9F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84CA044C2CD0BD8F00B675CB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E2B63D462DB7F827C4B11FD51E4F8E2D;
+			remoteInfo = FirebaseCore;
+		};
+		84C6984C2CE36140006DA9F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84CA044C2CD0BD8F00B675CB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8BB937B1C0DFFCF92F41861C2BC54DDA;
+			remoteInfo = "FirebaseCore-FirebaseCore_Privacy";
+		};
+		84C6984E2CE36140006DA9F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84CA044C2CD0BD8F00B675CB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AEF1DC80F0EB62580B81D18786BAF924;
+			remoteInfo = FirebaseCoreExtension;
+		};
+		84C698502CE36140006DA9F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84CA044C2CD0BD8F00B675CB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = ECAC028550A03412C51913B85686D98B;
+			remoteInfo = "FirebaseCoreExtension-FirebaseCoreExtension_Privacy";
+		};
+		84C698522CE36140006DA9F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84CA044C2CD0BD8F00B675CB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 148D0F9E8C7373FEAF40D800FC5F1BAA;
+			remoteInfo = FirebaseCoreInternal;
+		};
+		84C698542CE36140006DA9F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84CA044C2CD0BD8F00B675CB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DB03FD262B678178A44272143846563;
+			remoteInfo = "FirebaseCoreInternal-FirebaseCoreInternal_Privacy";
+		};
+		84C698562CE36140006DA9F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84CA044C2CD0BD8F00B675CB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 92000153CD73F7FC2DBAB4AB708269F3;
+			remoteInfo = FirebaseFirestore;
+		};
+		84C698582CE36140006DA9F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84CA044C2CD0BD8F00B675CB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B6FC6D7893981399354A5310B0C34D02;
+			remoteInfo = "FirebaseFirestore-FirebaseFirestore_Privacy";
+		};
+		84C6985A2CE36140006DA9F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84CA044C2CD0BD8F00B675CB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C6C0434B66B1A1EA497F81126A2C4DC6;
+			remoteInfo = FirebaseFirestoreInternal;
+		};
+		84C6985C2CE36140006DA9F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84CA044C2CD0BD8F00B675CB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 62B963135E1B5D0D0871A62C8DC29B85;
+			remoteInfo = "FirebaseFirestoreInternal-FirebaseFirestoreInternal_Privacy";
+		};
+		84C6985E2CE36140006DA9F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84CA044C2CD0BD8F00B675CB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 13C8C8B254851998F9289F71229B28A2;
+			remoteInfo = FirebaseInstallations;
+		};
+		84C698602CE36140006DA9F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84CA044C2CD0BD8F00B675CB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 47C581450CDB4A6111CB97EEE0711A8C;
+			remoteInfo = "FirebaseInstallations-FirebaseInstallations_Privacy";
+		};
+		84C698622CE36140006DA9F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84CA044C2CD0BD8F00B675CB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5B654B4B042BA7DC93766943A643E42B;
+			remoteInfo = FirebaseMessaging;
+		};
+		84C698642CE36140006DA9F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84CA044C2CD0BD8F00B675CB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B0B6501341FD6783C6874C54AB31A9CF;
+			remoteInfo = "FirebaseMessaging-FirebaseMessaging_Privacy";
+		};
+		84C698662CE36140006DA9F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84CA044C2CD0BD8F00B675CB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 519172F62353C84795D05BA8A499936B;
+			remoteInfo = FirebaseSharedSwift;
+		};
+		84C698682CE36140006DA9F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84CA044C2CD0BD8F00B675CB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 856B5CD56F194FAD26EA91620B66D614;
+			remoteInfo = GoogleDataTransport;
+		};
+		84C6986A2CE36140006DA9F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84CA044C2CD0BD8F00B675CB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F73AA961F4AEFF2B46B00AE435DF6BE3;
+			remoteInfo = "GoogleDataTransport-GoogleDataTransport_Privacy";
+		};
+		84C6986C2CE36140006DA9F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84CA044C2CD0BD8F00B675CB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B43874C6CBB50E7134FBEC24BABFE14F;
+			remoteInfo = GoogleUtilities;
+		};
+		84C6986E2CE36140006DA9F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84CA044C2CD0BD8F00B675CB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 44E291D18340EAC3F761346198515323;
+			remoteInfo = "GoogleUtilities-GoogleUtilities_Privacy";
+		};
+		84C698702CE36140006DA9F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84CA044C2CD0BD8F00B675CB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3347A1AB6546F0A3977529B8F199DC41;
+			remoteInfo = PromisesObjC;
+		};
+		84C698722CE36140006DA9F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84CA044C2CD0BD8F00B675CB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3F238BB22C5201CE689CAF2F766AED95;
+			remoteInfo = "PromisesObjC-FBLPromises_Privacy";
+		};
+		84C698742CE36140006DA9F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84CA044C2CD0BD8F00B675CB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0B9BD901B3EB04B824A157C85265F044;
+			remoteInfo = RNCPushNotificationIOS;
+		};
+		84C698762CE36140006DA9F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84CA044C2CD0BD8F00B675CB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 18D0B1E13C69654196028DD6EDCC3452;
+			remoteInfo = RNFBApp;
+		};
+		84C698782CE36140006DA9F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84CA044C2CD0BD8F00B675CB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1492B8126E174E9B7DC3748278EF2DFD;
+			remoteInfo = RNFBFirestore;
+		};
+		84C6987A2CE36140006DA9F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84CA044C2CD0BD8F00B675CB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8C1EA40EBD30D734BFD7F4BC6E754BB9;
+			remoteInfo = RNFBMessaging;
+		};
+		84C6987E2CE36140006DA9F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84CA044C2CD0BD8F00B675CB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BF96B57ADE05E8909F823BDF6868B3E3;
+			remoteInfo = abseil;
+		};
+		84C698802CE36140006DA9F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84CA044C2CD0BD8F00B675CB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3A6766BF64A8C96ACC94313C935C8573;
+			remoteInfo = "abseil-xcprivacy";
+		};
+		84C698822CE36140006DA9F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84CA044C2CD0BD8F00B675CB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1911113E0FBF13CFF9132E5FF7685228;
+			remoteInfo = "gRPC-C++";
+		};
+		84C698842CE36140006DA9F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84CA044C2CD0BD8F00B675CB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9C7C87B5D0A6752AFA2642F1BCA967A3;
+			remoteInfo = "gRPC-C++-gRPCCertificates-Cpp";
+		};
+		84C698862CE36140006DA9F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84CA044C2CD0BD8F00B675CB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 28F341633BC96126DD3A7030F0B54124;
+			remoteInfo = "gRPC-C++-grpcpp";
+		};
+		84C698882CE36140006DA9F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84CA044C2CD0BD8F00B675CB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B471867C535B02FA55D87E260F6480F8;
+			remoteInfo = "gRPC-Core";
+		};
+		84C6988A2CE36140006DA9F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84CA044C2CD0BD8F00B675CB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3A6314653B568326014FEB5B7B3E6ABB;
+			remoteInfo = "gRPC-Core-grpc";
+		};
+		84C6988C2CE36140006DA9F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84CA044C2CD0BD8F00B675CB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A9F46A999C47653013D3AD854352507;
+			remoteInfo = "leveldb-library";
+		};
+		84C6988E2CE36140006DA9F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84CA044C2CD0BD8F00B675CB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5F8C1626C73591959F16DB1CE2536F54;
+			remoteInfo = "leveldb-library-leveldb_Privacy";
+		};
+		84C698902CE36140006DA9F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84CA044C2CD0BD8F00B675CB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06FC5C9CF96D60C50FCD47D339C91951;
+			remoteInfo = nanopb;
+		};
+		84C698922CE36140006DA9F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84CA044C2CD0BD8F00B675CB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3227F3FC45681D7CEE5D1355A532398A;
+			remoteInfo = "nanopb-nanopb_Privacy";
 		};
 		84CA04AE2CD0BD9100B675CB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -670,13 +798,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = 5AA54A19E2135E09B9C8C0767385FD3A;
 			remoteInfo = "React-graphics";
-		};
-		84CA04E02CD0BD9100B675CB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 84CA044C2CD0BD8F00B675CB /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = DAD8B71DF2DFCF15AAF98C06D37D5703;
-			remoteInfo = "React-hermes";
 		};
 		84CA04E22CD0BD9100B675CB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -881,13 +1002,6 @@
 			remoteGlobalIDString = D22EED118A762A7D7BC88A4ADBB7026E;
 			remoteInfo = "React-RuntimeCore";
 		};
-		84CA051C2CD0BD9100B675CB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 84CA044C2CD0BD8F00B675CB /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4F3E9C98444FA55E416B857143C48013;
-			remoteInfo = "React-RuntimeHermes";
-		};
 		84CA051E2CD0BD9100B675CB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 84CA044C2CD0BD8F00B675CB /* Pods.xcodeproj */;
@@ -937,6 +1051,20 @@
 			remoteGlobalIDString = 65D0A19C165FA1126B1360680FE6DB12;
 			remoteInfo = Yoga;
 		};
+		84F446562CE396EB000EA2D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84CA044C2CD0BD8F00B675CB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DAD8B71DF2DFCF15AAF98C06D37D5703;
+			remoteInfo = "React-hermes";
+		};
+		84F446582CE396EB000EA2D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84CA044C2CD0BD8F00B675CB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4F3E9C98444FA55E416B857143C48013;
+			remoteInfo = "React-RuntimeHermes";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -950,13 +1078,11 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = studentApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = studentApp/main.m; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = studentApp/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		19F6CBCC0A4E27FBF8BF4A61 /* libPods-studentApp-studentAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-studentApp-studentAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B4392A12AC88292D35C810B /* Pods-studentApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-studentApp.debug.xcconfig"; path = "Target Support Files/Pods-studentApp/Pods-studentApp.debug.xcconfig"; sourceTree = "<group>"; };
-		5709B34CF0A7D63546082F79 /* Pods-studentApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-studentApp.release.xcconfig"; path = "Target Support Files/Pods-studentApp/Pods-studentApp.release.xcconfig"; sourceTree = "<group>"; };
-		5B7EB9410499542E8C5724F5 /* Pods-studentApp-studentAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-studentApp-studentAppTests.debug.xcconfig"; path = "Target Support Files/Pods-studentApp-studentAppTests/Pods-studentApp-studentAppTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5DCACB8F33CDC322A6C60F78 /* libPods-studentApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-studentApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AFA71ECDE6340BDAF798E07 /* libPods-studentApp-studentAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-studentApp-studentAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A9E148A9E355EDC814103A6 /* Pods-studentApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-studentApp.debug.xcconfig"; path = "Target Support Files/Pods-studentApp/Pods-studentApp.debug.xcconfig"; sourceTree = "<group>"; };
 		63EA2ECD791A47409CFDD5C9 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = studentApp/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = studentApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84C697D42CE36140006DA9F0 /* studentApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = studentApp.entitlements; path = studentApp/studentApp.entitlements; sourceTree = "<group>"; };
 		84CA00002CD0BD8F00B675CB /* ComponentDescriptors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComponentDescriptors.h; sourceTree = "<group>"; };
 		84CA00012CD0BD8F00B675CB /* EventEmitters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventEmitters.h; sourceTree = "<group>"; };
 		84CA00022CD0BD8F00B675CB /* Props.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Props.h; sourceTree = "<group>"; };
@@ -1938,11 +2064,10 @@
 		84CA04582CD0BD8F00B675CB /* studentAppTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = studentAppTests.m; sourceTree = "<group>"; };
 		84CA045A2CD0BD8F00B675CB /* .xcode.env */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .xcode.env; sourceTree = "<group>"; };
 		84CA045B2CD0BD8F00B675CB /* .xcode.env.local */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .xcode.env.local; sourceTree = "<group>"; };
-		84CA045C2CD0BD8F00B675CB /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		84CA045C2CD0BD8F00B675CB /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		84CA045D2CD0BD8F00B675CB /* Podfile.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
 		84CA045E2CD0BD8F00B675CB /* studentApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = studentApp.xcodeproj; sourceTree = "<group>"; };
 		84CA045F2CD0BD8F00B675CB /* studentApp.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = studentApp.xcworkspace; sourceTree = "<group>"; };
-		84CA07022CD0BE6600B675CB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		84CAE1862CD0BD8F00B675CB /* FBReactNativeSpec-generated.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "FBReactNativeSpec-generated.mm"; sourceTree = "<group>"; };
 		84CAE1872CD0BD8F00B675CB /* FBReactNativeSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBReactNativeSpec.h; sourceTree = "<group>"; };
 		84CAE1892CD0BD8F00B675CB /* ComponentDescriptors.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ComponentDescriptors.cpp; sourceTree = "<group>"; };
@@ -8863,8 +8988,11 @@
 		84CAFFF92CD0BD8F00B675CB /* Telemetry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Telemetry.h; sourceTree = "<group>"; };
 		84CAFFFA2CD0BD8F00B675CB /* to_underlying.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = to_underlying.h; sourceTree = "<group>"; };
 		84CAFFFE2CD0BD8F00B675CB /* FBReactNativeSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBReactNativeSpec.h; sourceTree = "<group>"; };
-		89C6BE57DB24E9ADA2F236DE /* Pods-studentApp-studentAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-studentApp-studentAppTests.release.xcconfig"; path = "Target Support Files/Pods-studentApp-studentAppTests/Pods-studentApp-studentAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		CFA8771AAD77B2566DC1B2F0 /* Pods-studentApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-studentApp.release.xcconfig"; path = "Target Support Files/Pods-studentApp/Pods-studentApp.release.xcconfig"; sourceTree = "<group>"; };
+		CFD9DF366605380D50EA508A /* Pods-studentApp-studentAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-studentApp-studentAppTests.debug.xcconfig"; path = "Target Support Files/Pods-studentApp-studentAppTests/Pods-studentApp-studentAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EBDC8237B7EF6AD499B14269 /* libPods-studentApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-studentApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F7D60F824512034F1842753F /* Pods-studentApp-studentAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-studentApp-studentAppTests.release.xcconfig"; path = "Target Support Files/Pods-studentApp-studentAppTests/Pods-studentApp-studentAppTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -8872,7 +9000,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7699B88040F8A987B510C191 /* libPods-studentApp-studentAppTests.a in Frameworks */,
+				A7024FC881269F9635BAD312 /* libPods-studentApp-studentAppTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -8880,9 +9008,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84CA05942CD0BD9500B675CB /* hermes.framework in Frameworks */,
 				84CA05952CD0BD9500B675CB /* hermes.xcframework in Frameworks */,
-				0C80B921A6F3F58F76C31292 /* libPods-studentApp.a in Frameworks */,
+				84CA05942CD0BD9500B675CB /* hermes.framework in Frameworks */,
+				D558F94689203F03F353A4B1 /* libPods-studentApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -8909,6 +9037,7 @@
 		13B07FAE1A68108700A75B9A /* studentApp */ = {
 			isa = PBXGroup;
 			children = (
+				84C697D42CE36140006DA9F0 /* studentApp.entitlements */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -8925,8 +9054,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				5DCACB8F33CDC322A6C60F78 /* libPods-studentApp.a */,
-				19F6CBCC0A4E27FBF8BF4A61 /* libPods-studentApp-studentAppTests.a */,
+				EBDC8237B7EF6AD499B14269 /* libPods-studentApp.a */,
+				1AFA71ECDE6340BDAF798E07 /* libPods-studentApp-studentAppTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -8941,7 +9070,6 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				84CA07022CD0BE6600B675CB /* GoogleService-Info.plist */,
 				84CA04602CD0BD8F00B675CB /* ios */,
 				13B07FAE1A68108700A75B9A /* studentApp */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
@@ -11128,47 +11256,49 @@
 		84CA04632CD0BD8F00B675CB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				84CA04AF2CD0BD9100B675CB /* boost-boost_privacy */,
+				84C698452CE36140006DA9F0 /* BoringSSL-GRPC */,
+				84C698472CE36140006DA9F0 /* BoringSSL-GRPC-openssl_grpc */,
 				84CA04B12CD0BD9100B675CB /* DoubleConversion */,
-				84CA04B32CD0BD9100B675CB /* fmt */,
-				84CA04B52CD0BD9100B675CB /* glog */,
-				84CA04B72CD0BD9100B675CB /* glog-glog_privacy */,
-				84CA04B92CD0BD9100B675CB /* Pods-studentApp */,
-				84CA04BB2CD0BD9100B675CB /* Pods-studentApp-studentAppTests */,
+				84C698492CE36140006DA9F0 /* FirebaseAppCheckInterop */,
+				84C6984B2CE36140006DA9F0 /* FirebaseCore */,
+				84C6984D2CE36140006DA9F0 /* FirebaseCore-FirebaseCore_Privacy */,
+				84C6984F2CE36140006DA9F0 /* FirebaseCoreExtension */,
+				84C698512CE36140006DA9F0 /* FirebaseCoreExtension-FirebaseCoreExtension_Privacy */,
+				84C698532CE36140006DA9F0 /* FirebaseCoreInternal */,
+				84C698552CE36140006DA9F0 /* FirebaseCoreInternal-FirebaseCoreInternal_Privacy */,
+				84C698572CE36140006DA9F0 /* FirebaseFirestore */,
+				84C698592CE36140006DA9F0 /* FirebaseFirestore-FirebaseFirestore_Privacy */,
+				84C6985B2CE36140006DA9F0 /* FirebaseFirestoreInternal */,
+				84C6985D2CE36140006DA9F0 /* FirebaseFirestoreInternal-FirebaseFirestoreInternal_Privacy */,
+				84C6985F2CE36140006DA9F0 /* FirebaseInstallations */,
+				84C698612CE36140006DA9F0 /* FirebaseInstallations-FirebaseInstallations_Privacy */,
+				84C698632CE36140006DA9F0 /* FirebaseMessaging */,
+				84C698652CE36140006DA9F0 /* FirebaseMessaging-FirebaseMessaging_Privacy */,
+				84C698672CE36140006DA9F0 /* FirebaseSharedSwift */,
+				84C698692CE36140006DA9F0 /* GoogleDataTransport */,
+				84C6986B2CE36140006DA9F0 /* GoogleDataTransport-GoogleDataTransport_Privacy */,
+				84C6986D2CE36140006DA9F0 /* GoogleUtilities */,
+				84C6986F2CE36140006DA9F0 /* GoogleUtilities-GoogleUtilities_Privacy */,
+				84C698712CE36140006DA9F0 /* PromisesObjC */,
+				84C698732CE36140006DA9F0 /* PromisesObjC-FBLPromises_Privacy */,
 				84CA04BD2CD0BD9100B675CB /* RCT-Folly */,
 				84CA04BF2CD0BD9100B675CB /* RCT-Folly-RCT-Folly_privacy */,
 				84CA04C12CD0BD9100B675CB /* RCTDeprecation */,
 				84CA04C32CD0BD9100B675CB /* RCTTypeSafety */,
+				84C698752CE36140006DA9F0 /* RNCPushNotificationIOS */,
+				84C698772CE36140006DA9F0 /* RNFBApp */,
+				84C698792CE36140006DA9F0 /* RNFBFirestore */,
+				84C6987B2CE36140006DA9F0 /* RNFBMessaging */,
+				84CA05272CD0BD9100B675CB /* RNScreens */,
 				84CA04C52CD0BD9100B675CB /* React-Core */,
 				84CA04C72CD0BD9100B675CB /* React-Core-React-Core_privacy */,
 				84CA04C92CD0BD9100B675CB /* React-CoreModules */,
-				84CA04CB2CD0BD9100B675CB /* React-cxxreact */,
-				84CA04CD2CD0BD9100B675CB /* React-cxxreact-React-cxxreact_privacy */,
-				84CA04CF2CD0BD9100B675CB /* React-debug */,
-				84CA04D12CD0BD9100B675CB /* React-defaultsnativemodule */,
-				84CA04D32CD0BD9100B675CB /* React-domnativemodule */,
 				84CA04D52CD0BD9100B675CB /* React-Fabric */,
 				84CA04D72CD0BD9100B675CB /* React-FabricComponents */,
 				84CA04D92CD0BD9100B675CB /* React-FabricImage */,
-				84CA04DB2CD0BD9100B675CB /* React-featureflags */,
-				84CA04DD2CD0BD9100B675CB /* React-featureflagsnativemodule */,
-				84CA04DF2CD0BD9100B675CB /* React-graphics */,
-				84CA04E12CD0BD9100B675CB /* React-hermes */,
-				84CA04E32CD0BD9100B675CB /* React-idlecallbacksnativemodule */,
 				84CA04E52CD0BD9100B675CB /* React-ImageManager */,
-				84CA04E72CD0BD9100B675CB /* React-jserrorhandler */,
-				84CA04E92CD0BD9100B675CB /* React-jsi */,
-				84CA04EB2CD0BD9100B675CB /* React-jsiexecutor */,
-				84CA04ED2CD0BD9100B675CB /* React-jsinspector */,
-				84CA04EF2CD0BD9100B675CB /* React-logger */,
 				84CA04F12CD0BD9100B675CB /* React-Mapbuffer */,
-				84CA04F32CD0BD9100B675CB /* React-microtasksnativemodule */,
-				84CA04F52CD0BD9100B675CB /* react-native-date-picker */,
-				84CA04F72CD0BD9100B675CB /* react-native-safe-area-context */,
-				84CA04F92CD0BD9100B675CB /* React-nativeconfig */,
 				84CA04FB2CD0BD9100B675CB /* React-NativeModulesApple */,
-				84CA04FD2CD0BD9100B675CB /* React-perflogger */,
-				84CA04FF2CD0BD9100B675CB /* React-performancetimeline */,
 				84CA05012CD0BD9100B675CB /* React-RCTAnimation */,
 				84CA05032CD0BD9100B675CB /* React-RCTAppDelegate */,
 				84CA05052CD0BD9100B675CB /* React-RCTBlob */,
@@ -11179,18 +11309,55 @@
 				84CA050F2CD0BD9100B675CB /* React-RCTSettings */,
 				84CA05112CD0BD9100B675CB /* React-RCTText */,
 				84CA05132CD0BD9100B675CB /* React-RCTVibration */,
-				84CA05152CD0BD9100B675CB /* React-rendererconsistency */,
-				84CA05172CD0BD9100B675CB /* React-rendererdebug */,
 				84CA05192CD0BD9100B675CB /* React-RuntimeApple */,
 				84CA051B2CD0BD9100B675CB /* React-RuntimeCore */,
-				84CA051D2CD0BD9100B675CB /* React-RuntimeHermes */,
+				84F446592CE396EB000EA2D1 /* React-RuntimeHermes */,
+				84CA04CB2CD0BD9100B675CB /* React-cxxreact */,
+				84CA04CD2CD0BD9100B675CB /* React-cxxreact-React-cxxreact_privacy */,
+				84CA04CF2CD0BD9100B675CB /* React-debug */,
+				84CA04D12CD0BD9100B675CB /* React-defaultsnativemodule */,
+				84CA04D32CD0BD9100B675CB /* React-domnativemodule */,
+				84CA04DB2CD0BD9100B675CB /* React-featureflags */,
+				84CA04DD2CD0BD9100B675CB /* React-featureflagsnativemodule */,
+				84CA04DF2CD0BD9100B675CB /* React-graphics */,
+				84F446572CE396EB000EA2D1 /* React-hermes */,
+				84CA04E32CD0BD9100B675CB /* React-idlecallbacksnativemodule */,
+				84CA04E72CD0BD9100B675CB /* React-jserrorhandler */,
+				84CA04E92CD0BD9100B675CB /* React-jsi */,
+				84CA04EB2CD0BD9100B675CB /* React-jsiexecutor */,
+				84CA04ED2CD0BD9100B675CB /* React-jsinspector */,
+				84CA04EF2CD0BD9100B675CB /* React-logger */,
+				84CA04F32CD0BD9100B675CB /* React-microtasksnativemodule */,
+				84CA04F92CD0BD9100B675CB /* React-nativeconfig */,
+				84CA04FD2CD0BD9100B675CB /* React-perflogger */,
+				84CA04FF2CD0BD9100B675CB /* React-performancetimeline */,
+				84CA05152CD0BD9100B675CB /* React-rendererconsistency */,
+				84CA05172CD0BD9100B675CB /* React-rendererdebug */,
 				84CA051F2CD0BD9100B675CB /* React-runtimescheduler */,
 				84CA05212CD0BD9100B675CB /* React-utils */,
 				84CA05232CD0BD9100B675CB /* ReactCodegen */,
 				84CA05252CD0BD9100B675CB /* ReactCommon */,
-				84CA05272CD0BD9100B675CB /* RNScreens */,
 				84CA05292CD0BD9100B675CB /* SocketRocket */,
 				84CA052B2CD0BD9100B675CB /* Yoga */,
+				84C6987F2CE36140006DA9F0 /* abseil */,
+				84C698812CE36140006DA9F0 /* abseil-xcprivacy */,
+				84CA04AF2CD0BD9100B675CB /* boost-boost_privacy */,
+				84CA04B32CD0BD9100B675CB /* fmt */,
+				84C698832CE36140006DA9F0 /* gRPC-C++ */,
+				84C698852CE36140006DA9F0 /* gRPC-C++-gRPCCertificates-Cpp */,
+				84C698872CE36140006DA9F0 /* gRPC-C++-grpcpp */,
+				84C698892CE36140006DA9F0 /* gRPC-Core */,
+				84C6988B2CE36140006DA9F0 /* gRPC-Core-grpc */,
+				84CA04B52CD0BD9100B675CB /* glog */,
+				84CA04B72CD0BD9100B675CB /* glog-glog_privacy */,
+				84C6988D2CE36140006DA9F0 /* leveldb-library */,
+				84C6988F2CE36140006DA9F0 /* leveldb-library-leveldb_Privacy */,
+				84C698912CE36140006DA9F0 /* nanopb */,
+				84C698932CE36140006DA9F0 /* nanopb-nanopb_Privacy */,
+				84CA04F52CD0BD9100B675CB /* react-native-date-picker */,
+				84CA04F72CD0BD9100B675CB /* react-native-safe-area-context */,
+				84CA04B92CD0BD9100B675CB /* Pods-studentApp */,
+				84CA04BB2CD0BD9100B675CB /* Pods-studentApp-studentAppTests */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -25092,10 +25259,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3B4392A12AC88292D35C810B /* Pods-studentApp.debug.xcconfig */,
-				5709B34CF0A7D63546082F79 /* Pods-studentApp.release.xcconfig */,
-				5B7EB9410499542E8C5724F5 /* Pods-studentApp-studentAppTests.debug.xcconfig */,
-				89C6BE57DB24E9ADA2F236DE /* Pods-studentApp-studentAppTests.release.xcconfig */,
+				4A9E148A9E355EDC814103A6 /* Pods-studentApp.debug.xcconfig */,
+				CFA8771AAD77B2566DC1B2F0 /* Pods-studentApp.release.xcconfig */,
+				CFD9DF366605380D50EA508A /* Pods-studentApp-studentAppTests.debug.xcconfig */,
+				F7D60F824512034F1842753F /* Pods-studentApp-studentAppTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -25107,12 +25274,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "studentAppTests" */;
 			buildPhases = (
-				A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */,
+				76EA174AF744BCA943C6FCCE /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */,
-				F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */,
+				5E337999DB7BC43EE359AD90 /* [CP] Copy Pods Resources */,
+				D965001B69C01C5C8BD95AA7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -25128,14 +25295,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "studentApp" */;
 			buildPhases = (
-				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
+				17888289B3E1D6782C8A0D12 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
-				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
-				EA1160974C9E8E971B735D24 /* [CP-User] [RNFB] Core Configuration */,
+				96DE75CDC3C5CDCCC7F3B39A /* [CP] Copy Pods Resources */,
+				43449FC2E76233E5DCAB1FC5 /* [CP-User] [RNFB] Core Configuration */,
+				9A216F9E1705338EC597A51D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -25152,7 +25319,8 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1210;
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
@@ -25193,6 +25361,318 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		84C698452CE36140006DA9F0 /* BoringSSL-GRPC */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			name = "BoringSSL-GRPC";
+			path = "libBoringSSL-GRPC.a";
+			remoteRef = 84C698442CE36140006DA9F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84C698472CE36140006DA9F0 /* BoringSSL-GRPC-openssl_grpc */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			name = "BoringSSL-GRPC-openssl_grpc";
+			path = openssl_grpc.bundle;
+			remoteRef = 84C698462CE36140006DA9F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84C698492CE36140006DA9F0 /* FirebaseAppCheckInterop */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			name = FirebaseAppCheckInterop;
+			path = libFirebaseAppCheckInterop.a;
+			remoteRef = 84C698482CE36140006DA9F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84C6984B2CE36140006DA9F0 /* FirebaseCore */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			name = FirebaseCore;
+			path = libFirebaseCore.a;
+			remoteRef = 84C6984A2CE36140006DA9F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84C6984D2CE36140006DA9F0 /* FirebaseCore-FirebaseCore_Privacy */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			name = "FirebaseCore-FirebaseCore_Privacy";
+			path = FirebaseCore_Privacy.bundle;
+			remoteRef = 84C6984C2CE36140006DA9F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84C6984F2CE36140006DA9F0 /* FirebaseCoreExtension */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			name = FirebaseCoreExtension;
+			path = libFirebaseCoreExtension.a;
+			remoteRef = 84C6984E2CE36140006DA9F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84C698512CE36140006DA9F0 /* FirebaseCoreExtension-FirebaseCoreExtension_Privacy */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			name = "FirebaseCoreExtension-FirebaseCoreExtension_Privacy";
+			path = FirebaseCoreExtension_Privacy.bundle;
+			remoteRef = 84C698502CE36140006DA9F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84C698532CE36140006DA9F0 /* FirebaseCoreInternal */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			name = FirebaseCoreInternal;
+			path = libFirebaseCoreInternal.a;
+			remoteRef = 84C698522CE36140006DA9F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84C698552CE36140006DA9F0 /* FirebaseCoreInternal-FirebaseCoreInternal_Privacy */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			name = "FirebaseCoreInternal-FirebaseCoreInternal_Privacy";
+			path = FirebaseCoreInternal_Privacy.bundle;
+			remoteRef = 84C698542CE36140006DA9F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84C698572CE36140006DA9F0 /* FirebaseFirestore */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			name = FirebaseFirestore;
+			path = libFirebaseFirestore.a;
+			remoteRef = 84C698562CE36140006DA9F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84C698592CE36140006DA9F0 /* FirebaseFirestore-FirebaseFirestore_Privacy */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			name = "FirebaseFirestore-FirebaseFirestore_Privacy";
+			path = FirebaseFirestore_Privacy.bundle;
+			remoteRef = 84C698582CE36140006DA9F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84C6985B2CE36140006DA9F0 /* FirebaseFirestoreInternal */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			name = FirebaseFirestoreInternal;
+			path = libFirebaseFirestoreInternal.a;
+			remoteRef = 84C6985A2CE36140006DA9F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84C6985D2CE36140006DA9F0 /* FirebaseFirestoreInternal-FirebaseFirestoreInternal_Privacy */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			name = "FirebaseFirestoreInternal-FirebaseFirestoreInternal_Privacy";
+			path = FirebaseFirestoreInternal_Privacy.bundle;
+			remoteRef = 84C6985C2CE36140006DA9F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84C6985F2CE36140006DA9F0 /* FirebaseInstallations */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			name = FirebaseInstallations;
+			path = libFirebaseInstallations.a;
+			remoteRef = 84C6985E2CE36140006DA9F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84C698612CE36140006DA9F0 /* FirebaseInstallations-FirebaseInstallations_Privacy */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			name = "FirebaseInstallations-FirebaseInstallations_Privacy";
+			path = FirebaseInstallations_Privacy.bundle;
+			remoteRef = 84C698602CE36140006DA9F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84C698632CE36140006DA9F0 /* FirebaseMessaging */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			name = FirebaseMessaging;
+			path = libFirebaseMessaging.a;
+			remoteRef = 84C698622CE36140006DA9F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84C698652CE36140006DA9F0 /* FirebaseMessaging-FirebaseMessaging_Privacy */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			name = "FirebaseMessaging-FirebaseMessaging_Privacy";
+			path = FirebaseMessaging_Privacy.bundle;
+			remoteRef = 84C698642CE36140006DA9F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84C698672CE36140006DA9F0 /* FirebaseSharedSwift */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			name = FirebaseSharedSwift;
+			path = libFirebaseSharedSwift.a;
+			remoteRef = 84C698662CE36140006DA9F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84C698692CE36140006DA9F0 /* GoogleDataTransport */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			name = GoogleDataTransport;
+			path = libGoogleDataTransport.a;
+			remoteRef = 84C698682CE36140006DA9F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84C6986B2CE36140006DA9F0 /* GoogleDataTransport-GoogleDataTransport_Privacy */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			name = "GoogleDataTransport-GoogleDataTransport_Privacy";
+			path = GoogleDataTransport_Privacy.bundle;
+			remoteRef = 84C6986A2CE36140006DA9F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84C6986D2CE36140006DA9F0 /* GoogleUtilities */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			name = GoogleUtilities;
+			path = libGoogleUtilities.a;
+			remoteRef = 84C6986C2CE36140006DA9F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84C6986F2CE36140006DA9F0 /* GoogleUtilities-GoogleUtilities_Privacy */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			name = "GoogleUtilities-GoogleUtilities_Privacy";
+			path = GoogleUtilities_Privacy.bundle;
+			remoteRef = 84C6986E2CE36140006DA9F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84C698712CE36140006DA9F0 /* PromisesObjC */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			name = PromisesObjC;
+			path = libPromisesObjC.a;
+			remoteRef = 84C698702CE36140006DA9F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84C698732CE36140006DA9F0 /* PromisesObjC-FBLPromises_Privacy */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			name = "PromisesObjC-FBLPromises_Privacy";
+			path = FBLPromises_Privacy.bundle;
+			remoteRef = 84C698722CE36140006DA9F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84C698752CE36140006DA9F0 /* RNCPushNotificationIOS */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			name = RNCPushNotificationIOS;
+			path = libRNCPushNotificationIOS.a;
+			remoteRef = 84C698742CE36140006DA9F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84C698772CE36140006DA9F0 /* RNFBApp */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			name = RNFBApp;
+			path = libRNFBApp.a;
+			remoteRef = 84C698762CE36140006DA9F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84C698792CE36140006DA9F0 /* RNFBFirestore */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			name = RNFBFirestore;
+			path = libRNFBFirestore.a;
+			remoteRef = 84C698782CE36140006DA9F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84C6987B2CE36140006DA9F0 /* RNFBMessaging */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			name = RNFBMessaging;
+			path = libRNFBMessaging.a;
+			remoteRef = 84C6987A2CE36140006DA9F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84C6987F2CE36140006DA9F0 /* abseil */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			name = abseil;
+			path = libabseil.a;
+			remoteRef = 84C6987E2CE36140006DA9F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84C698812CE36140006DA9F0 /* abseil-xcprivacy */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			name = "abseil-xcprivacy";
+			path = xcprivacy.bundle;
+			remoteRef = 84C698802CE36140006DA9F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84C698832CE36140006DA9F0 /* gRPC-C++ */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			name = "gRPC-C++";
+			path = "libgRPC-C++.a";
+			remoteRef = 84C698822CE36140006DA9F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84C698852CE36140006DA9F0 /* gRPC-C++-gRPCCertificates-Cpp */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			name = "gRPC-C++-gRPCCertificates-Cpp";
+			path = "gRPCCertificates-Cpp.bundle";
+			remoteRef = 84C698842CE36140006DA9F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84C698872CE36140006DA9F0 /* gRPC-C++-grpcpp */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			name = "gRPC-C++-grpcpp";
+			path = grpcpp.bundle;
+			remoteRef = 84C698862CE36140006DA9F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84C698892CE36140006DA9F0 /* gRPC-Core */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			name = "gRPC-Core";
+			path = "libgRPC-Core.a";
+			remoteRef = 84C698882CE36140006DA9F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84C6988B2CE36140006DA9F0 /* gRPC-Core-grpc */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			name = "gRPC-Core-grpc";
+			path = grpc.bundle;
+			remoteRef = 84C6988A2CE36140006DA9F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84C6988D2CE36140006DA9F0 /* leveldb-library */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			name = "leveldb-library";
+			path = "libleveldb-library.a";
+			remoteRef = 84C6988C2CE36140006DA9F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84C6988F2CE36140006DA9F0 /* leveldb-library-leveldb_Privacy */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			name = "leveldb-library-leveldb_Privacy";
+			path = leveldb_Privacy.bundle;
+			remoteRef = 84C6988E2CE36140006DA9F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84C698912CE36140006DA9F0 /* nanopb */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			name = nanopb;
+			path = libnanopb.a;
+			remoteRef = 84C698902CE36140006DA9F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84C698932CE36140006DA9F0 /* nanopb-nanopb_Privacy */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			name = "nanopb-nanopb_Privacy";
+			path = nanopb_Privacy.bundle;
+			remoteRef = 84C698922CE36140006DA9F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		84CA04AF2CD0BD9100B675CB /* boost-boost_privacy */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
@@ -25391,14 +25871,6 @@
 			name = "React-graphics";
 			path = "libReact-graphics.a";
 			remoteRef = 84CA04DE2CD0BD9100B675CB /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		84CA04E12CD0BD9100B675CB /* React-hermes */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			name = "React-hermes";
-			path = "libReact-hermes.a";
-			remoteRef = 84CA04E02CD0BD9100B675CB /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		84CA04E32CD0BD9100B675CB /* React-idlecallbacksnativemodule */ = {
@@ -25633,14 +26105,6 @@
 			remoteRef = 84CA051A2CD0BD9100B675CB /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		84CA051D2CD0BD9100B675CB /* React-RuntimeHermes */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			name = "React-RuntimeHermes";
-			path = "libReact-RuntimeHermes.a";
-			remoteRef = 84CA051C2CD0BD9100B675CB /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		84CA051F2CD0BD9100B675CB /* React-runtimescheduler */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -25697,6 +26161,22 @@
 			remoteRef = 84CA052A2CD0BD9100B675CB /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		84F446572CE396EB000EA2D1 /* React-hermes */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			name = "React-hermes";
+			path = "libReact-hermes.a";
+			remoteRef = 84F446562CE396EB000EA2D1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84F446592CE396EB000EA2D1 /* React-RuntimeHermes */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			name = "React-RuntimeHermes";
+			path = "libReact-RuntimeHermes.a";
+			remoteRef = 84F446582CE396EB000EA2D1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -25711,160 +26191,79 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84CA06D72CD0BD9600B675CB /* React-RuntimeCore.debug.xcconfig in Resources */,
-				84CA06722CD0BD9500B675CB /* React-featureflags.release.xcconfig in Resources */,
 				84CA05832CD0BD9400B675CB /* README in Resources */,
 				84CA06342CD0BD9500B675CB /* Pods-studentApp-studentAppTests-acknowledgements.markdown in Resources */,
-				84CA069E2CD0BD9600B675CB /* react-native-safe-area-context.release.xcconfig in Resources */,
-				84CA06E92CD0BD9600B675CB /* ReactCommon.release.xcconfig in Resources */,
 				84CA05462CD0BD9400B675CB /* README.md in Resources */,
 				84CA05782CD0BD9400B675CB /* vlog_is_on.h.in in Resources */,
 				84CA06262CD0BD9500B675CB /* Pods-studentApp-acknowledgements.plist in Resources */,
 				84CA06562CD0BD9500B675CB /* ResourceBundle-React-Core_privacy-React-Core-Info.plist in Resources */,
 				84CA05932CD0BD9500B675CB /* hermesc in Resources */,
 				84CA05532CD0BD9400B675CB /* PrivacyInfo.xcprivacy in Resources */,
-				84CA06782CD0BD9500B675CB /* React-graphics.release.xcconfig in Resources */,
-				84CA06CC2CD0BD9600B675CB /* React-rendererconsistency.debug.xcconfig in Resources */,
 				84CA05DA2CD0BD9500B675CB /* Yoga.podspec.json in Resources */,
-				84CA06D82CD0BD9600B675CB /* React-RuntimeCore.release.xcconfig in Resources */,
-				84CA06D92CD0BD9600B675CB /* React-runtimeexecutor.debug.xcconfig in Resources */,
-				84CA06A72CD0BD9600B675CB /* React-perflogger.release.xcconfig in Resources */,
 				84CA063A2CD0BD9500B675CB /* Pods-studentApp-studentAppTests-frameworks-Release-output-files.xcfilelist in Resources */,
-				84CA06842CD0BD9500B675CB /* React-jserrorhandler.release.xcconfig in Resources */,
 				84CA05B02CD0BD9500B675CB /* React-hermes.podspec.json in Resources */,
-				84CA06F72CD0BD9600B675CB /* Info.plist in Resources */,
-				84CA06EF2CD0BD9600B675CB /* SocketRocket.release.xcconfig in Resources */,
 				84CA059C2CD0BD9500B675CB /* fmt.podspec.json in Resources */,
 				84CA06302CD0BD9500B675CB /* Pods-studentApp-resources-Release-output-files.xcfilelist in Resources */,
 				84CA05B52CD0BD9500B675CB /* React-jsiexecutor.podspec.json in Resources */,
-				84CA06C12CD0BD9600B675CB /* React-RCTNetwork.release.xcconfig in Resources */,
 				84CA058D2CD0BD9400B675CB /* LICENSE in Resources */,
-				84CA069D2CD0BD9600B675CB /* react-native-safe-area-context.debug.xcconfig in Resources */,
-				84CA061D2CD0BD9500B675CB /* glog.debug.xcconfig in Resources */,
-				84CA067B2CD0BD9500B675CB /* React-hermes.release.xcconfig in Resources */,
 				84CA05BF2CD0BD9500B675CB /* React-perflogger.podspec.json in Resources */,
 				84CA07012CD0BD9600B675CB /* studentApp.xcworkspace in Resources */,
 				84CA06282CD0BD9500B675CB /* Pods-studentApp-frameworks-Debug-input-files.xcfilelist in Resources */,
 				84CA06382CD0BD9500B675CB /* Pods-studentApp-studentAppTests-frameworks-Debug-output-files.xcfilelist in Resources */,
 				84CA05962CD0BD9500B675CB /* LICENSE in Resources */,
-				84CA06D22CD0BD9600B675CB /* React-rncore.release.xcconfig in Resources */,
 				84CA05FA2CD0BD9500B675CB /* README.md in Resources */,
-				84CA06AC2CD0BD9600B675CB /* React-RCTActionSheet.release.xcconfig in Resources */,
-				84CA06512CD0BD9500B675CB /* React-callinvoker.debug.xcconfig in Resources */,
-				84CA06982CD0BD9600B675CB /* React-microtasksnativemodule.release.xcconfig in Resources */,
 				84CA05B62CD0BD9500B675CB /* React-jsinspector.podspec.json in Resources */,
 				84CA060E2CD0BD9500B675CB /* LICENSE in Resources */,
 				84CA05AA2CD0BD9500B675CB /* React-Fabric.podspec.json in Resources */,
 				84CA05D42CD0BD9500B675CB /* React-utils.podspec.json in Resources */,
 				84CA05C32CD0BD9500B675CB /* React-RCTAppDelegate.podspec.json in Resources */,
 				84CA063B2CD0BD9500B675CB /* Pods-studentApp-studentAppTests-frameworks.sh in Resources */,
-				84CA065B2CD0BD9500B675CB /* React-cxxreact.debug.xcconfig in Resources */,
-				84CA06652CD0BD9500B675CB /* React-domnativemodule.debug.xcconfig in Resources */,
-				84CA067E2CD0BD9500B675CB /* React-idlecallbacksnativemodule.release.xcconfig in Resources */,
-				84CA06662CD0BD9500B675CB /* React-domnativemodule.release.xcconfig in Resources */,
-				84CA06162CD0BD9500B675CB /* DoubleConversion.release.xcconfig in Resources */,
 				84CA05CF2CD0BD9500B675CB /* React-RuntimeApple.podspec.json in Resources */,
-				84CA06812CD0BD9500B675CB /* React-ImageManager.release.xcconfig in Resources */,
 				84CA05B72CD0BD9500B675CB /* React-jsitracing.podspec.json in Resources */,
 				84CA05CC2CD0BD9500B675CB /* React-rendererconsistency.podspec.json in Resources */,
 				84CA05C72CD0BD9500B675CB /* React-RCTLinking.podspec.json in Resources */,
 				84CA05792CD0BD9400B675CB /* config.h.cmake.in in Resources */,
-				84CA06A02CD0BD9600B675CB /* React-nativeconfig.debug.xcconfig in Resources */,
 				84CA05922CD0BD9500B675CB /* hermes-lit in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				84CA05982CD0BD9500B675CB /* hermes-ios-0.75.4-release.tar.gz in Resources */,
 				84CA05F92CD0BD9500B675CB /* LICENSE in Resources */,
-				84CA06412CD0BD9500B675CB /* Pods-studentApp-studentAppTests.debug.xcconfig in Resources */,
-				84CA06B42CD0BD9600B675CB /* React-RCTBlob.debug.xcconfig in Resources */,
-				84CA06232CD0BD9500B675CB /* hermes-engine.debug.xcconfig in Resources */,
 				84CA05BB2CD0BD9500B675CB /* react-native-date-picker.podspec.json in Resources */,
-				84CA06332CD0BD9500B675CB /* Pods-studentApp.release.xcconfig in Resources */,
-				84CA067A2CD0BD9500B675CB /* React-hermes.debug.xcconfig in Resources */,
 				84CA05D02CD0BD9500B675CB /* React-RuntimeCore.podspec.json in Resources */,
-				84CA06912CD0BD9600B675CB /* React-logger.debug.xcconfig in Resources */,
-				84CA06A12CD0BD9600B675CB /* React-nativeconfig.release.xcconfig in Resources */,
-				84CA06CF2CD0BD9600B675CB /* React-rendererdebug.debug.xcconfig in Resources */,
 				84CA06252CD0BD9500B675CB /* Pods-studentApp-acknowledgements.markdown in Resources */,
-				84CA06C32CD0BD9600B675CB /* React-RCTSettings.debug.xcconfig in Resources */,
-				84CA06152CD0BD9500B675CB /* DoubleConversion.debug.xcconfig in Resources */,
 				84CA06FF2CD0BD9600B675CB /* Podfile in Resources */,
 				84CA05D92CD0BD9500B675CB /* RNScreens.podspec.json in Resources */,
-				84CA065C2CD0BD9500B675CB /* React-cxxreact.release.xcconfig in Resources */,
-				84CA06A32CD0BD9600B675CB /* React-NativeModulesApple.debug.xcconfig in Resources */,
-				84CA06832CD0BD9500B675CB /* React-jserrorhandler.debug.xcconfig in Resources */,
 				84CA05A72CD0BD9500B675CB /* React-debug.podspec.json in Resources */,
 				84CA05752CD0BD9400B675CB /* logging.h.in in Resources */,
-				84CA06EB2CD0BD9600B675CB /* RNScreens.debug.xcconfig in Resources */,
 				84CA063E2CD0BD9500B675CB /* Pods-studentApp-studentAppTests-resources-Release-input-files.xcfilelist in Resources */,
-				84CA06E52CD0BD9600B675CB /* ReactCodegen.debug.xcconfig in Resources */,
-				84CA06E22CD0BD9600B675CB /* React-utils.debug.xcconfig in Resources */,
 				84CA05C12CD0BD9500B675CB /* React-RCTActionSheet.podspec.json in Resources */,
-				84CA068C2CD0BD9600B675CB /* React-jsinspector.debug.xcconfig in Resources */,
-				84CA06DA2CD0BD9600B675CB /* React-runtimeexecutor.release.xcconfig in Resources */,
 				84CA061F2CD0BD9500B675CB /* ResourceBundle-glog_privacy-glog-Info.plist in Resources */,
-				84CA06542CD0BD9500B675CB /* React-Core.debug.xcconfig in Resources */,
-				84CA06742CD0BD9500B675CB /* React-featureflagsnativemodule.debug.xcconfig in Resources */,
 				84CA05772CD0BD9400B675CB /* stl_logging.h.in in Resources */,
 				84CA05D12CD0BD9500B675CB /* React-runtimeexecutor.podspec.json in Resources */,
-				84CA06492CD0BD9500B675CB /* RCTDeprecation.release.xcconfig in Resources */,
-				84CA068F2CD0BD9600B675CB /* React-jsitracing.release.xcconfig in Resources */,
-				84CA06D42CD0BD9600B675CB /* React-RuntimeApple.debug.xcconfig in Resources */,
 				84CA05AC2CD0BD9500B675CB /* React-FabricImage.podspec.json in Resources */,
-				84CA06B52CD0BD9600B675CB /* React-RCTBlob.release.xcconfig in Resources */,
-				84CA06E02CD0BD9600B675CB /* React-runtimescheduler.release.xcconfig in Resources */,
-				84CA06B22CD0BD9600B675CB /* React-RCTAppDelegate.release.xcconfig in Resources */,
-				84CA06772CD0BD9500B675CB /* React-graphics.debug.xcconfig in Resources */,
 				84CA05A12CD0BD9500B675CB /* RCTRequired.podspec.json in Resources */,
-				84CA061A2CD0BD9500B675CB /* fmt.debug.xcconfig in Resources */,
-				84CA06DF2CD0BD9600B675CB /* React-runtimescheduler.debug.xcconfig in Resources */,
-				84CA06482CD0BD9500B675CB /* RCTDeprecation.debug.xcconfig in Resources */,
 				84CA05522CD0BD9400B675CB /* README.md in Resources */,
-				84CA06442CD0BD9500B675CB /* RCT-Folly.debug.xcconfig in Resources */,
 				84CA06312CD0BD9500B675CB /* Pods-studentApp-resources.sh in Resources */,
 				84CA05622CD0BD9400B675CB /* README.md in Resources */,
-				84CA06AB2CD0BD9600B675CB /* React-RCTActionSheet.debug.xcconfig in Resources */,
 				84CA060F2CD0BD9500B675CB /* LICENSE-examples in Resources */,
 				84CA063F2CD0BD9500B675CB /* Pods-studentApp-studentAppTests-resources-Release-output-files.xcfilelist in Resources */,
-				84CA06E32CD0BD9600B675CB /* React-utils.release.xcconfig in Resources */,
 				84CA05B12CD0BD9500B675CB /* React-idlecallbacksnativemodule.podspec.json in Resources */,
-				84CA06582CD0BD9500B675CB /* React-CoreModules.debug.xcconfig in Resources */,
-				84CA06692CD0BD9500B675CB /* React-Fabric.release.xcconfig in Resources */,
-				84CA06F12CD0BD9600B675CB /* Yoga.debug.xcconfig in Resources */,
-				84CA069B2CD0BD9600B675CB /* react-native-date-picker.release.xcconfig in Resources */,
 				84CA062C2CD0BD9500B675CB /* Pods-studentApp-frameworks.sh in Resources */,
-				84CA06EE2CD0BD9600B675CB /* SocketRocket.debug.xcconfig in Resources */,
 				84CA05A82CD0BD9500B675CB /* React-defaultsnativemodule.podspec.json in Resources */,
-				84CA06BD2CD0BD9600B675CB /* React-RCTLinking.debug.xcconfig in Resources */,
 				84CA06F62CD0BD9600B675CB /* Images.xcassets in Resources */,
-				84CA06922CD0BD9600B675CB /* React-logger.release.xcconfig in Resources */,
-				84CA06972CD0BD9600B675CB /* React-microtasksnativemodule.debug.xcconfig in Resources */,
-				84CA06E62CD0BD9600B675CB /* ReactCodegen.release.xcconfig in Resources */,
 				84CA05992CD0BD9500B675CB /* boost.podspec.json in Resources */,
 				84CA05412CD0BD9400B675CB /* ReactCodegen.podspec.json in Resources */,
 				84CA05CE2CD0BD9500B675CB /* React-rncore.podspec.json in Resources */,
-				84CA06DC2CD0BD9600B675CB /* React-RuntimeHermes.debug.xcconfig in Resources */,
 				84CA058E2CD0BD9400B675CB /* README.md in Resources */,
-				84CA06B72CD0BD9600B675CB /* React-RCTFabric.debug.xcconfig in Resources */,
 				84CA05C82CD0BD9500B675CB /* React-RCTNetwork.podspec.json in Resources */,
-				84CA064B2CD0BD9500B675CB /* RCTRequired.release.xcconfig in Resources */,
 				84CA05D62CD0BD9500B675CB /* ReactCodegen.podspec.json in Resources */,
-				84CA06682CD0BD9500B675CB /* React-Fabric.debug.xcconfig in Resources */,
 				84CA059F2CD0BD9500B675CB /* RCT-Folly.podspec.json in Resources */,
 				84CA05BA2CD0BD9500B675CB /* React-microtasksnativemodule.podspec.json in Resources */,
-				84CA06592CD0BD9500B675CB /* React-CoreModules.release.xcconfig in Resources */,
 				84CA05A22CD0BD9500B675CB /* RCTTypeSafety.podspec.json in Resources */,
-				84CA06172CD0BD9500B675CB /* FBLazyVector.debug.xcconfig in Resources */,
 				84CA06202CD0BD9500B675CB /* hermes-engine-xcframeworks-input-files.xcfilelist in Resources */,
-				84CA06C42CD0BD9600B675CB /* React-RCTSettings.release.xcconfig in Resources */,
-				84CA06422CD0BD9500B675CB /* Pods-studentApp-studentAppTests.release.xcconfig in Resources */,
 				84CA06392CD0BD9500B675CB /* Pods-studentApp-studentAppTests-frameworks-Release-input-files.xcfilelist in Resources */,
 				84CA06FE2CD0BD9600B675CB /* .xcode.env.local in Resources */,
-				84CA064D2CD0BD9500B675CB /* RCTTypeSafety.debug.xcconfig in Resources */,
 				84CA05CB2CD0BD9500B675CB /* React-RCTVibration.podspec.json in Resources */,
 				84CA06102CD0BD9500B675CB /* README.md in Resources */,
-				84CA06242CD0BD9500B675CB /* hermes-engine.release.xcconfig in Resources */,
-				84CA06112CD0BD9500B675CB /* boost.debug.xcconfig in Resources */,
-				84CA06602CD0BD9500B675CB /* React-debug.release.xcconfig in Resources */,
 				84CA05712CD0BD9400B675CB /* README.md in Resources */,
 				84CA05B22CD0BD9500B675CB /* React-ImageManager.podspec.json in Resources */,
 				84CA06462CD0BD9500B675CB /* ResourceBundle-RCT-Folly_privacy-RCT-Folly-Info.plist in Resources */,
@@ -25873,7 +26272,6 @@
 				84CA06352CD0BD9500B675CB /* Pods-studentApp-studentAppTests-acknowledgements.plist in Resources */,
 				84CA05A42CD0BD9500B675CB /* React-Core.podspec.json in Resources */,
 				84CA05D82CD0BD9500B675CB /* RNFBApp.podspec.json in Resources */,
-				84CA06552CD0BD9500B675CB /* React-Core.release.xcconfig in Resources */,
 				84CA062E2CD0BD9500B675CB /* Pods-studentApp-resources-Debug-output-files.xcfilelist in Resources */,
 				84CA062D2CD0BD9500B675CB /* Pods-studentApp-resources-Debug-input-files.xcfilelist in Resources */,
 				84CA059E2CD0BD9500B675CB /* hermes-engine.podspec.json in Resources */,
@@ -25885,122 +26283,61 @@
 				84CA05A62CD0BD9500B675CB /* React-cxxreact.podspec.json in Resources */,
 				84CA05A52CD0BD9500B675CB /* React-CoreModules.podspec.json in Resources */,
 				84CA05C62CD0BD9500B675CB /* React-RCTImage.podspec.json in Resources */,
-				84CA06BB2CD0BD9600B675CB /* React-RCTImage.release.xcconfig in Resources */,
 				84CA065D2CD0BD9500B675CB /* ResourceBundle-React-cxxreact_privacy-React-cxxreact-Info.plist in Resources */,
-				84CA06E82CD0BD9600B675CB /* ReactCommon.debug.xcconfig in Resources */,
 				84CA05B32CD0BD9500B675CB /* React-jserrorhandler.podspec.json in Resources */,
-				84CA065F2CD0BD9500B675CB /* React-debug.debug.xcconfig in Resources */,
 				84CA05AF2CD0BD9500B675CB /* React-graphics.podspec.json in Resources */,
-				84CA06F22CD0BD9600B675CB /* Yoga.release.xcconfig in Resources */,
-				84CA06C62CD0BD9600B675CB /* React-RCTText.debug.xcconfig in Resources */,
-				84CA06802CD0BD9500B675CB /* React-ImageManager.debug.xcconfig in Resources */,
 				84CA05C02CD0BD9500B675CB /* React-performancetimeline.podspec.json in Resources */,
-				84CA061E2CD0BD9500B675CB /* glog.release.xcconfig in Resources */,
-				84CA06AA2CD0BD9600B675CB /* React-performancetimeline.release.xcconfig in Resources */,
-				84CA06EC2CD0BD9600B675CB /* RNScreens.release.xcconfig in Resources */,
-				84CA06FB2CD0BD9600B675CB /* Info.plist in Resources */,
 				84CA06212CD0BD9500B675CB /* hermes-engine-xcframeworks-output-files.xcfilelist in Resources */,
 				84CA062A2CD0BD9500B675CB /* Pods-studentApp-frameworks-Release-input-files.xcfilelist in Resources */,
 				84CA05A02CD0BD9500B675CB /* RCTDeprecation.podspec.json in Resources */,
-				84CA06632CD0BD9500B675CB /* React-defaultsnativemodule.release.xcconfig in Resources */,
-				84CA06D02CD0BD9600B675CB /* React-rendererdebug.release.xcconfig in Resources */,
 				84CA05AE2CD0BD9500B675CB /* React-featureflagsnativemodule.podspec.json in Resources */,
-				84CA06AE2CD0BD9600B675CB /* React-RCTAnimation.debug.xcconfig in Resources */,
-				84CA06BA2CD0BD9600B675CB /* React-RCTImage.debug.xcconfig in Resources */,
 				84CA05702CD0BD9400B675CB /* LICENSE in Resources */,
 				84CA05902CD0BD9500B675CB /* ForwardingConsoleMethods.def in Resources */,
-				84CA068A2CD0BD9600B675CB /* React-jsiexecutor.release.xcconfig in Resources */,
 				84CA07002CD0BD9600B675CB /* Podfile.lock in Resources */,
-				84CA066F2CD0BD9500B675CB /* React-FabricImage.release.xcconfig in Resources */,
-				84CA069A2CD0BD9600B675CB /* react-native-date-picker.debug.xcconfig in Resources */,
 				84CA05C42CD0BD9500B675CB /* React-RCTBlob.podspec.json in Resources */,
-				84CA06A62CD0BD9600B675CB /* React-perflogger.debug.xcconfig in Resources */,
 				84CA05AB2CD0BD9500B675CB /* React-FabricComponents.podspec.json in Resources */,
-				84CA064F2CD0BD9500B675CB /* React.debug.xcconfig in Resources */,
 				84CA05B42CD0BD9500B675CB /* React-jsi.podspec.json in Resources */,
-				84CA07032CD0BE6600B675CB /* GoogleService-Info.plist in Resources */,
-				84CA06622CD0BD9500B675CB /* React-defaultsnativemodule.debug.xcconfig in Resources */,
-				84CA06122CD0BD9500B675CB /* boost.release.xcconfig in Resources */,
-				84CA06452CD0BD9500B675CB /* RCT-Folly.release.xcconfig in Resources */,
 				84CA06F32CD0BD9600B675CB /* Manifest.lock in Resources */,
 				84CA05502CD0BD9400B675CB /* README in Resources */,
-				84CA06952CD0BD9600B675CB /* React-Mapbuffer.release.xcconfig in Resources */,
 				84CA05D52CD0BD9500B675CB /* React.podspec.json in Resources */,
-				84CA066E2CD0BD9500B675CB /* React-FabricImage.debug.xcconfig in Resources */,
 				84CA059A2CD0BD9500B675CB /* DoubleConversion.podspec.json in Resources */,
-				84CA06872CD0BD9600B675CB /* React-jsi.release.xcconfig in Resources */,
-				84CA058F2CD0BD9400B675CB /* ForwardingConsoleMethods.def in Resources */,
-				84CA064A2CD0BD9500B675CB /* RCTRequired.debug.xcconfig in Resources */,
-				84CA061B2CD0BD9500B675CB /* fmt.release.xcconfig in Resources */,
-				84CA06182CD0BD9500B675CB /* FBLazyVector.release.xcconfig in Resources */,
-				84CA06522CD0BD9500B675CB /* React-callinvoker.release.xcconfig in Resources */,
-				84CA06B82CD0BD9600B675CB /* React-RCTFabric.release.xcconfig in Resources */,
 				84CA05BE2CD0BD9500B675CB /* React-NativeModulesApple.podspec.json in Resources */,
 				84CA059B2CD0BD9500B675CB /* FBLazyVector.podspec.json in Resources */,
 				84CA05742CD0BD9400B675CB /* README.rst in Resources */,
 				84CA05972CD0BD9500B675CB /* hermes-ios-0.75.4-debug.tar.gz in Resources */,
 				84CA06132CD0BD9500B675CB /* ResourceBundle-boost_privacy-boost-Info.plist in Resources */,
-				84CA06502CD0BD9500B675CB /* React.release.xcconfig in Resources */,
 				84CA06292CD0BD9500B675CB /* Pods-studentApp-frameworks-Debug-output-files.xcfilelist in Resources */,
-				84CA06F82CD0BD9600B675CB /* LaunchScreen.storyboard in Resources */,
 				84CA05822CD0BD9400B675CB /* COPYING in Resources */,
 				84CA05842CD0BD9400B675CB /* README.windows in Resources */,
-				84CA06322CD0BD9500B675CB /* Pods-studentApp.debug.xcconfig in Resources */,
 				84CA05CD2CD0BD9500B675CB /* React-rendererdebug.podspec.json in Resources */,
 				84CA063D2CD0BD9500B675CB /* Pods-studentApp-studentAppTests-resources-Debug-output-files.xcfilelist in Resources */,
-				84CA06712CD0BD9500B675CB /* React-featureflags.debug.xcconfig in Resources */,
 				84CA05452CD0BD9400B675CB /* LICENSE_1_0.txt in Resources */,
-				84CA06D52CD0BD9600B675CB /* React-RuntimeApple.release.xcconfig in Resources */,
 				84CA05A32CD0BD9500B675CB /* React-callinvoker.podspec.json in Resources */,
 				84CA05CA2CD0BD9500B675CB /* React-RCTText.podspec.json in Resources */,
 				84CA05D22CD0BD9500B675CB /* React-RuntimeHermes.podspec.json in Resources */,
-				84CA06CA2CD0BD9600B675CB /* React-RCTVibration.release.xcconfig in Resources */,
-				84CA068D2CD0BD9600B675CB /* React-jsinspector.release.xcconfig in Resources */,
 				84CA05BD2CD0BD9500B675CB /* React-nativeconfig.podspec.json in Resources */,
-				84CA06DD2CD0BD9600B675CB /* React-RuntimeHermes.release.xcconfig in Resources */,
 				84CA05C52CD0BD9500B675CB /* React-RCTFabric.podspec.json in Resources */,
-				84CA066B2CD0BD9500B675CB /* React-FabricComponents.debug.xcconfig in Resources */,
 				84CA06372CD0BD9500B675CB /* Pods-studentApp-studentAppTests-frameworks-Debug-input-files.xcfilelist in Resources */,
-				84CA067D2CD0BD9500B675CB /* React-idlecallbacksnativemodule.debug.xcconfig in Resources */,
-				84CA06C72CD0BD9600B675CB /* React-RCTText.release.xcconfig in Resources */,
 				84CA06FA2CD0BD9600B675CB /* PrivacyInfo.xcprivacy in Resources */,
 				84CA058B2CD0BD9400B675CB /* PrivacyInfo.xcprivacy in Resources */,
 				84CA059D2CD0BD9500B675CB /* glog.podspec.json in Resources */,
 				84CA05512CD0BD9400B675CB /* LICENSE in Resources */,
 				84CA057A2CD0BD9400B675CB /* config.h.in in Resources */,
-				84CA06942CD0BD9600B675CB /* React-Mapbuffer.debug.xcconfig in Resources */,
 				84CA05AD2CD0BD9500B675CB /* React-featureflags.podspec.json in Resources */,
 				84CA05C22CD0BD9500B675CB /* React-RCTAnimation.podspec.json in Resources */,
-				84CA06A92CD0BD9600B675CB /* React-performancetimeline.debug.xcconfig in Resources */,
-				84CA068E2CD0BD9600B675CB /* React-jsitracing.debug.xcconfig in Resources */,
 				84CA06FD2CD0BD9600B675CB /* .xcode.env in Resources */,
-				84CA064E2CD0BD9500B675CB /* RCTTypeSafety.release.xcconfig in Resources */,
 				84CA05D72CD0BD9500B675CB /* ReactCommon.podspec.json in Resources */,
-				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				84CA06752CD0BD9500B675CB /* React-featureflagsnativemodule.release.xcconfig in Resources */,
 				84CA05D32CD0BD9500B675CB /* React-runtimescheduler.podspec.json in Resources */,
-				84CA06A42CD0BD9600B675CB /* React-NativeModulesApple.release.xcconfig in Resources */,
 				84CA062B2CD0BD9500B675CB /* Pods-studentApp-frameworks-Release-output-files.xcfilelist in Resources */,
 				84CA063C2CD0BD9500B675CB /* Pods-studentApp-studentAppTests-resources-Debug-input-files.xcfilelist in Resources */,
-				84CA06CD2CD0BD9600B675CB /* React-rendererconsistency.release.xcconfig in Resources */,
 				84CA05BC2CD0BD9500B675CB /* react-native-safe-area-context.podspec.json in Resources */,
 				84CA06222CD0BD9500B675CB /* hermes-engine-xcframeworks.sh in Resources */,
 				84CA05912CD0BD9500B675CB /* hermes in Resources */,
 				84CA062F2CD0BD9500B675CB /* Pods-studentApp-resources-Release-input-files.xcfilelist in Resources */,
-				84CA06BE2CD0BD9600B675CB /* React-RCTLinking.release.xcconfig in Resources */,
-				327F591FE9894A6742CE1BE3 /* PrivacyInfo.xcprivacy in Resources */,
-				84CA06B12CD0BD9600B675CB /* React-RCTAppDelegate.debug.xcconfig in Resources */,
 				84CA06F42CD0BD9600B675CB /* resources-to-copy-studentApp.txt in Resources */,
 				84CA05762CD0BD9400B675CB /* raw_logging.h.in in Resources */,
-				84CA06C92CD0BD9600B675CB /* React-RCTVibration.debug.xcconfig in Resources */,
-				84CA06862CD0BD9600B675CB /* React-jsi.debug.xcconfig in Resources */,
 				84CA05B82CD0BD9500B675CB /* React-logger.podspec.json in Resources */,
-				84CA066C2CD0BD9500B675CB /* React-FabricComponents.release.xcconfig in Resources */,
-				84CA06C02CD0BD9600B675CB /* React-RCTNetwork.debug.xcconfig in Resources */,
-				84CA06892CD0BD9600B675CB /* React-jsiexecutor.debug.xcconfig in Resources */,
 				84CA05B92CD0BD9500B675CB /* React-Mapbuffer.podspec.json in Resources */,
-				84CA06D12CD0BD9600B675CB /* React-rncore.debug.xcconfig in Resources */,
-				84CA06AF2CD0BD9600B675CB /* React-RCTAnimation.release.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -26023,46 +26360,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"$REACT_NATIVE_PATH/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"$REACT_NATIVE_PATH/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-studentApp/Pods-studentApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-studentApp/Pods-studentApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-studentApp/Pods-studentApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-studentApp-studentAppTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
+		17888289B3E1D6782C8A0D12 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -26084,24 +26382,59 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */ = {
+		43449FC2E76233E5DCAB1FC5 /* [CP-User] [RNFB] Core Configuration */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = "[CP-User] [RNFB] Core Configuration";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/usr/bin/env bash\n#\n# Copyright (c) 2016-present Invertase Limited & Contributors\n#\n# Licensed under the Apache License, Version 2.0 (the \"License\");\n# you may not use this library except in compliance with the License.\n# You may obtain a copy of the License at\n#\n#   http://www.apache.org/licenses/LICENSE-2.0\n#\n# Unless required by applicable law or agreed to in writing, software\n# distributed under the License is distributed on an \"AS IS\" BASIS,\n# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n# See the License for the specific language governing permissions and\n# limitations under the License.\n#\n\n##########################################################################\n##########################################################################\n#\n#  NOTE THAT IF YOU CHANGE THIS FILE YOU MUST RUN pod install AFTERWARDS\n#\n#  This file is installed as an Xcode build script in the project file\n#  by cocoapods, and you will not see your changes until you pod install\n#\n##########################################################################\n##########################################################################\n\nset -e\n\n_MAX_LOOKUPS=2;\n_SEARCH_RESULT=''\n_RN_ROOT_EXISTS=''\n_CURRENT_LOOKUPS=1\n_JSON_ROOT=\"'react-native'\"\n_JSON_FILE_NAME='firebase.json'\n_JSON_OUTPUT_BASE64='e30=' # { }\n_CURRENT_SEARCH_DIR=${PROJECT_DIR}\n_PLIST_BUDDY=/usr/libexec/PlistBuddy\n_TARGET_PLIST=\"${BUILT_PRODUCTS_DIR}/${INFOPLIST_PATH}\"\n_DSYM_PLIST=\"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist\"\n\n# plist arrays\n_PLIST_ENTRY_KEYS=()\n_PLIST_ENTRY_TYPES=()\n_PLIST_ENTRY_VALUES=()\n\nfunction setPlistValue {\n  echo \"info:      setting plist entry '$1' of type '$2' in file '$4'\"\n  ${_PLIST_BUDDY} -c \"Add :$1 $2 '$3'\" $4 || echo \"info:      '$1' already exists\"\n}\n\nfunction getFirebaseJsonKeyValue () {\n  if [[ ${_RN_ROOT_EXISTS} ]]; then\n    ruby -Ku -e \"require 'rubygems';require 'json'; output=JSON.parse('$1'); puts output[$_JSON_ROOT]['$2']\"\n  else\n    echo \"\"\n  fi;\n}\n\nfunction jsonBoolToYesNo () {\n  if [[ $1 == \"false\" ]]; then\n    echo \"NO\"\n  elif [[ $1 == \"true\" ]]; then\n    echo \"YES\"\n  else echo \"NO\"\n  fi\n}\n\necho \"info: -> RNFB build script started\"\necho \"info: 1) Locating ${_JSON_FILE_NAME} file:\"\n\nif [[ -z ${_CURRENT_SEARCH_DIR} ]]; then\n  _CURRENT_SEARCH_DIR=$(pwd)\nfi;\n\nwhile true; do\n  _CURRENT_SEARCH_DIR=$(dirname \"$_CURRENT_SEARCH_DIR\")\n  if [[ \"$_CURRENT_SEARCH_DIR\" == \"/\" ]] || [[ ${_CURRENT_LOOKUPS} -gt ${_MAX_LOOKUPS} ]]; then break; fi;\n  echo \"info:      ($_CURRENT_LOOKUPS of $_MAX_LOOKUPS) Searching in '$_CURRENT_SEARCH_DIR' for a ${_JSON_FILE_NAME} file.\"\n  _SEARCH_RESULT=$(find \"$_CURRENT_SEARCH_DIR\" -maxdepth 2 -name ${_JSON_FILE_NAME} -print | /usr/bin/head -n 1)\n  if [[ ${_SEARCH_RESULT} ]]; then\n    echo \"info:      ${_JSON_FILE_NAME} found at $_SEARCH_RESULT\"\n    break;\n  fi;\n  _CURRENT_LOOKUPS=$((_CURRENT_LOOKUPS+1))\ndone\n\nif [[ ${_SEARCH_RESULT} ]]; then\n  _JSON_OUTPUT_RAW=$(cat \"${_SEARCH_RESULT}\")\n  _RN_ROOT_EXISTS=$(ruby -Ku -e \"require 'rubygems';require 'json'; output=JSON.parse('$_JSON_OUTPUT_RAW'); puts output[$_JSON_ROOT]\" || echo '')\n\n  if [[ ${_RN_ROOT_EXISTS} ]]; then\n    if ! python3 --version >/dev/null 2>&1; then echo \"python3 not found, firebase.json file processing error.\" && exit 1; fi\n    _JSON_OUTPUT_BASE64=$(python3 -c 'import json,sys,base64;print(base64.b64encode(bytes(json.dumps(json.loads(open('\"'${_SEARCH_RESULT}'\"', '\"'rb'\"').read())['${_JSON_ROOT}']), '\"'utf-8'\"')).decode())' || echo \"e30=\")\n  fi\n\n  _PLIST_ENTRY_KEYS+=(\"firebase_json_raw\")\n  _PLIST_ENTRY_TYPES+=(\"string\")\n  _PLIST_ENTRY_VALUES+=(\"$_JSON_OUTPUT_BASE64\")\n\n  # config.app_data_collection_default_enabled\n  _APP_DATA_COLLECTION_ENABLED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"app_data_collection_default_enabled\")\n  if [[ $_APP_DATA_COLLECTION_ENABLED ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseDataCollectionDefaultEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_APP_DATA_COLLECTION_ENABLED\")\")\n  fi\n\n  # config.analytics_auto_collection_enabled\n  _ANALYTICS_AUTO_COLLECTION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_auto_collection_enabled\")\n  if [[ $_ANALYTICS_AUTO_COLLECTION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FIREBASE_ANALYTICS_COLLECTION_ENABLED\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_AUTO_COLLECTION\")\")\n  fi\n\n  # config.analytics_collection_deactivated\n  _ANALYTICS_DEACTIVATED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_collection_deactivated\")\n  if [[ $_ANALYTICS_DEACTIVATED ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FIREBASE_ANALYTICS_COLLECTION_DEACTIVATED\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_DEACTIVATED\")\")\n  fi\n\n  # config.analytics_idfv_collection_enabled\n  _ANALYTICS_IDFV_COLLECTION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_idfv_collection_enabled\")\n  if [[ $_ANALYTICS_IDFV_COLLECTION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GOOGLE_ANALYTICS_IDFV_COLLECTION_ENABLED\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_IDFV_COLLECTION\")\")\n  fi\n\n  # config.analytics_default_allow_analytics_storage\n  _ANALYTICS_STORAGE=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_default_allow_analytics_storage\")\n  if [[ $_ANALYTICS_STORAGE ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GOOGLE_ANALYTICS_DEFAULT_ALLOW_ANALYTICS_STORAGE\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_STORAGE\")\")\n  fi\n\n  # config.analytics_default_allow_ad_storage\n  _ANALYTICS_AD_STORAGE=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_default_allow_ad_storage\")\n  if [[ $_ANALYTICS_AD_STORAGE ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GOOGLE_ANALYTICS_DEFAULT_ALLOW_AD_STORAGE\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_AD_STORAGE\")\")\n  fi\n\n  # config.analytics_default_allow_ad_user_data\n  _ANALYTICS_AD_USER_DATA=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_default_allow_ad_user_data\")\n  if [[ $_ANALYTICS_AD_USER_DATA ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GOOGLE_ANALYTICS_DEFAULT_ALLOW_AD_USER_DATA\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_AD_USER_DATA\")\")\n  fi\n\n  # config.analytics_default_allow_ad_personalization_signals\n  _ANALYTICS_PERSONALIZATION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_default_allow_ad_personalization_signals\")\n  if [[ $_ANALYTICS_PERSONALIZATION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GOOGLE_ANALYTICS_DEFAULT_ALLOW_AD_PERSONALIZATION_SIGNALS\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_PERSONALIZATION\")\")\n  fi\n\n  # config.analytics_registration_with_ad_network_enabled\n  _ANALYTICS_REGISTRATION_WITH_AD_NETWORK=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"google_analytics_registration_with_ad_network_enabled\")\n  if [[ $_ANALYTICS_REGISTRATION_WITH_AD_NETWORK ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GOOGLE_ANALYTICS_REGISTRATION_WITH_AD_NETWORK_ENABLED\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_REGISTRATION_WITH_AD_NETWORK\")\")\n  fi\n\n  # config.google_analytics_automatic_screen_reporting_enabled\n  _ANALYTICS_AUTO_SCREEN_REPORTING=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"google_analytics_automatic_screen_reporting_enabled\")\n  if [[ $_ANALYTICS_AUTO_SCREEN_REPORTING ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseAutomaticScreenReportingEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_AUTO_SCREEN_REPORTING\")\")\n  fi\n\n  # config.perf_auto_collection_enabled\n  _PERF_AUTO_COLLECTION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"perf_auto_collection_enabled\")\n  if [[ $_PERF_AUTO_COLLECTION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"firebase_performance_collection_enabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_PERF_AUTO_COLLECTION\")\")\n  fi\n\n  # config.perf_collection_deactivated\n  _PERF_DEACTIVATED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"perf_collection_deactivated\")\n  if [[ $_PERF_DEACTIVATED ]]; then\n    _PLIST_ENTRY_KEYS+=(\"firebase_performance_collection_deactivated\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_PERF_DEACTIVATED\")\")\n  fi\n\n  # config.messaging_auto_init_enabled\n  _MESSAGING_AUTO_INIT=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"messaging_auto_init_enabled\")\n  if [[ $_MESSAGING_AUTO_INIT ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseMessagingAutoInitEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_MESSAGING_AUTO_INIT\")\")\n  fi\n\n  # config.in_app_messaging_auto_colllection_enabled\n  _FIAM_AUTO_INIT=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"in_app_messaging_auto_collection_enabled\")\n  if [[ $_FIAM_AUTO_INIT ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseInAppMessagingAutomaticDataCollectionEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_FIAM_AUTO_INIT\")\")\n  fi\n\n  # config.app_check_token_auto_refresh\n  _APP_CHECK_TOKEN_AUTO_REFRESH=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"app_check_token_auto_refresh\")\n  if [[ $_APP_CHECK_TOKEN_AUTO_REFRESH ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseAppCheckTokenAutoRefreshEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_APP_CHECK_TOKEN_AUTO_REFRESH\")\")\n  fi\n\n  # config.crashlytics_disable_auto_disabler - undocumented for now - mainly for debugging, document if becomes useful\n  _CRASHLYTICS_AUTO_DISABLE_ENABLED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"crashlytics_disable_auto_disabler\")\n  if [[ $_CRASHLYTICS_AUTO_DISABLE_ENABLED == \"true\" ]]; then\n    echo \"Disabled Crashlytics auto disabler.\" # do nothing\n  else\n    _PLIST_ENTRY_KEYS+=(\"FirebaseCrashlyticsCollectionEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"NO\")\n  fi\nelse\n  _PLIST_ENTRY_KEYS+=(\"firebase_json_raw\")\n  _PLIST_ENTRY_TYPES+=(\"string\")\n  _PLIST_ENTRY_VALUES+=(\"$_JSON_OUTPUT_BASE64\")\n  echo \"warning:   A firebase.json file was not found, whilst this file is optional it is recommended to include it to configure firebase services in React Native Firebase.\"\nfi;\n\necho \"info: 2) Injecting Info.plist entries: \"\n\n# Log out the keys we're adding\nfor i in \"${!_PLIST_ENTRY_KEYS[@]}\"; do\n  echo \"    ->  $i) ${_PLIST_ENTRY_KEYS[$i]}\" \"${_PLIST_ENTRY_TYPES[$i]}\" \"${_PLIST_ENTRY_VALUES[$i]}\"\ndone\n\nfor plist in \"${_TARGET_PLIST}\" \"${_DSYM_PLIST}\" ; do\n  if [[ -f \"${plist}\" ]]; then\n\n    # paths with spaces break the call to setPlistValue. temporarily modify\n    # the shell internal field separator variable (IFS), which normally\n    # includes spaces, to consist only of line breaks\n    oldifs=$IFS\n    IFS=\"\n\"\n\n    for i in \"${!_PLIST_ENTRY_KEYS[@]}\"; do\n      setPlistValue \"${_PLIST_ENTRY_KEYS[$i]}\" \"${_PLIST_ENTRY_TYPES[$i]}\" \"${_PLIST_ENTRY_VALUES[$i]}\" \"${plist}\"\n    done\n\n    # restore the original internal field separator value\n    IFS=$oldifs\n  else\n    echo \"warning:   A Info.plist build output file was not found (${plist})\"\n  fi\ndone\n\necho \"info: <- RNFB build script finished\"\n";
+		};
+		5E337999DB7BC43EE359AD90 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-studentApp-studentAppTests/Pods-studentApp-studentAppTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-studentApp-studentAppTests/Pods-studentApp-studentAppTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-studentApp-studentAppTests/Pods-studentApp-studentAppTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-studentApp-studentAppTests/Pods-studentApp-studentAppTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-studentApp-studentAppTests/Pods-studentApp-studentAppTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-studentApp-studentAppTests/Pods-studentApp-studentAppTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
+		76EA174AF744BCA943C6FCCE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-studentApp-studentAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96DE75CDC3C5CDCCC7F3B39A /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -26118,34 +26451,38 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-studentApp/Pods-studentApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EA1160974C9E8E971B735D24 /* [CP-User] [RNFB] Core Configuration */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
-			);
-			name = "[CP-User] [RNFB] Core Configuration";
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "#!/usr/bin/env bash\n#\n# Copyright (c) 2016-present Invertase Limited & Contributors\n#\n# Licensed under the Apache License, Version 2.0 (the \"License\");\n# you may not use this library except in compliance with the License.\n# You may obtain a copy of the License at\n#\n#   http://www.apache.org/licenses/LICENSE-2.0\n#\n# Unless required by applicable law or agreed to in writing, software\n# distributed under the License is distributed on an \"AS IS\" BASIS,\n# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n# See the License for the specific language governing permissions and\n# limitations under the License.\n#\n\n##########################################################################\n##########################################################################\n#\n#  NOTE THAT IF YOU CHANGE THIS FILE YOU MUST RUN pod install AFTERWARDS\n#\n#  This file is installed as an Xcode build script in the project file\n#  by cocoapods, and you will not see your changes until you pod install\n#\n##########################################################################\n##########################################################################\n\nset -e\n\n_MAX_LOOKUPS=2;\n_SEARCH_RESULT=''\n_RN_ROOT_EXISTS=''\n_CURRENT_LOOKUPS=1\n_JSON_ROOT=\"'react-native'\"\n_JSON_FILE_NAME='firebase.json'\n_JSON_OUTPUT_BASE64='e30=' # { }\n_CURRENT_SEARCH_DIR=${PROJECT_DIR}\n_PLIST_BUDDY=/usr/libexec/PlistBuddy\n_TARGET_PLIST=\"${BUILT_PRODUCTS_DIR}/${INFOPLIST_PATH}\"\n_DSYM_PLIST=\"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist\"\n\n# plist arrays\n_PLIST_ENTRY_KEYS=()\n_PLIST_ENTRY_TYPES=()\n_PLIST_ENTRY_VALUES=()\n\nfunction setPlistValue {\n  echo \"info:      setting plist entry '$1' of type '$2' in file '$4'\"\n  ${_PLIST_BUDDY} -c \"Add :$1 $2 '$3'\" $4 || echo \"info:      '$1' already exists\"\n}\n\nfunction getFirebaseJsonKeyValue () {\n  if [[ ${_RN_ROOT_EXISTS} ]]; then\n    ruby -Ku -e \"require 'rubygems';require 'json'; output=JSON.parse('$1'); puts output[$_JSON_ROOT]['$2']\"\n  else\n    echo \"\"\n  fi;\n}\n\nfunction jsonBoolToYesNo () {\n  if [[ $1 == \"false\" ]]; then\n    echo \"NO\"\n  elif [[ $1 == \"true\" ]]; then\n    echo \"YES\"\n  else echo \"NO\"\n  fi\n}\n\necho \"info: -> RNFB build script started\"\necho \"info: 1) Locating ${_JSON_FILE_NAME} file:\"\n\nif [[ -z ${_CURRENT_SEARCH_DIR} ]]; then\n  _CURRENT_SEARCH_DIR=$(pwd)\nfi;\n\nwhile true; do\n  _CURRENT_SEARCH_DIR=$(dirname \"$_CURRENT_SEARCH_DIR\")\n  if [[ \"$_CURRENT_SEARCH_DIR\" == \"/\" ]] || [[ ${_CURRENT_LOOKUPS} -gt ${_MAX_LOOKUPS} ]]; then break; fi;\n  echo \"info:      ($_CURRENT_LOOKUPS of $_MAX_LOOKUPS) Searching in '$_CURRENT_SEARCH_DIR' for a ${_JSON_FILE_NAME} file.\"\n  _SEARCH_RESULT=$(find \"$_CURRENT_SEARCH_DIR\" -maxdepth 2 -name ${_JSON_FILE_NAME} -print | /usr/bin/head -n 1)\n  if [[ ${_SEARCH_RESULT} ]]; then\n    echo \"info:      ${_JSON_FILE_NAME} found at $_SEARCH_RESULT\"\n    break;\n  fi;\n  _CURRENT_LOOKUPS=$((_CURRENT_LOOKUPS+1))\ndone\n\nif [[ ${_SEARCH_RESULT} ]]; then\n  _JSON_OUTPUT_RAW=$(cat \"${_SEARCH_RESULT}\")\n  _RN_ROOT_EXISTS=$(ruby -Ku -e \"require 'rubygems';require 'json'; output=JSON.parse('$_JSON_OUTPUT_RAW'); puts output[$_JSON_ROOT]\" || echo '')\n\n  if [[ ${_RN_ROOT_EXISTS} ]]; then\n    if ! python3 --version >/dev/null 2>&1; then echo \"python3 not found, firebase.json file processing error.\" && exit 1; fi\n    _JSON_OUTPUT_BASE64=$(python3 -c 'import json,sys,base64;print(base64.b64encode(bytes(json.dumps(json.loads(open('\"'${_SEARCH_RESULT}'\"', '\"'rb'\"').read())['${_JSON_ROOT}']), '\"'utf-8'\"')).decode())' || echo \"e30=\")\n  fi\n\n  _PLIST_ENTRY_KEYS+=(\"firebase_json_raw\")\n  _PLIST_ENTRY_TYPES+=(\"string\")\n  _PLIST_ENTRY_VALUES+=(\"$_JSON_OUTPUT_BASE64\")\n\n  # config.app_data_collection_default_enabled\n  _APP_DATA_COLLECTION_ENABLED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"app_data_collection_default_enabled\")\n  if [[ $_APP_DATA_COLLECTION_ENABLED ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseDataCollectionDefaultEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_APP_DATA_COLLECTION_ENABLED\")\")\n  fi\n\n  # config.analytics_auto_collection_enabled\n  _ANALYTICS_AUTO_COLLECTION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_auto_collection_enabled\")\n  if [[ $_ANALYTICS_AUTO_COLLECTION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FIREBASE_ANALYTICS_COLLECTION_ENABLED\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_AUTO_COLLECTION\")\")\n  fi\n\n  # config.analytics_collection_deactivated\n  _ANALYTICS_DEACTIVATED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_collection_deactivated\")\n  if [[ $_ANALYTICS_DEACTIVATED ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FIREBASE_ANALYTICS_COLLECTION_DEACTIVATED\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_DEACTIVATED\")\")\n  fi\n\n  # config.analytics_idfv_collection_enabled\n  _ANALYTICS_IDFV_COLLECTION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_idfv_collection_enabled\")\n  if [[ $_ANALYTICS_IDFV_COLLECTION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GOOGLE_ANALYTICS_IDFV_COLLECTION_ENABLED\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_IDFV_COLLECTION\")\")\n  fi\n\n  # config.analytics_default_allow_analytics_storage\n  _ANALYTICS_STORAGE=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_default_allow_analytics_storage\")\n  if [[ $_ANALYTICS_STORAGE ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GOOGLE_ANALYTICS_DEFAULT_ALLOW_ANALYTICS_STORAGE\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_STORAGE\")\")\n  fi\n\n  # config.analytics_default_allow_ad_storage\n  _ANALYTICS_AD_STORAGE=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_default_allow_ad_storage\")\n  if [[ $_ANALYTICS_AD_STORAGE ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GOOGLE_ANALYTICS_DEFAULT_ALLOW_AD_STORAGE\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_AD_STORAGE\")\")\n  fi\n\n  # config.analytics_default_allow_ad_user_data\n  _ANALYTICS_AD_USER_DATA=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_default_allow_ad_user_data\")\n  if [[ $_ANALYTICS_AD_USER_DATA ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GOOGLE_ANALYTICS_DEFAULT_ALLOW_AD_USER_DATA\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_AD_USER_DATA\")\")\n  fi\n\n  # config.analytics_default_allow_ad_personalization_signals\n  _ANALYTICS_PERSONALIZATION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_default_allow_ad_personalization_signals\")\n  if [[ $_ANALYTICS_PERSONALIZATION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GOOGLE_ANALYTICS_DEFAULT_ALLOW_AD_PERSONALIZATION_SIGNALS\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_PERSONALIZATION\")\")\n  fi\n\n  # config.analytics_registration_with_ad_network_enabled\n  _ANALYTICS_REGISTRATION_WITH_AD_NETWORK=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"google_analytics_registration_with_ad_network_enabled\")\n  if [[ $_ANALYTICS_REGISTRATION_WITH_AD_NETWORK ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GOOGLE_ANALYTICS_REGISTRATION_WITH_AD_NETWORK_ENABLED\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_REGISTRATION_WITH_AD_NETWORK\")\")\n  fi\n\n  # config.google_analytics_automatic_screen_reporting_enabled\n  _ANALYTICS_AUTO_SCREEN_REPORTING=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"google_analytics_automatic_screen_reporting_enabled\")\n  if [[ $_ANALYTICS_AUTO_SCREEN_REPORTING ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseAutomaticScreenReportingEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_AUTO_SCREEN_REPORTING\")\")\n  fi\n\n  # config.perf_auto_collection_enabled\n  _PERF_AUTO_COLLECTION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"perf_auto_collection_enabled\")\n  if [[ $_PERF_AUTO_COLLECTION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"firebase_performance_collection_enabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_PERF_AUTO_COLLECTION\")\")\n  fi\n\n  # config.perf_collection_deactivated\n  _PERF_DEACTIVATED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"perf_collection_deactivated\")\n  if [[ $_PERF_DEACTIVATED ]]; then\n    _PLIST_ENTRY_KEYS+=(\"firebase_performance_collection_deactivated\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_PERF_DEACTIVATED\")\")\n  fi\n\n  # config.messaging_auto_init_enabled\n  _MESSAGING_AUTO_INIT=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"messaging_auto_init_enabled\")\n  if [[ $_MESSAGING_AUTO_INIT ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseMessagingAutoInitEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_MESSAGING_AUTO_INIT\")\")\n  fi\n\n  # config.in_app_messaging_auto_colllection_enabled\n  _FIAM_AUTO_INIT=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"in_app_messaging_auto_collection_enabled\")\n  if [[ $_FIAM_AUTO_INIT ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseInAppMessagingAutomaticDataCollectionEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_FIAM_AUTO_INIT\")\")\n  fi\n\n  # config.app_check_token_auto_refresh\n  _APP_CHECK_TOKEN_AUTO_REFRESH=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"app_check_token_auto_refresh\")\n  if [[ $_APP_CHECK_TOKEN_AUTO_REFRESH ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseAppCheckTokenAutoRefreshEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_APP_CHECK_TOKEN_AUTO_REFRESH\")\")\n  fi\n\n  # config.crashlytics_disable_auto_disabler - undocumented for now - mainly for debugging, document if becomes useful\n  _CRASHLYTICS_AUTO_DISABLE_ENABLED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"crashlytics_disable_auto_disabler\")\n  if [[ $_CRASHLYTICS_AUTO_DISABLE_ENABLED == \"true\" ]]; then\n    echo \"Disabled Crashlytics auto disabler.\" # do nothing\n  else\n    _PLIST_ENTRY_KEYS+=(\"FirebaseCrashlyticsCollectionEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"NO\")\n  fi\nelse\n  _PLIST_ENTRY_KEYS+=(\"firebase_json_raw\")\n  _PLIST_ENTRY_TYPES+=(\"string\")\n  _PLIST_ENTRY_VALUES+=(\"$_JSON_OUTPUT_BASE64\")\n  echo \"warning:   A firebase.json file was not found, whilst this file is optional it is recommended to include it to configure firebase services in React Native Firebase.\"\nfi;\n\necho \"info: 2) Injecting Info.plist entries: \"\n\n# Log out the keys we're adding\nfor i in \"${!_PLIST_ENTRY_KEYS[@]}\"; do\n  echo \"    ->  $i) ${_PLIST_ENTRY_KEYS[$i]}\" \"${_PLIST_ENTRY_TYPES[$i]}\" \"${_PLIST_ENTRY_VALUES[$i]}\"\ndone\n\nfor plist in \"${_TARGET_PLIST}\" \"${_DSYM_PLIST}\" ; do\n  if [[ -f \"${plist}\" ]]; then\n\n    # paths with spaces break the call to setPlistValue. temporarily modify\n    # the shell internal field separator variable (IFS), which normally\n    # includes spaces, to consist only of line breaks\n    oldifs=$IFS\n    IFS=\"\n\"\n\n    for i in \"${!_PLIST_ENTRY_KEYS[@]}\"; do\n      setPlistValue \"${_PLIST_ENTRY_KEYS[$i]}\" \"${_PLIST_ENTRY_TYPES[$i]}\" \"${_PLIST_ENTRY_VALUES[$i]}\" \"${plist}\"\n    done\n\n    # restore the original internal field separator value\n    IFS=$oldifs\n  else\n    echo \"warning:   A Info.plist build output file was not found (${plist})\"\n  fi\ndone\n\necho \"info: <- RNFB build script finished\"\n";
-		};
-		F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */ = {
+		9A216F9E1705338EC597A51D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-studentApp-studentAppTests/Pods-studentApp-studentAppTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-studentApp/Pods-studentApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-studentApp-studentAppTests/Pods-studentApp-studentAppTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-studentApp/Pods-studentApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-studentApp-studentAppTests/Pods-studentApp-studentAppTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-studentApp/Pods-studentApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D965001B69C01C5C8BD95AA7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-studentApp-studentAppTests/Pods-studentApp-studentAppTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-studentApp-studentAppTests/Pods-studentApp-studentAppTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-studentApp-studentAppTests/Pods-studentApp-studentAppTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -26301,7 +26638,6 @@
 				84CA05FD2CD0BD9500B675CB /* SRIOConsumerPool.m in Sources */,
 				84CA06272CD0BD9500B675CB /* Pods-studentApp-dummy.m in Sources */,
 				84CA06142CD0BD9500B675CB /* DoubleConversion-dummy.m in Sources */,
-				84CA06F52CD0BD9600B675CB /* AppDelegate.mm in Sources */,
 				84CA05722CD0BD9400B675CB /* format.cc in Sources */,
 				84CA056C2CD0BD9400B675CB /* Storage.swift in Sources */,
 				84CA06ED2CD0BD9600B675CB /* SocketRocket-dummy.m in Sources */,
@@ -26312,7 +26648,6 @@
 				84CA06642CD0BD9500B675CB /* React-domnativemodule-dummy.m in Sources */,
 				84CA05572CD0BD9400B675CB /* FIRComponent.m in Sources */,
 				84CA054A2CD0BD9400B675CB /* diy-fp.cc in Sources */,
-				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				84CA06532CD0BD9500B675CB /* React-Core-dummy.m in Sources */,
 				84CA05DD2CD0BD9500B675CB /* FileUtilDetail.cpp in Sources */,
 				84CA06572CD0BD9500B675CB /* React-CoreModules-dummy.m in Sources */,
@@ -26363,7 +26698,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-studentApp-studentAppTests.debug.xcconfig */;
+			baseConfigurationReference = CFD9DF366605380D50EA508A /* Pods-studentApp-studentAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -26391,7 +26726,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-studentApp-studentAppTests.release.xcconfig */;
+			baseConfigurationReference = F7D60F824512034F1842753F /* Pods-studentApp-studentAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -26416,10 +26751,11 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-studentApp.debug.xcconfig */;
+			baseConfigurationReference = 4A9E148A9E355EDC814103A6 /* Pods-studentApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = studentApp/studentApp.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -26427,6 +26763,7 @@
 					"$(PROJECT_DIR)/Pods/hermes-engine/destroot/Library/Frameworks/macosx",
 				);
 				INFOPLIST_FILE = studentApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -26447,16 +26784,18 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-studentApp.release.xcconfig */;
+			baseConfigurationReference = CFA8771AAD77B2566DC1B2F0 /* Pods-studentApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = studentApp/studentApp.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pods/hermes-engine/destroot/Library/Frameworks/macosx",
 				);
 				INFOPLIST_FILE = studentApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -26509,7 +26848,8 @@
 				CXX = "";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -26525,6 +26865,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon/ReactCommon.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon/ReactCommon.framework/Headers/react/nativemodule/core",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon-Samples/ReactCommon_Samples.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon-Samples/ReactCommon_Samples.framework/Headers/platform/ios",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-Fabric/React_Fabric.framework/Headers/react/renderer/components/view/platform/cxx",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-NativeModulesApple/React_NativeModulesApple.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers/react/renderer/graphics/platform/ios",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD = "";
 				LDPLUSPLUS = "";
@@ -26593,6 +26944,7 @@
 				CXX = "";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -26602,6 +26954,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon/ReactCommon.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon/ReactCommon.framework/Headers/react/nativemodule/core",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon-Samples/ReactCommon_Samples.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon-Samples/ReactCommon_Samples.framework/Headers/platform/ios",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-Fabric/React_Fabric.framework/Headers/react/renderer/components/view/platform/cxx",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-NativeModulesApple/React_NativeModulesApple.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers/react/renderer/graphics/platform/ios",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD = "";
 				LDPLUSPLUS = "";
@@ -26629,6 +26992,7 @@
 				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				USE_HERMES = true;
 				VALIDATE_PRODUCT = YES;
 			};

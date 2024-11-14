@@ -27,9 +27,9 @@ const FeeDetails = () => {
   return (
     <View style={{ height: HEIGHT, backgroundColor: setColors.white }}>
         <ProfileNavbar backBtn={left_icon} title='Fee Details'/>
-        <View style={{ borderTopRightRadius: HEIGHT*0.03, backgroundColor: setColors.white, height: HEIGHT, paddingHorizontal: WIDTH*0.05 }}>
+        <View style={{ borderTopRightRadius: HEIGHT*0.03, backgroundColor: setColors.white, height: HEIGHT, paddingHorizontal: WIDTH*0.04 }}>
 
-        <FlatList contentContainerStyle={{marginTop: HEIGHT*0.02,  paddingBottom: HEIGHT*0.05}} showsVerticalScrollIndicator={false} data={feeMonthsDet} ListEmptyComponent={()=> <Text>No Event for the day</Text>}  showsHorizontalScrollIndicator={false} renderItem={({item}) => <MonthlyFees data={item} feeDetails={openDet===item.id} fees={fees} onDetailFeesPress={()=>onDetailFeesPress(item.id)} />} keyExtractor={item => item.id}/>
+        <FlatList contentContainerStyle={{marginTop: HEIGHT*0.02,  paddingBottom: HEIGHT*0.1 }} showsVerticalScrollIndicator={false} data={feeMonthsDet} ListEmptyComponent={()=> <Text>No Event for the day</Text>}  showsHorizontalScrollIndicator={false} renderItem={({item}) => <MonthlyFees data={item} feeDetails={openDet===item.id} fees={fees} onDetailFeesPress={()=>onDetailFeesPress(item.id)} />} keyExtractor={item => item.id}/>
         </View>
     </View>
   )

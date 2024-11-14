@@ -1,4 +1,6 @@
 import firestore from '@react-native-firebase/firestore';
+import { apiKey } from '../contants/common';
+import { baseUrl } from './configApi';
 
 export const storeData = async (collectionName, data) => {
     await firestore().collection(collectionName).add(data);
@@ -47,11 +49,36 @@ export const filterData = async (collectionName, filterValue, fieldValue) => {
             id: doc.id,
             ...doc.data()
         }))
-        // console.log("data_filterData", data);
-
         return data;
-
     } catch (err) {
         console.log("Failed to filterData", err);
     }
 }
+
+
+const sendPushNotification = async (token, title, body) => {
+    const message = {
+        token,
+        notification: {
+            title,
+            body
+        }
+    }
+    try {
+        const response = await axios.post(baseUrl, message, {
+            headers: {
+                Authorization: apiKey,
+                'Content-Type': 'application/json',
+            },
+        });
+        console.log("response", response);
+
+    } catch (err) {
+        console.log(err);
+
+    }
+
+
+}
+
+

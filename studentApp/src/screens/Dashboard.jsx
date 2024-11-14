@@ -30,7 +30,7 @@ const Dashboard = () => {
 
   const getNoticeData = async () =>{
     const noticeDta = await getData('Notice');
-    LocalNotification(noticeDta)
+    // LocalNotification(noticeDta)
     // setNotices(noticeDta[0].notice)
     // console.log("notices here",noticeDta[0].notice);
 }
@@ -48,7 +48,7 @@ const Dashboard = () => {
   const onClickDash = (route) => {
     if(route===constant.FEES && !isAdmin){
       navigation.navigate('feedetails')
-    }if(route===constant.NOTICE && !isAdmin){
+    }else if(route===constant.NOTICE && !isAdmin){
       navigation.navigate('noticedetails')
     }else{
       navigation.navigate(route)
@@ -91,7 +91,7 @@ const Dashboard = () => {
     style={{
       // alignItems: 'center',
       // justifyContent: 'flex-end',
-      color: setColors.errorRed,
+      color: setColors.white,
       textAlign: 'center',
       marginTop: HEIGHT*0.3
     }}>Logout</Text>

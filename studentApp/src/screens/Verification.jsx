@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import { KeyboardAvoidingView, ScrollView, Text, TextInput, View } from 'react-native'
 import { HEIGHT, WIDTH } from '../contants/dimensions'
 import Navbar from '../components/Navbar'
@@ -10,21 +10,35 @@ import InputComponent from '../components/InputComponent'
 const Verification = ({route}) => {
 
   const [error,setError] = useState('');
-  const [otp,setOtp] = useState('');
+  const [otp,setOtp] = useState(Array(6).fill(''));
   const items = Array.from({ length:6 })
   const navigation = useNavigation();
+  const inputs = useRef([]);
   const navig = route?.params?.router;
 
-  const handleChangeForm = (text) => {
+  const handleChangeForm = (text,index) => {
     console.log("text",text);
-    setOtp((prevOtp) => [...prevOtp,text])
+    setOtp((prevOtp) => {
+      const newOtp = [...prevOtp];
+      newOtp[index] = text;
+      return newOtp
+    });
     setError('')
+    console.log("text_length",text.length);
+    console.log("index_here",index);
+    
+    if(text.length===1 && index<5){
+      console.log("current.focus triggered");
+      
+      console.log("inputs",inputs);
+      inputs?.current[index+1]?.focus();
+    }
     console.log("otp",otp);
   }
 
   const handleOnVerify = () => {
     console.log("pressed",otp);
-    if(otp.length === 6){
+    if(otp[0]!=="" && otp[5]!==""){
       navigation.navigate('dashboard')
     }else{
       setError('Enter valid otp')
@@ -49,25 +63,26 @@ const Verification = ({route}) => {
       borderTopRightRadius: HEIGHT*0.03,
       backgroundColor: setColors.white,
     }}>
-    <Text style={{fontSize: 16,
+    <Text style={{fontSize: 15,
       fontWeight: '500',
       color: setColors.black
     }}>Enter OTP</Text>
 
     <View style={{
+      // borderWidth:1,
       height: HEIGHT*0.07,
       flexDirection: 'row',
       alignItems: 'center',
       justifyContent: 'space-between'
     }}>
-      {items.map((_,index)=>(
+      {items.map((_,index)=>(     
          <View key={index}
          style={{
-          width: WIDTH*0.1,
+          // width: WIDTH*0.1,
           borderRadius: HEIGHT*0.01,
           alignItems: 'center',
         }}>
-          <InputComponent number={true} maxLength={1} componentWidth={WIDTH*0.1} centered="center" onChangeText={text=>handleChangeForm(text)}/>
+          <InputComponent ref={(ref)=>(inputs.current[index]=ref)} number={true} maxLength={1} componentWidth={WIDTH*0.1} centered="center" onChangeText={text=>handleChangeForm(text,index)} autoFocus={index===0}/>
         </View>
       ))}
     </View>

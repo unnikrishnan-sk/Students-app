@@ -3,7 +3,7 @@ import { FlatList, KeyboardAvoidingView, ScrollView, Text, TextInput, View } fro
 import { Calendar } from 'react-native-calendars'
 import { HEIGHT, WIDTH } from '../contants/dimensions'
 import ProfileNavbar from '../components/ProfileNavbar'
-import { down_arrow, left_icon, up_arrow } from '../assets'
+import { down_arrow, down_arrow_triangle, left_icon, up_arrow, up_arrow_triangle } from '../assets'
 import { setColors } from '../contants/colors'
 import InputComponent from '../components/InputComponent'
 import ButtonComponent from '../components/ButtonComponent'
@@ -35,6 +35,9 @@ const CalendarScreen = () => {
   const navigation = useNavigation();
   const currentDate = `${yearChange}-${String(monthChange +1)}`
 
+  console.log("events_calendar",events);
+  
+
   const constants = {
     EVENT: 'Event',
     EXAM: 'Exam'
@@ -45,8 +48,6 @@ const CalendarScreen = () => {
     renderAllEvents()
     return () => unsubscribe;
   },[])
-
-  
 
   useEffect(()=>{
     eventsOnSelectedDate()
@@ -63,11 +64,15 @@ const CalendarScreen = () => {
 }
 
   const renderAllEvents = () => {
-    // console.log("selectedMonth_calendar",moment(selectedDate).format('MMM'));
+    console.log("selectedMonth_calendar",moment(selectedDate).format('MMM'));
+    // console.log("selectedMonth_calendar",moment(events[0].date).format('MMM'));
+    console.log("current Date",currentDate);
+    console.log("current_Date_change_month",moment(currentDate).format('MMM'));
+    console.log(monthChange );
     
-    const initialEvents = events.filter(event => moment(event.date).format('MMM')===moment(selectedDate).format('MMM'))
+    console.log("month change_calendar",moment(monthChange).format('MMM'));
+    const initialEvents = events.filter(event => moment(event.date).format('MMM')===moment(currentDate).format('MMM'))
     // console.log("initial Events",initialEvents);
-    
     setFilteredEvents(initialEvents);
   }
 
@@ -160,9 +165,7 @@ events.forEach((event)=>{
     // monthRef(moment(selectedDate).format('YYYY-MM-DD'))
     // console.log("moment month here",moment(selectedDate).format('YYYY-MM-DD'));
     // console.log("currentData_calendar",currentDate);
-
     // console.log("selectedDate_calendar",moment(selectedDate).format('MMM'));
-    
     
     if(Number(monthChange) === 11){
       setMonthChange(0);
@@ -184,17 +187,19 @@ events.forEach((event)=>{
 
   return (
     <KeyboardAvoidingView behavior='padding' style={{flex:1}}>
-    <View style={{
-      backgroundColor: setColors.white,
-      // height: HEIGHT
-      flex: 1
-    }}>
-       <ScrollView 
+      <ScrollView 
     showsVerticalScrollIndicator={false}
     contentContainerStyle={{
         paddingBottom: HEIGHT*0.01
     }}>
-      <ProfileNavbar backBtn={left_icon} title={'Calendar'} upArrow={up_arrow} downArrow={down_arrow} calendar="calendar" year={yearChange} handleOnMonthAdd={handleOnMonthAdd} handleOnMonthSub={handleOnMonthSub}/>
+    <View style={{
+      // borderWidth: 1,
+      backgroundColor: setColors.white,
+      height: HEIGHT,
+      flex: 1
+    }}>
+       
+      <ProfileNavbar backBtn={left_icon} title={'Calendar'} upArrow={up_arrow_triangle} downArrow={down_arrow_triangle} calendar="calendar" year={yearChange} handleOnMonthAdd={handleOnMonthAdd} handleOnMonthSub={handleOnMonthSub}/>
       <View style={{
         borderTopRightRadius: HEIGHT*0.03,
         // borderWidth: 1,
@@ -203,12 +208,12 @@ events.forEach((event)=>{
       }}>
         
       <Calendar markingType={'custom'} firstDay={1}
-        style={{ backgroundColor: setColors.white, marginTop: HEIGHT*0.04 }}
+        style={{ backgroundColor: setColors.white, marginTop: HEIGHT*0.02 }}
         hideArrows={true}
         theme={{ 
         textMonthFontSize: 16, 
         monthTextColor: setColors.violetShade,
-        textDayFontSize: 15, 
+        textDayFontSize: 14, 
         textDayFontWeight: '600', 
         textMonthFontWeight: '500', 
         calendarBackground: setColors.white,  
@@ -233,9 +238,9 @@ events.forEach((event)=>{
 
       {isAdmin && 
       <View style={{
-        borderWidth: 1,
+        // borderWidth: 1,
         borderColor: setColors.grayShade,
-        paddingHorizontal: WIDTH*0.05,
+        paddingHorizontal: WIDTH*0.04,
         // paddingVertical: HEIGHT*0.02
         paddingBottom: HEIGHT*0.01
       }}>
@@ -244,29 +249,40 @@ events.forEach((event)=>{
         justifyContent: 'space-between',
         alignItems: 'center'
       }}>
-        <InputComponent marginTop={HEIGHT*0.01} componentWidth={WIDTH*0.4} height={HEIGHT*0.06} onChangeText={(text)=>onHandleTextChange(text)}/>
+        <InputComponent marginTop={HEIGHT*0.01} componentWidth={WIDTH*0.4} height={HEIGHT*0.055} onChangeText={(text)=>onHandleTextChange(text)}/>
         <ButtonComponent buttonWidth={WIDTH*0.4} marginTop={HEIGHT*0.01} title={'Add Event'} onButtonPress={onCalendarAdd}/>
       </View>
       {error && <Text style={{ color: setColors.errorRed, fontWeight: '600', marginTop: HEIGHT*0.005,}}>{error}</Text>}
       </View>
       
       }
-      </ScrollView>
+     
      
       <ScrollView 
       showsVerticalScrollIndicator={false}
       style={{
-        marginBottom: HEIGHT*0.02
+        // marginBottom: HEIGHT*0.02,
+        paddingBottom: HEIGHT*0.05,
+        // borderWidth: 1,
+        // backgroundColor: setColors.white,
+        borderTopWidth: 1,
+        borderColor: setColors.grayShade
       }}>
-      <FlatList contentContainerStyle={{marginTop: HEIGHT*0.02, paddingHorizontal: WIDTH*0.05, paddingBottom: HEIGHT*0.02}} showsVerticalScrollIndicator={false} data={filteredEvents} ListEmptyComponent={()=> <Text>No Event for the day</Text>}  showsHorizontalScrollIndicator={false} renderItem={({item}) => 
+        <Text style={{
+          marginLeft: WIDTH*0.04,
+          marginTop: HEIGHT*0.02,
+          fontSize: 15,
+          fontWeight: 600,
+          color: setColors.black
+        }}>Events and Exams</Text>
+      <FlatList contentContainerStyle={{marginTop: HEIGHT*0.02, paddingHorizontal: WIDTH*0.045, paddingBottom: HEIGHT*0.05}} showsVerticalScrollIndicator={false} data={filteredEvents} ListEmptyComponent={()=> <Text>No Event for the day</Text>}  showsHorizontalScrollIndicator={false} renderItem={({item}) => 
       <FadeInView duration='600'>
-      {/* <SlideIn initial={-100} final={0}> */}
       <CalendarComp data={item} eventsOnSelectedDate={eventsOnSelectedDate}/>
-      {/* </SlideIn > */}
       </FadeInView>
       } keyExtractor={item => item.id}/>
       </ScrollView>
     </View>
+     </ScrollView>
     </KeyboardAvoidingView>
   )
 }

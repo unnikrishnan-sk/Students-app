@@ -12,6 +12,9 @@ export const setColors = {
     calImpColor: '#FEF1EC',
     backgroundGreen: '#37B264',
     calImpGreenColor: '#D4FFEA',
-    blueShade: '#D4F5FF',
-    pinkShade: '#FEF1EC'
+    blueShade: '#d2f4fe',
+    pinkShade: '#FEF1EC',
+    statusRed: '#F53567',
+    pinkShade: '#EEE5FF',
+    violetLightShade: '#D4FFEA'
 }

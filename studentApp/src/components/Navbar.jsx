@@ -25,7 +25,7 @@ const Navbar = () => {
         alignItems: 'center',
         justifyContent: 'center',
         backgroundColor: setColors.violetShade,
-        borderBottomLeftRadius: HEIGHT*0.01,
+        borderBottomLeftRadius: HEIGHT*0.03,
 
     }}>
         <FadeInView duration='900'>

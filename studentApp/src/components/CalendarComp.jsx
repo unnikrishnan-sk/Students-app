@@ -20,14 +20,15 @@ const CalendarComp = ({data}) => {
     {/* // <SlideIn initial={-100} final={0}> */}
     {/* <FadeInView duration='1000'> */}
     <View style={{
+      // borderWidth: 1,
         // paddingHorizontal: WIDTH*0.05,
-        paddingVertical: HEIGHT*0.02,
+        paddingVertical: HEIGHT*0.007,
         flexDirection: 'row'
       }}>
         <View style={{
           // borderWidth: 1,
-          height: HEIGHT*0.08,
-          width: HEIGHT*0.08,
+          height: HEIGHT*0.07,
+          width: HEIGHT*0.07,
           borderRadius: HEIGHT*0.05,
           backgroundColor: setColors.calendarRed,
           justifyContent: 'center',
@@ -35,19 +36,19 @@ const CalendarComp = ({data}) => {
         }}>
           <Text style={{
             color: setColors.white,
-            fontSize: 20
+            fontSize: 17
           }}>{moment(date).format('DD')}</Text>
           <Text style={{
             color: setColors.white,
-            fontSize: 12
+            fontSize: 11
           }}>{moment(date).format('MMM').toUpperCase()}</Text>
         </View>
         <View style={{
           // borderWidth: 1,
-          marginLeft: WIDTH*0.03,
-          paddingHorizontal: WIDTH*0.04,
+          marginLeft: WIDTH*0.02,
+          paddingHorizontal: WIDTH*0.03,
           paddingVertical: HEIGHT*0.005,
-          width: WIDTH*0.73,
+          width: WIDTH*0.75,
           borderRadius: HEIGHT*0.015,
           backgroundColor: desc===constant.EVENT ? setColors.calImpColor : setColors.calImpGreenColor
           // width: WIDTH*0.6

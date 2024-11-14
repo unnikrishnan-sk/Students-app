@@ -90,7 +90,7 @@ const FeesScreen = () => {
                 // height: HEIGHT*0.1,
                 // borderWidth: 1,
                 flexDirection: 'row',
-                paddingHorizontal: WIDTH*0.05,
+                paddingHorizontal: WIDTH*0.04,
                 justifyContent: 'space-between',
                 marginTop: HEIGHT*0.04,
                 paddingVertical: HEIGHT*0.01,
@@ -111,8 +111,8 @@ const FeesScreen = () => {
             <ScrollView 
             showsVerticalScrollIndicator={false}
             style={{
-                paddingHorizontal: WIDTH*0.05,
-                marginBottom: HEIGHT*0.05,
+                paddingHorizontal: WIDTH*0.02,
+                paddingBottom: HEIGHT*0.05,
             }}>
                     {addFees.map((item)=>(
                         <View key={item.id} style={{
@@ -120,10 +120,10 @@ const FeesScreen = () => {
                             // borderWidth: 1,
                             paddingHorizontal: WIDTH*0.02,
                             justifyContent: 'space-between',
-                            marginTop: HEIGHT*0.01
+                            marginTop: HEIGHT*0.005
                         }}>
                         <Text style={{
-                            marginTop: HEIGHT*0.02,
+                            marginTop: HEIGHT*0.01,
                             color: setColors.black,
                             fontWeight: '700'
                             // borderBottomWidth: 1,
@@ -132,14 +132,17 @@ const FeesScreen = () => {
                         <InputComponent style={{borderWidth:1,
                         width: WIDTH*0.3}} 
                         key={item.id} value={fees?.[item.value]} onChangeText={text => handleChangeForm(item.value,text)} number={item.number}
-                        height={HEIGHT*0.055} componentWidth={WIDTH*0.3} marginTop={HEIGHT*0.006}/>
+                        height={HEIGHT*0.055} componentWidth={WIDTH*0.3} marginTop={HEIGHT*0.005}/>
                         </View>
                     ))}
                      {error && <Text style={{ color: setColors.errorRed, fontWeight: '600', marginTop: HEIGHT*0.005, textAlign: 'right', marginRight: WIDTH*0.015}}>{error}</Text> }
-
+                    <View style={{
+                        paddingHorizontal: WIDTH*0.04,
+                        marginBottom: HEIGHT*0.02
+                    }}>
                     <ButtonComponent title={fees ? 'EDIT' : 'ADD'} onButtonPress={onFeesFn}/>
+                    </View>
                 </ScrollView>
-
         </View>
     </View>
     </KeyboardAvoidingView>

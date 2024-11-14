@@ -141,9 +141,9 @@ const AddExams = () => {
             style={{
               borderWidth: 2,
               width: WIDTH*0.42,
-              height: HEIGHT*0.07,
-              marginTop: HEIGHT*0.02,
-              borderRadius: HEIGHT*0.02,
+              height: HEIGHT*0.055,
+              marginTop: HEIGHT*0.015,
+              borderRadius: HEIGHT*0.015,
               borderColor: setColors.darkgrayShade,
               alignItems: 'center',
               justifyContent: 'space-between',
@@ -151,7 +151,7 @@ const AddExams = () => {
               // marginLeft: WIDTH*0.03
             }}>
               <Text style={{
-                marginLeft: WIDTH*0.05,
+                marginLeft: WIDTH*0.02,
                 color: examMain?.ExmDate ? setColors.black :setColors.gray
               }}>{examMain?.ExmDate ? moment(examMain?.ExmDate).format('YYYY-MM-DD')  : 'Exam Date'}</Text>
               <Image style={{

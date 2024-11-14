@@ -18,7 +18,6 @@ const StudentsList = () => {
     const [value,setValue] = useState();
     const [focus,setFocus] = useState();
     const [adminStatus,studentsRedux] = useSelector((state)=> [state?.isAdmin?.admin, state?.isAdmin?.students])
-    // console.log("students_admin_",students);
     const navigation = useNavigation();
 
     useEffect(()=>{
@@ -32,16 +31,13 @@ const StudentsList = () => {
     }
 
     const onStudentEdit = (name) => {
-        // console.log("pressed",name);
         if(name){
             const stud = students.filter(item => item.name===name)
-            // console.log(stud);
             navigation.navigate('addstudent', {data: stud})
         }
     }
 
     const handleDropChange = async (key,newValue) => {
-        // console.log(" pressed", newValue.value);
         const filterValue = newValue.value;
         const filteredData = await filterData('Students','className',filterValue)
         setStudents(filteredData)
@@ -56,21 +52,17 @@ const StudentsList = () => {
     }}>
         <ProfileNavbar backBtn={left_icon} title={'Student List'}/>
         <View style={{
-        paddingTop: HEIGHT*0.04,
+        paddingTop: HEIGHT*0.005,
         backgroundColor: setColors.white,
         borderTopRightRadius: HEIGHT*0.03
         }}>
             <View style={{
-                // borderWidth: 1,
-                // height: HEIGHT*0.03,
-                // width: WIDTH*0.7
+                // borderWidth:1,
                 alignItems: 'flex-end',
-                paddingHorizontal: WIDTH*0.05,
+                paddingHorizontal: WIDTH*0.04,
                 flexDirection: 'row',
                 justifyContent: 'space-between'
             }}>
-            
-            
             
             { adminStatus && <Pressable 
             onPress={()=>navigation.navigate('addstudent')}
@@ -78,9 +70,9 @@ const StudentsList = () => {
                 paddingVertical: HEIGHT*0.01,
                 width: WIDTH*0.2,
                 alignItems: 'center',
-                borderRadius: WIDTH*0.03,
+                borderRadius: WIDTH*0.02,
                 backgroundColor: setColors.violetShade,
-                marginLeft: WIDTH*0.05
+                // marginLeft: WIDTH*0.02
             }}>
                 <Text style={{
                     color: setColors.white,
@@ -94,9 +86,9 @@ const StudentsList = () => {
             <View style={{
                 flexDirection: 'row',
                 justifyContent: 'space-between',
-                marginTop: HEIGHT*0.02,
+                marginTop: HEIGHT*0.015,
                 backgroundColor: setColors.violetShade,
-                paddingHorizontal: WIDTH*0.05,
+                paddingHorizontal: WIDTH*0.04,
                 paddingVertical: HEIGHT*0.01
             }}>
             <Text style={{
@@ -117,7 +109,7 @@ const StudentsList = () => {
             }}>Action</Text>
             </View>
 
-            <FlatList contentContainerStyle={{marginTop: HEIGHT*0.02, paddingHorizontal: WIDTH*0.05}} data={students} ListEmptyComponent={()=> <Text>Data not available</Text>}  showsHorizontalScrollIndicator={false} renderItem={({item}) => <StudentList data={item} onStudentEdit={onStudentEdit} />} keyExtractor={item => item.id}/>  
+            <FlatList contentContainerStyle={{marginTop: HEIGHT*0.015, paddingHorizontal: WIDTH*0.04}} data={students} ListEmptyComponent={()=> <Text>Data not available</Text>}  showsHorizontalScrollIndicator={false} renderItem={({item}) => <StudentList data={item} onStudentEdit={onStudentEdit} />} keyExtractor={item => item.id}/>  
         </View>
     </View>
   )

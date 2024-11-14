@@ -66,7 +66,7 @@ const AttendanceScreen = () => {
                 justifyContent: 'space-between',
                 marginTop: HEIGHT*0.02,
                 backgroundColor: setColors.violetShade,
-                paddingHorizontal: WIDTH*0.05,
+                paddingHorizontal: WIDTH*0.04,
                 paddingVertical: HEIGHT*0.01
             }}>
             <Text style={{
@@ -83,7 +83,7 @@ const AttendanceScreen = () => {
             }}>Action</Text>
             </View>
 
-            <FlatList contentContainerStyle={{marginTop: HEIGHT*0.02, paddingHorizontal: WIDTH*0.05}} data={studentList ? studentList : []} ListEmptyComponent={()=> <Text>Data not available</Text>}  showsHorizontalScrollIndicator={false} renderItem={({item}) => <StudentList data={item} pressedCheckbox={pressedCheckbox} attendance={true} presentList={presentList}/>} keyExtractor={item => item.id}/> 
+            <FlatList contentContainerStyle={{marginTop: HEIGHT*0.015, paddingHorizontal: WIDTH*0.04}} data={studentList ? studentList : []} ListEmptyComponent={()=> <Text>Data not available</Text>}  showsHorizontalScrollIndicator={false} renderItem={({item}) => <StudentList data={item} pressedCheckbox={pressedCheckbox} attendance={true} presentList={presentList}/>} keyExtractor={item => item.id}/> 
 
           <View style={{
             alignItems: 'center',

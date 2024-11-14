@@ -1,6 +1,9 @@
 import { useEffect, useRef } from "react";
 import { Animated, View } from "react-native";
+import messaging from '@react-native-firebase/messaging'
 
+
+export const apiKey = 'BK8VzTqWsXlmo-1ajqqz6iSftF9TXPyztFZtTmcK_tVvsCt--LiO2UtryGa2xABbiIf_3qVbmAInr48Nj2CwDCE';
 
 export const FadeInView = props => {
     const fadeAnim = useRef(new Animated.Value(0)).current;
@@ -86,10 +89,14 @@ export const getMonth = (monthChange) => {
         const monthName = monthNames[monthChange]
         return monthName
     }
-    console.log("month_chamge", monthChange);
+    console.log("month_change", monthChange);
 
 }
 
-// export const FadeIn = props => {
-//     const faded = useRef(new Animated.Value(0)).current;
-// }
+export const getFCMToken = async () => {
+    const token = await messaging().getToken();
+    if (token) {
+        console.log("FCM Token", token);
+        return token
+    }
+}
