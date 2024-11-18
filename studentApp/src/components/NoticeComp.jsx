@@ -10,25 +10,12 @@ const NoticeComp = ({notices}) => {
     {notices && notices.length>0 ? (notices?.map((item)=>(
         <FadeInView key={item.id}>
         <View
-        style={{
-            // borderWidth: 1,
-            paddingHorizontal: WIDTH*0.05,
-            paddingVertical: HEIGHT*0.01,
-            backgroundColor: setColors.pinkShade,
-            borderRadius: HEIGHT*0.01,
-            marginTop: HEIGHT*0.01
-        }}>
-            <Text style={{
-                fontSize: 13,
-                fontWeight: 500,
-                color: setColors.black
-            }}>{(item?.notice).charAt(0).toUpperCase()+(item?.notice).slice(1)}</Text>
+        style={{ paddingHorizontal: WIDTH*0.05, paddingVertical: HEIGHT*0.01, backgroundColor: setColors.pinkShade, borderRadius: HEIGHT*0.01, marginTop: HEIGHT*0.01 }}>
+            <Text style={{ fontSize: 13, fontWeight: 500, color: setColors.black }}>{(item?.notice).charAt(0).toUpperCase()+(item?.notice).slice(1)}</Text>
         </View>
         </FadeInView>
     ))
- ) : (
-        <Text>No Notifications </Text>
-    )}
+    ) : ( <Text>No Notifications </Text> )}
     </>
   )
 }

@@ -5,11 +5,10 @@ import { setColors } from '../contants/colors'
 
 const FeeDetailComp = ({data,fees}) => {
     const { id,title,price,percent } = data;
-
   return (
     <View style={{ flexDirection: 'row', paddingHorizontal: WIDTH*0.05, justifyContent: 'space-between', marginTop: HEIGHT*0.01 }}>
-    <Text style={{ fontSize: 13, fontWeight: '500', color: setColors.black  }}>{title}</Text>
-    <Text style={{ fontSize: 13, fontWeight: '500', color: setColors.black }}>{fees*percent}</Text>
+    <Text style={{ fontSize: 13, fontWeight: 500, color: setColors?.black  }}>{title}</Text>
+    <Text style={{ fontSize: 13, fontWeight: 500, color: setColors?.black }}>{fees*percent}</Text>
     </View>
   )
 }

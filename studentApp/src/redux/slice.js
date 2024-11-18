@@ -22,30 +22,21 @@ export const adminSlice = createSlice({
         },
         addfees: (state, action) => {
             state.fees = action.payload
-            // console.log("state", state.fees);
         },
         addstudents: (state, action) => {
-            console.log("action_students ", action.payload);
             state.students.push(action.payload)
         },
         addattendance: (state, action) => {
             state.attendance.push(action.payload);
-            console.log("state", state.attendance);
         },
         addevent: (state, action) => {
-            console.log("action", action.payload);
             state.event.push(action.payload)
-            console.log("state", state.event);
         },
         addexam: (state, action) => {
-            console.log("action", action.payload);
             state.exam.push(action.payload)
-            console.log("state", state.exam);
         },
         addnotice: (state, action) => {
-            console.log("action", action.payload);
             state.notice.push(action.payload)
-            console.log("state", state.notice);
         }
     }
 })

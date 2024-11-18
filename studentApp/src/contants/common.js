@@ -89,8 +89,6 @@ export const getMonth = (monthChange) => {
         const monthName = monthNames[monthChange]
         return monthName
     }
-    console.log("month_change", monthChange);
-
 }
 
 export const getFCMToken = async () => {

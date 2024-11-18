@@ -10,39 +10,32 @@ import { getData, storeData } from '../http/api'
 const SplashScreen = () => {
   const [availToken, setAvailToken] = useState([]);
   const navigation = useNavigation();
-
   useEffect(()=>{
     getToken();
   },[])
-
   useEffect(()=>{
     if(availToken){
       storeToken();
     }
   },[availToken])
-
   useEffect(() => {
     setTimeout(() => {
       navigation.navigate('login');
     }, 2500);
   }, []);
-
   const getToken = async () => {
-    const availableTokens = await getData('DeviceToken')
-    console.log("availableTokens",availableTokens);
-    setAvailToken(availableTokens || []);
+    try{
+      const availableTokens = await getData('DeviceToken')
+      setAvailToken(availableTokens || []);
+    }catch(err){
+      console.log("getToken_SplashScreen",err);
+    }
   }
-
   const storeToken = async () => {
     try{
       const token = await getFCMToken();
-      console.log("token",token);
-      console.log("availed",availToken[0]?.token);
-      
       const filterToken = availToken.filter((item)=>item?.token === token)
-      console.log("filterToken", filterToken);
       if(filterToken.length===0){
-        console.log("filter token empty ");
         Alert.alert("token here", token)
         storeData('DeviceToken', {token})
       }
@@ -52,24 +45,14 @@ const SplashScreen = () => {
   }
 
   return (
-    <View style={{
-      height: HEIGHT,
-      backgroundColor: setColors.violetShade,
-      alignItems: 'center',
-      justifyContent: 'center'
-    }}>
+    <View style={{ height: HEIGHT, backgroundColor: setColors?.violetShade, alignItems: 'center', justifyContent: 'center' }}>
       <FadeInView duration='600'>
         <SlideIn initial={0} final={-100}>
       <Image source={logo}></Image>
       </SlideIn>
       </FadeInView>
-
 <FadeInView duration='1100'>
-      <Text style={{
-        color: setColors.white,
-        fontSize: 22,
-        fontWeight: '600'
-      }}>Welcome to StudentsApp</Text>
+      <Text style={{ color: setColors?.white, fontSize: 22, fontWeight: 600 }}>Welcome to StudentsApp</Text>
       </FadeInView>
       </View>
   )

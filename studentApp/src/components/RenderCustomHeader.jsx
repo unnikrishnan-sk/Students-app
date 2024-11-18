@@ -6,10 +6,10 @@ import { getMonth } from '../contants/common';
 
 const RenderCustomHeader = ({monthChange,yearChange}) => {
    const selectMonth = getMonth(monthChange)
-   
+
   return (
     <View style={{ width: WIDTH, marginBottom: HEIGHT*0.005, marginRight: WIDTH*0.8, }}>
-        <Text style={{ color: setColors.violetShade, fontWeight: '600', fontSize: 16, textAlign: 'left'}}>{selectMonth} {yearChange}</Text>
+        <Text style={{ color: setColors?.violetShade, fontWeight: 600, fontSize: 16, textAlign: 'left'}}>{selectMonth} {yearChange}</Text>
     </View>
   )
 }

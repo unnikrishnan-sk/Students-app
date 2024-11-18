@@ -17,8 +17,12 @@ const FeeDetails = () => {
         return () => unsubscribe;
     },[])
     const getFeesData = async () =>{
-        const feesDta = await getData('Fees');
-        setFees(feesDta[0]?.Class10)
+        try{
+            const feesDta = await getData('Fees');
+            setFees(feesDta[0]?.Class10);
+        }catch(err){
+            console.log("getFeesData_FeeDetails", err); 
+        }
     }
     const onDetailFeesPress = (id) => {
         setOpenDet(openDet===id?null:id)
@@ -29,7 +33,7 @@ const FeeDetails = () => {
         <ProfileNavbar backBtn={left_icon} title='Fee Details'/>
         <View style={{ borderTopRightRadius: HEIGHT*0.03, backgroundColor: setColors.white, height: HEIGHT, paddingHorizontal: WIDTH*0.04 }}>
 
-        <FlatList contentContainerStyle={{marginTop: HEIGHT*0.02,  paddingBottom: HEIGHT*0.1 }} showsVerticalScrollIndicator={false} data={feeMonthsDet} ListEmptyComponent={()=> <Text>No Event for the day</Text>}  showsHorizontalScrollIndicator={false} renderItem={({item}) => <MonthlyFees data={item} feeDetails={openDet===item.id} fees={fees} onDetailFeesPress={()=>onDetailFeesPress(item.id)} />} keyExtractor={item => item.id}/>
+        <FlatList contentContainerStyle={{marginTop: HEIGHT*0.02,  paddingBottom: HEIGHT*0.1 }} showsVerticalScrollIndicator={false} data={feeMonthsDet} ListEmptyComponent={()=> <Text>No Event for the day</Text>}  showsHorizontalScrollIndicator={false} renderItem={({item}) => <MonthlyFees data={item} feeDetails={openDet===item?.id} fees={fees} onDetailFeesPress={()=>onDetailFeesPress(item?.id)} />} keyExtractor={item => item?.id}/>
         </View>
     </View>
   )
