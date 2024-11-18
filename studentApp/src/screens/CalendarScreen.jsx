@@ -58,7 +58,7 @@ const CalendarScreen = () => {
     setFilteredEvents(filteredEvent)
   }
   const onHandleDayPress = (day) => {
-    setSelectedDate(day.dateString)
+    setSelectedDate(day?.dateString)
   }
     onHandleTextChange = (text) => {
         setEvent(text)
@@ -68,7 +68,7 @@ const CalendarScreen = () => {
     if(event=="") setError("Add an event") 
     else{
       const calendarData = {
-        date: moment(selectedDate).format('YYYY-MM-DD'),
+        date: moment(selectedDate)?.format('YYYY-MM-DD'),
         eventAdded: event,
         desc: 'Event'
       }
@@ -83,18 +83,24 @@ const CalendarScreen = () => {
   const markedDates = {
     [selectedDate]: {
     customStyles: {
-    container: { backgroundColor: setColors.calendarRed, borderRadius: HEIGHT*0.03, alignItems: 'center', justifyContent: 'center'},
-    text: { color: selectedDate ? setColors.white :setColors.black, fontWeight: 500}
+    container: { backgroundColor: setColors?.calendarRed, borderRadius: HEIGHT*0.03, alignItems: 'center', justifyContent: 'center'},
+    text: { color: selectedDate ? setColors?.white :setColors?.black, fontWeight: 500}
     }
   }
 }
 events.forEach((event)=>{
   markedDates[event.date] = {
-    marked: true,
-    dotColor: event?.desc === constants.EVENT ? setColors.calendarRed : setColors.backgroundGreen,
     customStyles: {
-      container: { borderRadius: HEIGHT*0.03, alignItems: 'center', justifyContent: 'center' },
-      text: { color: selectedDate===event.date ? setColors.calendarRed : setColors.black, fontWeight: 500
+      container: { borderRadius: HEIGHT*0.03, alignItems: 'center', justifyContent: 'center',backgroundColor: event?.desc ? setColors?.calendarEvent : setColors?.calendarEvent, },
+      text: { color: selectedDate===event?.date ? setColors?.black : setColors?.black, fontWeight: 500
+      }
+    }
+  }
+  const currentDateFormatted = new Date().toISOString().split('T')[0];
+  markedDates[currentDateFormatted] = {
+    customStyles: {
+      container: { borderRadius: HEIGHT*0.03, alignItems: 'center', justifyContent: 'center',backgroundColor: setColors.calendarBlue, },
+      text: { color:  setColors.white, fontWeight: 500
       }
     }
   }
@@ -118,16 +124,16 @@ events.forEach((event)=>{
 
   return (
     <KeyboardAvoidingView behavior='padding' style={{flex:1}}>
-      <ScrollView 
+      {/* <ScrollView 
     showsVerticalScrollIndicator={false}
-    contentContainerStyle={{ paddingBottom: HEIGHT*0.01 }}>
-    <View style={{ backgroundColor: setColors.white, height: HEIGHT, flex: 1 }}>
+    contentContainerStyle={{ paddingBottom: HEIGHT*0.01 }}> */}
+    <View style={{ backgroundColor: setColors?.white, height: HEIGHT, flex: 1 }}>
       <ProfileNavbar backBtn={left_icon} title={constants?.CALENDAR} upArrow={up_arrow_triangle} downArrow={down_arrow_triangle} calendar="calendar" year={yearChange} handleOnMonthAdd={handleOnMonthAdd} handleOnMonthSub={handleOnMonthSub}/>
-      <View style={{ borderTopRightRadius: HEIGHT*0.03, backgroundColor: setColors.white, }}> 
+      <View style={{ borderTopRightRadius: HEIGHT*0.03, backgroundColor: setColors?.white, }}> 
       <Calendar markingType={'custom'} firstDay={1}
-        style={{ backgroundColor: setColors.white, marginTop: HEIGHT*0.02 }}
+        style={{ backgroundColor: setColors?.white, marginTop: HEIGHT*0.02 }}
         hideArrows={true}
-        theme={{ textMonthFontSize: 16, monthTextColor: setColors.violetShade, textDayFontSize: 14, textDayFontWeight: 600, textMonthFontWeight: 500, calendarBackground: setColors.white, monthTextColor: setColors.black, WeekTextColor: setColors.black,  textSectionTitleFontWeight: 700, selectedDayTextColor: setColors.black, dayTextColor: setColors.black}}
+        theme={{ textMonthFontSize: 16, monthTextColor: setColors?.violetShade, textDayFontSize: 14, textDayFontWeight: 600, textMonthFontWeight: 500, calendarBackground: setColors?.white, monthTextColor: setColors?.black, WeekTextColor: setColors?.black,  textSectionTitleFontWeight: 700, selectedDayTextColor: setColors?.black, dayTextColor: setColors?.black}}
         current={currentDate}
         key={currentDate}
         onDayPress={day => { onHandleDayPress(day)}}
@@ -143,21 +149,21 @@ events.forEach((event)=>{
         <InputComponent marginTop={HEIGHT*0.01} componentWidth={WIDTH*0.4} height={HEIGHT*0.055} onChangeText={(text)=>onHandleTextChange(text)}/>
         <ButtonComponent buttonWidth={WIDTH*0.4} marginTop={HEIGHT*0.01} title={constants?.ADD_EVENT} onButtonPress={onCalendarAdd}/>
       </View>
-      {error && <Text style={{ color: setColors.errorRed, fontWeight: 600, marginTop: HEIGHT*0.005,}}>{error}</Text>}
+      {error && <Text style={{ color: setColors?.errorRed, fontWeight: 600, marginTop: HEIGHT*0.005,}}>{error}</Text>}
       </View> : null
       }
       <ScrollView 
       showsVerticalScrollIndicator={false}
-      style={{ paddingBottom: HEIGHT*0.05, borderTopWidth: 1, borderColor: setColors.grayShade }}>
+      style={{ paddingBottom: HEIGHT*0.01, borderTopWidth: 1, borderColor: setColors?.grayShade }}>
         <Text style={{ marginLeft: WIDTH*0.04, marginTop: HEIGHT*0.02, fontSize: 15, fontWeight: 600, color: setColors.black }}>Events and Exams</Text>
-      <FlatList contentContainerStyle={{marginTop: HEIGHT*0.02, paddingHorizontal: WIDTH*0.045, paddingBottom: HEIGHT*0.05}} showsVerticalScrollIndicator={false} data={filteredEvents} ListEmptyComponent={()=> <Text>No Event for the day</Text>}  showsHorizontalScrollIndicator={false} renderItem={({item}) => 
+      <FlatList contentContainerStyle={{marginTop: HEIGHT*0.02, paddingHorizontal: WIDTH*0.045, paddingBottom: HEIGHT*0.1}} showsVerticalScrollIndicator={false} data={filteredEvents} ListEmptyComponent={()=> <Text>No Event for the day</Text>}  showsHorizontalScrollIndicator={false} renderItem={({item}) => 
       <FadeInView duration='600'>
       <CalendarComp data={item} eventsOnSelectedDate={eventsOnSelectedDate}/>
       </FadeInView>
       } keyExtractor={item => item.id}/>
       </ScrollView>
     </View>
-     </ScrollView>
+     {/* </ScrollView> */}
     </KeyboardAvoidingView>
   )
 }

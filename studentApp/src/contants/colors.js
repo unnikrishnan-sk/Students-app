@@ -16,5 +16,7 @@ export const setColors = {
     pinkShade: '#FEF1EC',
     statusRed: '#F53567',
     pinkShade: '#EEE5FF',
-    violetLightShade: '#D4FFEA'
+    violetLightShade: '#D4FFEA',
+    calendarBlue: '#3924E8',
+    calendarEvent: '#24E8B6'
 }
