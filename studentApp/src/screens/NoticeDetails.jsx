@@ -23,10 +23,10 @@ const NoticeDetails = () => {
     }
 
   return (
-    <View style={{ height: HEIGHT, backgroundColor: setColors.white }}>
+    <View style={{ height: HEIGHT, backgroundColor: setColors?.white }}>
         <ProfileNavbar backBtn={left_icon} title={constant?.NOTIFICATIONS}/>
-        <View style={{ paddingHorizontal: WIDTH*0.04, paddingTop: HEIGHT*0.02, borderTopRightRadius: HEIGHT*0.03, backgroundColor: setColors.white }}>
-        <Text style={{ fontSize: 15, fontWeight: 600, color: setColors.black, paddingBottom: HEIGHT*0.02 }}>Your Notifications will appear here</Text>
+        <View style={{ paddingHorizontal: WIDTH*0.04, paddingTop: HEIGHT*0.02, borderTopRightRadius: HEIGHT*0.03, backgroundColor: setColors?.white }}>
+        <Text style={{ fontSize: 15, fontWeight: 600, color: setColors?.black, paddingBottom: HEIGHT*0.02 }}>Your Notifications will appear here</Text>
         { notices ? <NoticeComp notices={notices}/> : null}
         </View>
     </View>

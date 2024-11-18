@@ -35,7 +35,7 @@ const SplashScreen = () => {
     try{
       const token = await getFCMToken();
       const filterToken = availToken.filter((item)=>item?.token === token)
-      if(filterToken.length===0){
+      if(filterToken?.length===0){
         Alert.alert("token here", token)
         storeData('DeviceToken', {token})
       }

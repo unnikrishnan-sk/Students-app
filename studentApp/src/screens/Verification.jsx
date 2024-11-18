@@ -7,22 +7,13 @@ import { useNavigation } from '@react-navigation/native'
 import { setColors } from '../contants/colors'
 import InputComponent from '../components/InputComponent'
 
-const Verification = ({route}) => {
-
+const Verification = () => {
   const [error,setError] = useState('');
   const [otp,setOtp] = useState(Array(6).fill(''));
   const items = Array.from({ length:6 })
   const navigation = useNavigation();
   const inputs = useRef([]);
-  const navig = route?.params?.router;
-  const constant = {
-    VERIFY: 'Verify'
-  }
-  /**
-   * @author vidya
-   * @param {*} text 
-   * @param {*} index 
-   */
+  const constant = { VERIFY: 'Verify' }
   const handleChangeForm = (text,index) => {
     setOtp((prevOtp) => {
       const newOtp = [...prevOtp];
@@ -60,13 +51,13 @@ const Verification = ({route}) => {
         </View>
       ))}
     </View>
-    {error ? <Text style={{marginTop: HEIGHT*0.04, color: setColors.errorRed, fontWeight: 500 }}>{error}</Text> : null}
+    {error ? <Text style={{marginTop: HEIGHT*0.04, color: setColors?.errorRed, fontWeight: 500 }}>{error}</Text> : null}
       <View style={{ marginTop: error ? HEIGHT*0.01 :HEIGHT*0.05 }}>
       <ButtonComponent title={constant?.VERIFY} onButtonPress={()=>handleOnVerify()}/>
       </View>
       <Text 
       onPress={()=>navigation.goBack()}
-      style={{ color: setColors.violetShade, fontWeight: 600, marginTop: HEIGHT*0.02, textAlign: 'center', marginTop: HEIGHT*0.02 }}>Cancel</Text>
+      style={{ color: setColors.violetShade, fontWeight: 600, marginTop: HEIGHT*0.02, textAlign: 'center'}}>Cancel</Text>
     </View>
     </ScrollView>
     </View>

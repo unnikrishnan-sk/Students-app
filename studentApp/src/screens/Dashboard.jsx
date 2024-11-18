@@ -23,9 +23,7 @@ const Dashboard = () => {
       const noticeDta = await getData('Notice');
     }catch(err){
       console.log("getNoticeData_Dashboard",err);
-      
-    }
-    
+    } 
 }
   const constant = { STUDENT: 'studentslist', ATTENDANCE: 'attendance', NOTICE: 'notice', FEES: 'fees', CALENDARS: 'calendars', EXAM: 'exam' }
   const onClickDash = (route) => {

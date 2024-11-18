@@ -57,13 +57,13 @@ const StudentsList = () => {
             style={{ paddingVertical: HEIGHT*0.01, width: WIDTH*0.2, alignItems: 'center', borderRadius: WIDTH*0.02, backgroundColor: setColors.violetShade, }}>
                 <Text style={{ color: setColors.white, fontWeight: 600 }}>Add</Text>
             </Pressable> : null }
-            <DropdownComponent data={classList} placeholderColor={setColors.black} title="Sort According to Class" width={WIDTH*0.5} value={value} focus={focus} setFocus={setFocus} handleChange={(value)=>handleDropChange('selected',value)} />
+            <DropdownComponent data={classList} placeholderColor={setColors?.black} title="Sort According to Class" width={WIDTH*0.5} value={value} focus={focus} setFocus={setFocus} handleChange={(value)=>handleDropChange('selected',value)} />
             </View>
             <View style={{ flexDirection: 'row', justifyContent: 'space-between', marginTop: HEIGHT*0.015, backgroundColor: setColors.violetShade, paddingHorizontal: WIDTH*0.04, paddingVertical: HEIGHT*0.01 }}>
-            <Text style={{ color: setColors.white, fontWeight: 500 }}>Students</Text>
-            <Text style={{ color: setColors.white, fontWeight: 500 }}>Class</Text>
-            <Text style={{ color: setColors.white, fontWeight: 500 }}>Roll No</Text>
-            <Text style={{ color: setColors.white, fontWeight: 500 }}>Action</Text>
+            <Text style={{ color: setColors?.white, fontWeight: 500 }}>Students</Text>
+            <Text style={{ color: setColors?.white, fontWeight: 500 }}>Class</Text>
+            <Text style={{ color: setColors?.white, fontWeight: 500 }}>Roll No</Text>
+            <Text style={{ color: setColors?.white, fontWeight: 500 }}>Action</Text>
             </View>
             <FlatList contentContainerStyle={{marginTop: HEIGHT*0.015, paddingHorizontal: WIDTH*0.04}} data={students} ListEmptyComponent={()=> <Text>Data not available</Text>}  showsHorizontalScrollIndicator={false} renderItem={({item}) => <StudentList data={item} onStudentEdit={onStudentEdit} />} keyExtractor={item => item.id}/>  
         </View>

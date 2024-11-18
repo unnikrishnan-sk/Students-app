@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { FlatList, KeyboardAvoidingView, ScrollView, Text, View } from 'react-native'
 import { Calendar } from 'react-native-calendars'
 import { HEIGHT, WIDTH } from '../contants/dimensions'
@@ -27,8 +27,7 @@ const CalendarScreen = () => {
   const [isAdmin, eventsRedux] = useSelector((state)=> [state?.isAdmin?.admin, state?.isAdmin?.event]);
   const dispatch = useDispatch();
   const currentDate = `${yearChange}-${String(monthChange +1)}`
-
-  const constants = { EVENT: 'Event', EXAM: 'Exam', CALENDAR: 'Calendar' }
+  const constants = { EVENT: 'Event', EXAM: 'Exam', CALENDAR: 'Calendar', ADD_EVENT: 'add Event' }
 
   useEffect(()=>{
     const unsubscribe = getCalendarData();
@@ -78,9 +77,7 @@ const CalendarScreen = () => {
         dispatch(addevent(calendarData))
       }catch(err){
         console.log("onCalendarAdd_CalenderScreen",err);
-        
       }
-      
     }
   }
   const markedDates = {
@@ -144,7 +141,7 @@ events.forEach((event)=>{
       <View style={{ borderColor: setColors.grayShade, paddingHorizontal: WIDTH*0.04, paddingBottom: HEIGHT*0.01 }}>
       <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
         <InputComponent marginTop={HEIGHT*0.01} componentWidth={WIDTH*0.4} height={HEIGHT*0.055} onChangeText={(text)=>onHandleTextChange(text)}/>
-        <ButtonComponent buttonWidth={WIDTH*0.4} marginTop={HEIGHT*0.01} title={'Add Event'} onButtonPress={onCalendarAdd}/>
+        <ButtonComponent buttonWidth={WIDTH*0.4} marginTop={HEIGHT*0.01} title={constants?.ADD_EVENT} onButtonPress={onCalendarAdd}/>
       </View>
       {error && <Text style={{ color: setColors.errorRed, fontWeight: 600, marginTop: HEIGHT*0.005,}}>{error}</Text>}
       </View> : null
