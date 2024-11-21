@@ -13,7 +13,7 @@ const DashboardComponent = ({data, onClickDash}) => {
     }}>
     <Pressable 
     onPress={()=>onClickDash(route)}
-    style={{ height: HEIGHT*0.14, width: HEIGHT*0.14, paddingVertical: HEIGHT*0.01, marginTop: HEIGHT*0.03, borderRadius: HEIGHT*0.07, backgroundColor: setColors.white, alignItems: 'center', justifyContent: 'center', flex: 1 }}>
+    style={{ height: HEIGHT*0.13, width: HEIGHT*0.13, paddingVertical: HEIGHT*0.01, marginTop: HEIGHT*0.03, borderRadius: HEIGHT*0.07, backgroundColor: setColors.white, alignItems: 'center', justifyContent: 'center', flex: 1 }}>
         <FadeInView duration="1000">
         <Image style={{ tintColor: setColors.violetShade, height: HEIGHT*0.06, width: HEIGHT*0.06 }} source={icon}></Image>
         </FadeInView>

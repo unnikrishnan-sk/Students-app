@@ -13,7 +13,7 @@ const StudentList = (props) => {
   return (
     <View style={{ marginTop: HEIGHT*0.01, borderBottomWidth: 1, borderColor: setColors?.darkgrayShade, paddingBottom: HEIGHT*0.015, flexDirection: 'row', justifyContent: 'space-between' }}>
       <View style={{flex: 1}}>
-      <Text style={{ color: setColors?.black, fontWeight: 500 }}>{name}</Text>
+      <Text style={{ color: setColors?.black, fontWeight: 500 }}>{String(name).charAt(0).toUpperCase()+String(name).slice(1)}</Text>
       </View>
       <View style={{flex: 1}}>
       <Text style={{ color: setColors?.black, fontWeight: 500 }}>{className}</Text>
@@ -27,7 +27,7 @@ const StudentList = (props) => {
         {isPresent ? <Image style={{ height: HEIGHT*0.02, width: HEIGHT*0.02, tintColor: setColors?.white, }} source={tick_mark} ></Image> : null}
       </Pressable> : 
       <Pressable onPress={()=>onStudentEdit(name)}>
-        <Text style={{ color: setColors?.violetShade, fontWeight: 500 }}>Edit</Text>
+        <Text style={{ color: setColors?.violetShade, fontWeight: 500, textDecorationLine:'underline' }}>Edit</Text>
         </Pressable>
       }
     </View>

@@ -23,6 +23,9 @@ const Verification = () => {
     setError('')
     if(text.length===1 && index<5){
       inputs?.current[index+1]?.focus();
+    } 
+    if(text.length===0 && index>0){
+      inputs?.current[index-1]?.focus();
     }
   }
   const handleOnVerify = () => {
@@ -40,14 +43,14 @@ const Verification = () => {
     showsVerticalScrollIndicator={false}
     contentContainerStyle={{ paddingBottom: HEIGHT*0.01 }}>
     <Navbar />
-    <View style={{ paddingHorizontal: WIDTH*0.05, paddingTop: HEIGHT*0.12, borderTopRightRadius: HEIGHT*0.03, backgroundColor: setColors.white, }}>
+    <View style={{ paddingHorizontal: WIDTH*0.05, paddingTop: HEIGHT*0.04, borderTopRightRadius: HEIGHT*0.03, backgroundColor: setColors.white, }}>
     <Text style={{fontSize: 15, fontWeight: 500, color: setColors.black
     }}>Enter OTP</Text>
-    <View style={{ height: HEIGHT*0.07, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
+    <View style={{ height: HEIGHT*0.07, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between',}}>
       {items.map((_,index)=>(     
          <View key={index}
-         style={{ borderRadius: HEIGHT*0.01, alignItems: 'center' }}>
-          <InputComponent ref={(ref)=>(inputs.current[index]=ref)} number={true} maxLength={1} componentWidth={WIDTH*0.1} centered="center" onChangeText={text=>handleChangeForm(text,index)} autoFocus={index===0}/>
+         style={{ borderRadius: HEIGHT*0.01, alignItems: 'center', paddingTop: error && otp[index]===""?HEIGHT*0.032: 0}}>
+          <InputComponent ref={(ref)=>(inputs.current[index]=ref)} number={true} maxLength={1} componentWidth={WIDTH*0.1} centered="center" onChangeText={text=>handleChangeForm(text,index)} autoFocus={index===0} error={error && otp[index]===""?true:null} verify={constant?.VERIFY}/>
         </View>
       ))}
     </View>

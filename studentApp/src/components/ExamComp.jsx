@@ -3,7 +3,7 @@ import { Pressable, Text, View } from 'react-native'
 import { setColors } from '../contants/colors'
 import { HEIGHT, WIDTH } from '../contants/dimensions'
 
-const ExamComp = ({data}) => {
+const ExamComp = ({data, isAdmin}) => {
     const {duration,examName,subject,totalMarks,date } = data;
   return (
     <View style={{ marginTop: HEIGHT*0.01, paddingHorizontal: WIDTH*0.03, paddingVertical: HEIGHT*0.01, backgroundColor: setColors?.violetLightShade, borderRadius: HEIGHT*0.02,
@@ -17,9 +17,9 @@ const ExamComp = ({data}) => {
          <Text style={{ marginTop: HEIGHT*0.005, color: setColors?.black, fontWeight: 500 }}>Max Marks: <Text style={{ color: setColors?.gray }}> {totalMarks}</Text></Text>
         <Text style={{ marginTop: HEIGHT*0.005, marginLeft: WIDTH*0.03, color: setColors?.black, fontWeight: 500 }}>Duration: <Text style={{ color: setColors?.gray }}> {duration}</Text></Text>
         </View>
-        <Pressable style={{ marginTop: HEIGHT*0.01, width: WIDTH*0.3, alignItems: 'center', borderRadius: HEIGHT*0.015, paddingVertical: HEIGHT*0.004, backgroundColor: setColors?.statusRed }}>
+        { isAdmin ? <Pressable style={{ marginTop: HEIGHT*0.01, width: WIDTH*0.3, alignItems: 'center', borderRadius: HEIGHT*0.015, paddingVertical: HEIGHT*0.004, backgroundColor: setColors?.statusRed }}>
             <Text style={{ color: setColors?.white, fontSize: 13 }}>Start Tests</Text>
-        </Pressable>
+        </Pressable> : null }
     </View>
   )
 }

@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { Animated, View } from "react-native";
 import messaging from '@react-native-firebase/messaging'
+import { inputValues } from "./dummyData";
 
 
 export const apiKey = 'BK8VzTqWsXlmo-1ajqqz6iSftF9TXPyztFZtTmcK_tVvsCt--LiO2UtryGa2xABbiIf_3qVbmAInr48Nj2CwDCE';
@@ -94,7 +95,16 @@ export const getMonth = (monthChange) => {
 export const getFCMToken = async () => {
     const token = await messaging().getToken();
     if (token) {
-        console.log("FCM Token", token);
         return token
     }
+}
+
+export const duplicates = (arr) => {
+    const filteredArr = arr.filter(val => val !== '');
+    return new Set(filteredArr).size !== filteredArr.length
+}
+
+export const checkInputValue = (value) => {
+    if (inputValues.includes(value)) return true;
+    else return false;
 }

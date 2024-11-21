@@ -81,10 +81,10 @@ function App(): React.JSX.Element {
       {/* <SafeAreaView> */}
       <Provider store={store}>
         {/* <NavigationContainer ref={navigationRef}> */}
-        <StatusBar
+        {/* <StatusBar
           barStyle={isDarkMode ? 'light-content' : 'dark-content'}
           backgroundColor='transparent'
-        />
+        /> */}
         {/* <ScrollView
           contentInsetAdjustmentBehavior="automatic">
           <View

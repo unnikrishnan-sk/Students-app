@@ -15,5 +15,7 @@ import up_arrow from './up_arrow/up_arrow.png'
 import down_arrow from './down_arrow/down_arrow.png'
 import up_arrow_triangle from './up_arrow_triangle/up_arrow_triangle.png'
 import down_arrow_triangle from './down_arrow_triangle/down_arrow_triangle.png'
+import profile_image from './profile_image/profile_image.png'
+import sudoku from './sudoku/sudoku.png'
 
-export { logo, user_logo, password_icon, add_student_icon, notice_icon, attendance, fee, calendar, student, left_icon, exam, tick_mark, dropdown_icon, up_arrow, down_arrow, up_arrow_triangle, down_arrow_triangle }
+export { logo, user_logo, password_icon, add_student_icon, notice_icon, attendance, fee, calendar, student, left_icon, exam, tick_mark, dropdown_icon, up_arrow, down_arrow, up_arrow_triangle, down_arrow_triangle, profile_image, sudoku }

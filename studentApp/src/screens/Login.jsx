@@ -50,7 +50,7 @@ const Login = () => {
     showsVerticalScrollIndicator={false}
     contentContainerStyle={{ paddingBottom: HEIGHT*0.01 }}>
         <Navbar /> 
-        <View style={{ paddingHorizontal: WIDTH*0.05, paddingTop: HEIGHT*0.05, backgroundColor: setColors?.white, borderTopRightRadius: HEIGHT*0.03, flex: 1 }}>  
+        <View style={{ paddingHorizontal: WIDTH*0.05, paddingTop: HEIGHT*0.01, backgroundColor: setColors?.white, borderTopRightRadius: HEIGHT*0.03, flex: 1 }}>  
             {loginData?.map((item)=> (
                 <InputComponent key={item?.id} icon={item?.icon} placeholder={item?.placeholder} value={logindata?.[item?.value]} onChangeText={text=>handleChangeForm(item?.value,text)} error={error?.[item?.value]}/>
             ))}

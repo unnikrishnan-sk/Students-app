@@ -40,18 +40,18 @@ const AddExams = () => {
     setError('')  
 }
   const onHandleForm = () => {
-    if(isEmpty(examMain.examName) || (isEmpty(examMain.subject)) || isEmpty(durationValue) || isEmpty(marksValue)) setError("Add all fields")
+    if(isEmpty(examMain?.examName) || (isEmpty(examMain?.subject)) || isEmpty(durationValue) || isEmpty(marksValue)) setError("Add all fields")
       else{
         const examMainDetails = {
-          examName : examMain.examName,
-          subject: examMain.subject,
-          duration: durationValue,
-          totalMarks: marksValue,
-          date: examMain?.ExmDate
+          examName :examMain ? examMain?.examName : null,
+          subject: examMain ? examMain?.subject : null,
+          duration:durationValue ? durationValue: null,
+          totalMarks:marksValue ? marksValue : null,
+          date:examMain ? examMain?.ExmDate: null
         }
         const calendarData = {
-          date: moment(examMain?.ExmDate)?.format('YYYY-MM-DD'),
-          eventAdded: examMain?.subject,
+          date: examMain?.ExmDate ? moment(examMain?.ExmDate)?.format('YYYY-MM-DD') : null,
+          eventAdded:examMain?.ExmDate ? examMain?.subject : null,
           desc: 'Exam'
         }
         try{
@@ -92,7 +92,7 @@ const AddExams = () => {
             <Pressable 
             onPress={()=>onExamDateAdd()}
             style={{ borderWidth: 2, width: WIDTH*0.42, height: HEIGHT*0.055, marginTop: HEIGHT*0.015, borderRadius: HEIGHT*0.015, borderColor: setColors.darkgrayShade, alignItems: 'center', justifyContent: 'space-between', flexDirection: 'row' }}>
-              <Text style={{ marginLeft: WIDTH*0.02, color: examMain?.ExmDate ? setColors.black :setColors.gray }}>{examMain?.ExmDate ? moment(examMain?.ExmDate).format(constant?.TIMEFORMAT)  : constant?.EXAMDATE}</Text>
+              <Text style={{ marginLeft: WIDTH*0.02, color: examMain?.ExmDate ? setColors.black :setColors.black }}>{examMain?.ExmDate ? moment(examMain?.ExmDate).format(constant?.TIMEFORMAT)  : constant?.EXAMDATE}</Text>
               <Image style={{ height: HEIGHT*0.025, width: HEIGHT*0.025, marginRight: WIDTH*0.02, tintColor: setColors.gray }} source={dropdown_icon}></Image>
             </Pressable>
             { timeDate &&  <View>

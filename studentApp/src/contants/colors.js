@@ -18,5 +18,7 @@ export const setColors = {
     pinkShade: '#EEE5FF',
     violetLightShade: '#D4FFEA',
     calendarBlue: '#3924E8',
-    calendarEvent: '#24E8B6'
+    calendarEvent: '#24E8B6',
+    sudokuError: '#FD582D',
+    sudokuLightShade: '#cdcbf0'
 }

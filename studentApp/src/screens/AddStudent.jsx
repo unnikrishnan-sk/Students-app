@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useState } from 'react'
-import { KeyboardAvoidingView, ScrollView, View } from 'react-native'
+import { KeyboardAvoidingView, ScrollView, Text, View } from 'react-native'
 import { academicYearList, classList, genderList, sectionList, studentDetails } from '../contants/dummyData'
 import InputComponent from '../components/InputComponent'
 import { HEIGHT, WIDTH } from '../contants/dimensions'
@@ -9,7 +9,7 @@ import ButtonComponent from '../components/ButtonComponent'
 import { setColors } from '../contants/colors'
 import DropdownComponent from '../components/DropdownComponent'
 import { useNavigation, useRoute } from '@react-navigation/native'
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { addstudents } from '../redux/slice'
 import isEmpty from 'lodash/isEmpty'
 import { storeData, updateData } from '../http/api'
@@ -25,7 +25,7 @@ const AddStudent = () => {
     const route = useRoute()
     const { data } = route.params || {};
 
-    const constant = { EDIT: 'Edit', ADD: 'Add', ACADEMIC_YEAR: 'Academic Year', ENTER_GENDER: 'Enter Gender', ENTER_SECTION: 'Enter Section', ENTER_CLASS: 'Enter Class', ADD_STUDENT: 'Add Student' }
+    const constant = { EDIT: 'Save', ADD: 'Add', ACADEMIC_YEAR: 'Academic Year', ENTER_GENDER: 'Enter Gender', ENTER_SECTION: 'Enter Section', ENTER_CLASS: 'Enter Class', ADD_STUDENT: 'Add Student' }
     
     useEffect(()=>{
         if(data && data.length>0){
@@ -88,14 +88,15 @@ const AddStudent = () => {
     <View style={{ backgroundColor: setColors.white, flex: 1
     }}>
         <ProfileNavbar backBtn={left_icon} title={constant?.ADD_STUDENT}/>
-        <View style={{ backgroundColor: setColors.white, borderTopRightRadius: HEIGHT*0.03, paddingBottom: HEIGHT*0.12 }}>
+        <View style={{ backgroundColor: setColors.white, borderTopRightRadius: HEIGHT*0.03, paddingBottom: HEIGHT*0.12, }}>
+        <Text style={{ marginLeft:WIDTH*0.05, marginTop: HEIGHT*0.02, fontSize: 16, fontWeight: 600, color: setColors.violetShade }}>Provide Student details</Text>
     <ScrollView 
     showsVerticalScrollIndicator={false}
     contentContainerStyle={{ paddingBottom: HEIGHT*0.1, borderTopRightRadius: HEIGHT*0.03, backgroundColor: setColors.white }}>
             <View key={studentDetails?.id}
-            style={{ marginTop: HEIGHT*0.025, paddingHorizontal: WIDTH*0.05 }}>
+            style={{ marginTop: HEIGHT*0.005, paddingHorizontal: WIDTH*0.05 }}>
             <View style={{ borderRadius: HEIGHT*0.02, borderColor: setColors?.gray }}>
-            <InputComponent key={studentDetails?.id} icon={studentDetails?.icon} placeholder={"Enter Name"} marginTop={HEIGHT*0.01} number={studentDetails?.number} onChangeText={text=>handleChangeForm("name",text)} value={studentData?.name} error={error?.name}/>
+            <InputComponent key={studentDetails?.id} icon={studentDetails?.icon} placeholder={"Enter Name"} marginTop={HEIGHT*0.015} number={studentDetails?.number} onChangeText={text=>handleChangeForm("name",text)} value={studentData?.name} error={error?.name}/>
             </View>
             <View style={{ flexDirection: 'row' }}>
             <DropdownComponent data={classList} title={constant?.ENTER_CLASS} value={studentData?.className} focus={focus} setFocus={setFocus} handleChange={(value)=>handleDropChange('className',value)} width={WIDTH*0.4}/>

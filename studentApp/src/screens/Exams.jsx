@@ -41,7 +41,7 @@ const Exams = () => {
                 <Text style={{ color: setColors?.white, fontWeight: 600 }}>Add Exams</Text>
             </Pressable> : null }
             <Text style={{ fontSize: 16, fontWeight: 500, marginTop: HEIGHT*0.01, color: setColors?.violetShade }}>Examination List</Text>
-        <FlatList contentContainerStyle={{marginTop: HEIGHT*0.005, }} showsVerticalScrollIndicator={false} data={exams} ListEmptyComponent={()=> <Text>No Exams to show here</Text>}  showsHorizontalScrollIndicator={false} renderItem={({item}) => <ExamComp data={item} />} keyExtractor={item => item?.id}/>
+        <FlatList contentContainerStyle={{marginTop: HEIGHT*0.005, }} showsVerticalScrollIndicator={false} data={exams} ListEmptyComponent={()=> <Text>No Exams to show here</Text>}  showsHorizontalScrollIndicator={false} renderItem={({item}) => <ExamComp data={item} isAdmin={isAdmin} />} keyExtractor={item => item?.id}/>
         </ScrollView>
         </View>
     </View>

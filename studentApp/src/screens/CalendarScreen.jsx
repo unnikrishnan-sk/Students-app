@@ -27,7 +27,7 @@ const CalendarScreen = () => {
   const [isAdmin, eventsRedux] = useSelector((state)=> [state?.isAdmin?.admin, state?.isAdmin?.event]);
   const dispatch = useDispatch();
   const currentDate = `${yearChange}-${String(monthChange +1)}`
-  const constants = { EVENT: 'Event', EXAM: 'Exam', CALENDAR: 'Calendar', ADD_EVENT: 'add Event' }
+  const constants = { EVENT: 'Event', EXAM: 'Exam', CALENDAR: 'Calendar', ADD_EVENT: 'Add Event' }
 
   useEffect(()=>{
     const unsubscribe = getCalendarData();
@@ -124,9 +124,6 @@ events.forEach((event)=>{
 
   return (
     <KeyboardAvoidingView behavior='padding' style={{flex:1}}>
-      {/* <ScrollView 
-    showsVerticalScrollIndicator={false}
-    contentContainerStyle={{ paddingBottom: HEIGHT*0.01 }}> */}
     <View style={{ backgroundColor: setColors?.white, height: HEIGHT, flex: 1 }}>
       <ProfileNavbar backBtn={left_icon} title={constants?.CALENDAR} upArrow={up_arrow_triangle} downArrow={down_arrow_triangle} calendar="calendar" year={yearChange} handleOnMonthAdd={handleOnMonthAdd} handleOnMonthSub={handleOnMonthSub}/>
       <View style={{ borderTopRightRadius: HEIGHT*0.03, backgroundColor: setColors?.white, }}> 
@@ -155,7 +152,7 @@ events.forEach((event)=>{
       <ScrollView 
       showsVerticalScrollIndicator={false}
       style={{ paddingBottom: HEIGHT*0.01, borderTopWidth: 1, borderColor: setColors?.grayShade }}>
-        <Text style={{ marginLeft: WIDTH*0.04, marginTop: HEIGHT*0.02, fontSize: 15, fontWeight: 600, color: setColors.black }}>Events and Exams</Text>
+        <Text style={{ marginLeft: WIDTH*0.04, marginTop: HEIGHT*0.02, fontSize: 15, fontWeight: 600, color: setColors?.black }}>Events and Exams</Text>
       <FlatList contentContainerStyle={{marginTop: HEIGHT*0.02, paddingHorizontal: WIDTH*0.045, paddingBottom: HEIGHT*0.1}} showsVerticalScrollIndicator={false} data={filteredEvents} ListEmptyComponent={()=> <Text>No Event for the day</Text>}  showsHorizontalScrollIndicator={false} renderItem={({item}) => 
       <FadeInView duration='600'>
       <CalendarComp data={item} eventsOnSelectedDate={eventsOnSelectedDate}/>
@@ -163,7 +160,6 @@ events.forEach((event)=>{
       } keyExtractor={item => item.id}/>
       </ScrollView>
     </View>
-     {/* </ScrollView> */}
     </KeyboardAvoidingView>
   )
 }

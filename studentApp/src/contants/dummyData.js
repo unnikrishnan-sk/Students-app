@@ -1,8 +1,8 @@
-import { add_student_icon, attendance, calendar, exam, fee, notice_icon, password_icon, student, user_logo } from "../assets";
+import { add_student_icon, attendance, calendar, exam, fee, notice_icon, password_icon, student, sudoku, user_logo } from "../assets";
 
 export const loginData = [{ id: 0, icon: user_logo, placeholder: "Username", value: 'username' }, { id: 1, icon: password_icon, placeholder: "Password", value: 'password' }]
 
-export const adminDash = [{ id: 0, icon: student, text: 'Students', route: 'studentslist' }, { id: 1, icon: attendance, text: 'Attendance', route: 'attendance' }, { id: 2, icon: notice_icon, text: 'Notice', route: 'notice', route: 'notice' }, { id: 3, icon: fee, text: 'Fees', route: 'fees' }, { id: 4, icon: calendar, text: 'Calendars', route: 'calendars' }, { id: 5, icon: exam, text: 'Exams', route: 'exam' }]
+export const adminDash = [{ id: 0, icon: student, text: 'Students', route: 'studentslist' }, { id: 1, icon: attendance, text: 'Attendance', route: 'attendance' }, { id: 2, icon: notice_icon, text: 'Notice', route: 'notice', route: 'notice' }, { id: 3, icon: fee, text: 'Fees', route: 'fees' }, { id: 4, icon: calendar, text: 'Calendars', route: 'calendars' }, { id: 5, icon: exam, text: 'Exams', route: 'exam' }, { id: 6, icon: sudoku, text: 'Sudoku', route: 'sudoku' }]
 
 export const studentList = [{ id: 0, name: 'student 1' }, { id: 1, name: 'student 2' }, { id: 2, name: 'student 3' }, { id: 3, name: 'student 4' }, { id: 4, name: 'student 5' }, { id: 5, name: 'student 6' }, { id: 6, name: 'student 7' }, { id: 7, name: 'student 8' }]
 
@@ -31,3 +31,9 @@ export const schoolFeeDetails = [{ id: 0, title: "Total Fee", price: "$14,500", 
 export const months = [{ id: 0, title: 'January' }, { id: 1, title: 'February' }, { id: 2, title: 'March' }, { id: 3, title: 'April' }, { id: 4, title: 'May' }, { id: 5, title: 'june' }, { id: 6, title: 'July' }, { id: 7, title: 'August' }, { id: 8, title: 'September' }, { id: 9, title: 'October' }, { id: 10, title: 'November' }, { id: 11, title: 'December' }]
 
 export const feeMonthsDet = [{ id: 0, month: 'January', status: 'Paid' }, { id: 1, month: 'February', status: 'Paid' }, { id: 2, month: 'March', status: 'Paid' }, { id: 3, month: 'April', status: 'Paid' }, { id: 4, month: 'May', status: 'Paid' }, { id: 5, month: 'June', status: 'Paid' }, { id: 6, month: 'July', status: 'Paid' }, { id: 7, month: 'August', status: 'Not Paid' }, { id: 8, month: 'September', status: 'Not Paid' }, { id: 9, month: 'October', status: 'Not Paid' }, { id: 10, month: 'November', status: 'Not Paid' }, { id: 11, month: 'December', status: 'Not Paid' }]
+
+export const inputValues = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
+
+export const rulesSudoku = [{ id: 0, desc: 'Sudoku grid consists of 9x9 spaces.' }, { id: 1, desc: 'You can use only numbers from 1 to 9.' }, { id: 2, desc: 'Each 3×3 block can only contain numbers from 1 to 9.' }, { id: 3, desc: 'Each vertical column can only contain numbers from 1 to 9.' }, { id: 4, desc: 'Each horizontal row can only contain numbers from 1 to 9.' }, { id: 5, desc: 'Each diagonals (from top to right and top to left) can only contain numbers from 1 to 9.' }, { id: 6, desc: 'Each number in the 3×3 block, vertical column or horizontal row or each diagonal can be used only once.' }, { id: 7, desc: 'The game is over when the whole Sudoku grid is correctly filled with numbers.' }]
+
+export const backgroundIndexes = [0, 1, 2, 9, 10, 11, 18, 19, 20, 6, 7, 8, 15, 16, 17, 24, 25, 26, 30, 31, 32, 39, 40, 41, 48, 49, 50, 54, 55, 56, 63, 64, 65, 72, 73, 74, 60, 61, 62, 69, 70, 71, 78, 79, 80]
