@@ -52,7 +52,7 @@ const Dashboard = () => {
     </View>
     <Text 
     onPress={()=>onLogout()}
-    style={{ color: setColors?.white, textAlign: 'center', marginTop: HEIGHT*0.3 }}>Logout</Text>
+    style={{ color: setColors?.white, textAlign: 'center', marginTop: HEIGHT*0.2 }}>Logout</Text>
   </View>
   )
 }

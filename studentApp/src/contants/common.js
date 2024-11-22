@@ -1,7 +1,8 @@
 import { useEffect, useRef } from "react";
 import { Animated, View } from "react-native";
 import messaging from '@react-native-firebase/messaging'
-import { inputValues } from "./dummyData";
+import { initialSudoku, inputValues, monthNames } from "./dummyData";
+import sudoku from 'sudoku'
 
 
 export const apiKey = 'BK8VzTqWsXlmo-1ajqqz6iSftF9TXPyztFZtTmcK_tVvsCt--LiO2UtryGa2xABbiIf_3qVbmAInr48Nj2CwDCE';
@@ -83,7 +84,24 @@ export const SlideInCalendar = props => {
     );
 };
 
-const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+export const SlideInView = props => {
+    const animated = useRef(new Animated.Value(props.initial)).current
+    const duration = 2000;
+
+    useEffect(() => {
+        Animated.timing(animated, {
+            toValue: props?.final,
+            duration: duration,
+            useNativeDriver: true,
+        }).start()
+    }, [props.final]);
+
+    return (
+        <Animated.View style={[{ transform: [{ translateY: animated }] }]}>
+            {props.children}
+        </Animated.View>
+    );
+};
 
 export const getMonth = (monthChange) => {
     if (monthChange >= 0 && monthChange <= 11) {
@@ -108,3 +126,35 @@ export const checkInputValue = (value) => {
     if (inputValues.includes(value)) return true;
     else return false;
 }
+
+export const initialSudokuCreate = (numberOfBoxVisible) => {
+    // console.log("Entered initial sudoku");
+    console.log("number od Suduko", numberOfBoxVisible);
+
+    let min = 0;
+    let max = 80;
+    let valuesArr = [];
+    const sudokuCopy = [...initialSudoku];
+    console.log("loop length", 80 - numberOfBoxVisible);
+
+    for (let i = 0; i <= (80 - numberOfBoxVisible); i++) {
+        const value = Math.floor(Math.random() * (max - min) + min)
+        // console.log("value", value);
+
+        const duplicateVal = valuesArr.includes(value)
+        // console.log("duplicateVal", duplicateVal);
+
+        if (!duplicateVal) {
+            // console.log("duplicateVal", value);
+
+            valuesArr.push(value);
+            sudokuCopy[value] = ""
+        } else numberOfBoxVisible--
+    }
+    console.log("value array length", valuesArr, valuesArr.length);
+
+    console.log("initial sudoku returned", sudokuCopy);
+
+    return sudokuCopy
+}
+

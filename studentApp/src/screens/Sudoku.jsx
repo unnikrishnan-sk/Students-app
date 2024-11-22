@@ -5,24 +5,39 @@ import { HEIGHT, WIDTH } from '../contants/dimensions'
 import ProfileNavbar from '../components/ProfileNavbar'
 import { left_icon } from '../assets'
 import SudokuInputComp from '../components/SudokuInputComp'
-import { checkInputValue, duplicates } from '../contants/common'
+import { checkInputValue, duplicates, initialSudokuCreate } from '../contants/common'
 import ButtonComponent from '../components/ButtonComponent'
 import { useNavigation } from '@react-navigation/native'
 import SudokuModalComponent from '../components/SudokuModalComponent'
 
 const Sudoku = () => {
     const [sudoku,setSudoku] = useState(Array(81).fill(''));
+    const [currentSudoku,setCurrentSudoku] = useState([]);
     const [currentIndex,setCurrentIndex] = useState(0);
     const [duplicate,setDuplicate] =  useState(false)
+    const [numberOfBoxVisible,setNumberOfBoxVisible] = useState(17);
     const [duplicateIndex,setDuplicateIndex] = useState([]);
     const [modalVisible, setModalVisible] = useState(false);
     const constant = {SUDOKU: 'Sudoku'}
     const navigation = useNavigation();
     
     useEffect(()=>{
+        initialSudokuSetting()
+    },[])
+    
+    useEffect(()=>{
         AllCheck();
         checkGame();
     },[sudoku])
+
+    const initialSudokuSetting = () => {
+        if(numberOfBoxVisible && numberOfBoxVisible>0 && numberOfBoxVisible<81) {
+            const newSudoku = initialSudokuCreate(numberOfBoxVisible);
+            setSudoku(newSudoku)
+            setCurrentSudoku(newSudoku)
+        }
+        else initialSudokuCreate(1)
+    }
 
     const checkGame = () => {
         if(sudoku?.length===81 && !sudoku.includes("") && duplicateIndex?.length===0){
@@ -179,8 +194,14 @@ const Sudoku = () => {
       }
 
     const onResetPress = () => {
-        setSudoku(Array(81).fill(''));
+        setSudoku(currentSudoku);
         setDuplicateIndex([])
+    }
+
+    const handleNextBtn = () => {
+        setModalVisible(false)
+        const nextSudoku = initialSudokuCreate(numberOfBoxVisible);
+        setSudoku(nextSudoku)
     }
 
   return (
@@ -192,40 +213,22 @@ const Sudoku = () => {
          <ProfileNavbar backBtn={left_icon} title={constant?.SUDOKU}/>
          <View style={{ 
             borderTopRightRadius: HEIGHT*0.02, backgroundColor: setColors?.white }}>
-            <View style={{ 
-                flexDirection: 'row', 
-                flexWrap: 'wrap', 
-                alignItems: 'center', 
-                justifyContent: 'center',
-                // backgroundColor: setColors.violetLightShade, 
-                marginTop: HEIGHT*0.03 }}>
-            {sudoku.map((_,index)=>(
+            <View style={{ flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center', marginTop: HEIGHT*0.03 }}>
+            {sudoku && sudoku.map((_,index)=>(
                 <View key={index}
-                style={{ 
-                    backgroundColor: setColors.violetShade,
-                    borderRightWidth: index%3===2 ? 2 : 0, 
-                    borderBottomWidth: (index >= 18 && index <= 26) || (index >= 45 && index <= 53) || (index >= 72 && index <= 81) ? 2 : 0, 
-                    borderLeftWidth: index%9===0 ? 2:0, 
-                    borderTopWidth: (index >= 0 && index <=8 ) ? 2 : 0 }}>
-                 <SudokuInputComp onChangeText={text=>handleChangeForm(text,index)} error={duplicate} index={index} currentIndex={currentIndex} duplicateIndex={duplicateIndex} sudoku={sudoku}/>
+                style={{ backgroundColor: setColors.violetShade, borderRightWidth: index%3===2 ? 2 : 0, borderBottomWidth: (index >= 18 && index <= 26) || (index >= 45 && index <= 53) || (index >= 72 && index <= 81) ? 2 : 0,  borderLeftWidth: index%9===0 ? 2:0, borderTopWidth: (index >= 0 && index <=8 ) ? 2 : 0 }}>
+                 <SudokuInputComp onChangeText={text=>handleChangeForm(text,index)} error={duplicate} index={index} currentIndex={currentIndex} duplicateIndex={duplicateIndex} sudoku={sudoku} currentSudoku={currentSudoku} readonly={currentSudoku[index]!==""}/>
                  </View>
             ))}
            </View>
          </View>
-         <View style={{
-            alignItems: 'center',
-            flexDirection: 'row',
-            paddingHorizontal: WIDTH*0.05,
-            justifyContent: 'space-between'
-         }}>
+         <View style={{ alignItems: 'center', flexDirection: 'row', paddingHorizontal: WIDTH*0.05, justifyContent: 'space-between' }}>
          <ButtonComponent title="RESET" onButtonPress={()=>onResetPress()} buttonWidth={WIDTH*0.4}/>
          <ButtonComponent title="RULES" onButtonPress={()=>navigation.navigate('rules')} buttonWidth={WIDTH*0.4}/>
          </View>
          </ScrollView>
     </View>
-
-    <SudokuModalComponent modalVisible={modalVisible} handleModalClose={()=>setModalVisible(false)}/>
-
+    <SudokuModalComponent modalVisible={modalVisible} handleModalClose={()=>setModalVisible(false)} handleNextBtn={handleNextBtn}/>
     </KeyboardAvoidingView>
   )
 }

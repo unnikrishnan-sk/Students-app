@@ -32,8 +32,12 @@ export const months = [{ id: 0, title: 'January' }, { id: 1, title: 'February' }
 
 export const feeMonthsDet = [{ id: 0, month: 'January', status: 'Paid' }, { id: 1, month: 'February', status: 'Paid' }, { id: 2, month: 'March', status: 'Paid' }, { id: 3, month: 'April', status: 'Paid' }, { id: 4, month: 'May', status: 'Paid' }, { id: 5, month: 'June', status: 'Paid' }, { id: 6, month: 'July', status: 'Paid' }, { id: 7, month: 'August', status: 'Not Paid' }, { id: 8, month: 'September', status: 'Not Paid' }, { id: 9, month: 'October', status: 'Not Paid' }, { id: 10, month: 'November', status: 'Not Paid' }, { id: 11, month: 'December', status: 'Not Paid' }]
 
+export const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+
 export const inputValues = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
 
 export const rulesSudoku = [{ id: 0, desc: 'Sudoku grid consists of 9x9 spaces.' }, { id: 1, desc: 'You can use only numbers from 1 to 9.' }, { id: 2, desc: 'Each 3×3 block can only contain numbers from 1 to 9.' }, { id: 3, desc: 'Each vertical column can only contain numbers from 1 to 9.' }, { id: 4, desc: 'Each horizontal row can only contain numbers from 1 to 9.' }, { id: 5, desc: 'Each diagonals (from top to right and top to left) can only contain numbers from 1 to 9.' }, { id: 6, desc: 'Each number in the 3×3 block, vertical column or horizontal row or each diagonal can be used only once.' }, { id: 7, desc: 'The game is over when the whole Sudoku grid is correctly filled with numbers.' }]
 
 export const backgroundIndexes = [0, 1, 2, 9, 10, 11, 18, 19, 20, 6, 7, 8, 15, 16, 17, 24, 25, 26, 30, 31, 32, 39, 40, 41, 48, 49, 50, 54, 55, 56, 63, 64, 65, 72, 73, 74, 60, 61, 62, 69, 70, 71, 78, 79, 80]
+
+export const initialSudoku = ["6", "4", "5", "3", "9", "7", "2", "8", "1", "7", "1", "3", "5", "8", "2", "9", "4", "6", "2", "8", "9", "6", "4", "1", "5", "7", "3", "8", "3", "2", "4", "7", "6", "1", "9", "5", "4", "9", "1", "8", "2", "5", "3", "6", "7", "5", "6", "7", "9", "1", "3", "8", "2", "4", "1", "5", "8", "2", "6", "4", "7", "3", "9", "9", "7", "6", "1", "3", "8", "4", "5", "2", "3", "2", "4", "7", "5", "9", "6", "1", "8"]

@@ -20,5 +20,6 @@ export const setColors = {
     calendarBlue: '#3924E8',
     calendarEvent: '#24E8B6',
     sudokuError: '#FD582D',
-    sudokuLightShade: '#cdcbf0'
+    sudokuLightShade: '#CDCBF0',
+    defaultSudokuTxt: '#2116de'
 }
