@@ -1,4 +1,4 @@
-import { add_student_icon, attendance, calendar, exam, fee, notice_icon, password_icon, student, sudoku, user_logo } from "../assets";
+import { add_student_icon, attendance, calendar, exam, fee, image_1, image_2, image_3, image_4, image_5, notice_icon, password_icon, student, sudoku, user_logo } from "../assets";
 
 export const loginData = [{ id: 0, icon: user_logo, placeholder: "Username", value: 'username' }, { id: 1, icon: password_icon, placeholder: "Password", value: 'password' }]
 
@@ -41,3 +41,5 @@ export const rulesSudoku = [{ id: 0, desc: 'Sudoku grid consists of 9x9 spaces.'
 export const backgroundIndexes = [0, 1, 2, 9, 10, 11, 18, 19, 20, 6, 7, 8, 15, 16, 17, 24, 25, 26, 30, 31, 32, 39, 40, 41, 48, 49, 50, 54, 55, 56, 63, 64, 65, 72, 73, 74, 60, 61, 62, 69, 70, 71, 78, 79, 80]
 
 export const initialSudoku = ["6", "4", "5", "3", "9", "7", "2", "8", "1", "7", "1", "3", "5", "8", "2", "9", "4", "6", "2", "8", "9", "6", "4", "1", "5", "7", "3", "8", "3", "2", "4", "7", "6", "1", "9", "5", "4", "9", "1", "8", "2", "5", "3", "6", "7", "5", "6", "7", "9", "1", "3", "8", "2", "4", "1", "5", "8", "2", "6", "4", "7", "3", "9", "9", "7", "6", "1", "3", "8", "4", "5", "2", "3", "2", "4", "7", "5", "9", "6", "1", "8"]
+
+export const images = [{ id: 0, image: image_1 }, { id: 1, image: image_2 }, { id: 2, image: image_3 }, { id: 3, image: image_4 }, { id: 4, image: image_5 }]

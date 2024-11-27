@@ -1,9 +1,10 @@
 import React from 'react'
-import { Image, StatusBar, View } from 'react-native'
+import { Image, Pressable, StatusBar, View } from 'react-native'
 import { FadeInView } from '../contants/common'
 import { HEIGHT, WIDTH } from '../contants/dimensions'
 import { logo } from '../assets'
 import { setColors } from '../contants/colors'
+
 
 const Navbar = () => {
   return (

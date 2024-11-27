@@ -17,6 +17,8 @@ import NoticeScreen from "./screens/NoticeScreen";
 import NoticeDetails from "./screens/NoticeDetails";
 import Sudoku from "./screens/Sudoku";
 import RulesComponent from "./components/RulesComponent";
+import Animations from "./screens/Animations";
+import Carousal from "./screens/Carousal";
 
 
 const Stack = createNativeStackNavigator();
@@ -24,7 +26,7 @@ const Stack = createNativeStackNavigator();
 const Router = () => {
     return (
         <NavigationContainer>
-            <Stack.Navigator initialRouteName='dashboard' screenOptions={{ headerShown: false }}>
+            <Stack.Navigator initialRouteName='carousal' screenOptions={{ headerShown: false }}>
                 <Stack.Screen name='splash' component={SplashScreen} />
                 <Stack.Screen name='login' component={Login} />
                 <Stack.Screen name='verification' component={Verification} />
@@ -43,6 +45,8 @@ const Router = () => {
                 <Stack.Screen name='noticedetails' component={NoticeDetails} />
                 <Stack.Screen name='sudoku' component={Sudoku} />
                 <Stack.Screen name='rules' component={RulesComponent} />
+                <Stack.Screen name='animations' component={Animations} />
+                <Stack.Screen name='carousal' component={Carousal} />
             </Stack.Navigator>
         </NavigationContainer>
     )
