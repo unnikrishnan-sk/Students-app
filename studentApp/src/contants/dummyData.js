@@ -1,4 +1,4 @@
-import { add_student_icon, attendance, calendar, exam, fee, image_1, image_2, image_3, image_4, image_5, notice_icon, password_icon, student, sudoku, user_logo } from "../assets";
+import { add_student_icon, attendance, calendar, exam, fee, image_1, image_2, image_3, image_4, image_5, image_6, notice_icon, password_icon, student, sudoku, user_logo } from "../assets";
 
 export const loginData = [{ id: 0, icon: user_logo, placeholder: "Username", value: 'username' }, { id: 1, icon: password_icon, placeholder: "Password", value: 'password' }]
 

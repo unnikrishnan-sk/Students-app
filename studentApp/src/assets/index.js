@@ -22,5 +22,6 @@ import image_2 from './image_2/image_2.jpg'
 import image_3 from './image_3/image_3.jpg'
 import image_4 from './image_4/image_4.jpg'
 import image_5 from './image_5/image_5.jpg'
+import image_6 from './image_6/image_6.jpg'
 
-export { logo, user_logo, password_icon, add_student_icon, notice_icon, attendance, fee, calendar, student, left_icon, exam, tick_mark, dropdown_icon, up_arrow, down_arrow, up_arrow_triangle, down_arrow_triangle, profile_image, sudoku, image_1, image_2, image_3, image_4, image_5 }
+export { logo, user_logo, password_icon, add_student_icon, notice_icon, attendance, fee, calendar, student, left_icon, exam, tick_mark, dropdown_icon, up_arrow, down_arrow, up_arrow_triangle, down_arrow_triangle, profile_image, sudoku, image_1, image_2, image_3, image_4, image_5, image_6 }
