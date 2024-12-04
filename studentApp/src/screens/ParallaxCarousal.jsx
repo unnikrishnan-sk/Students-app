@@ -2,7 +2,7 @@ import React, { memo, useCallback, useEffect, useRef, useState } from 'react'
 import { FlatList, Image, Pressable, ScrollView, TouchableHighlight, View } from 'react-native'
 import { images } from '../contants/dummyData'
 import { HEIGHT, WIDTH } from '../contants/dimensions'
-import Animated, { Easing, Extrapolation, interpolate, ReduceMotion, useAnimatedStyle, useSharedValue, withDecay, withDelay, withRepeat, withSequence, withSpring, withTiming } from 'react-native-reanimated'
+import Animated, { CurvedTransition, Easing, Extrapolation, interpolate, ReduceMotion, useAnimatedStyle, useSharedValue, withDecay, withDelay, withRepeat, withSequence, withSpring, withTiming } from 'react-native-reanimated'
 import { setColors } from '../contants/colors'
 import CarousalItems from '../components/CarousalItems'
 
@@ -206,50 +206,69 @@ const ParallaxCarousal = () => {
                             alignSelf: "center", width: WIDTH, height: HEIGHT * 0.8, }}>
                             <Animated.View style={[{ borderRadius: HEIGHT*0.01, backgroundColor: setColors.white, marginTop: HEIGHT * 0.11, alignSelf: "center", }, useAnimatedStyle(() => {
                                 const inputRange = [
-                                    (index - 1.5) * WIDTH,
+                                    (index - 1) * WIDTH,
                                     index * WIDTH,
-                                    (index - 1.5) * WIDTH,
+                                    (index - 1) * WIDTH,
                                 ];
                                 const translateX = interpolate(
                                   scrollX.value,
                                   inputRange,
                                   [0, 0, 0],
                                   // carouselIndex === index ? [0, 0, 0] : carouselIndex > index ? [WIDTH * -0.3, 0, WIDTH * 0.2] : [WIDTH * -0.2, 0, WIDTH * 0.3], 
-                                  Extrapolation.CLAMP
+                                  Extrapolation.CLAMP,
                                 );
                                 // const scale = carouselIndex === index
                                 // ? withTiming(1, { duration: 200, easing: Easing.ease })
                                 // : withTiming(0.8, { duration: 200, easing: Easing.ease });
-                                const scale = withTiming(carouselIndex === index ? 1 : 0.8, {
-                                    duration: 300,
-                                    easing: Easing.ease,
-                                });
-                                const leadInScale = carouselIndex === index 
-                                ? withTiming(1, { duration: 100, easing: Easing.ease })
-                                : withTiming(0.7, { duration: 100, easing: Easing.ease})
+                                const scale = withTiming(
+                                  carouselIndex === index ? 1 : 0.8, 
+                                    {
+                                    duration: 400,
+                                    easing: Easing.inOut(Easing.quad),
+                                    reduceMotion: ReduceMotion.System
+                                    }
+                                  );
                                 const marginLeft = withTiming(
-                                    carouselIndex > index ? WIDTH * -0.5 : 0,
-                                    {duration: 300, easing: Easing.ease }
+                                    carouselIndex > index ? -WIDTH*0.5 : 0,
+                                    { 
+                                      duration: 200, 
+                                      easing: Easing.ease, 
+                                      reduceMotion: ReduceMotion.System 
+                                    }
                                 );
+                                const curved = withTiming(scrollX.value,
+                                  {
+                                    duration: 1000,
+                                    easing: Easing.in(Easing.exp)
+                                  }
+                                )
+
                                 const marginRight = withTiming(
-                                    carouselIndex < index ? WIDTH * -0.5 : 0,
-                                    {duration: 300, easing: Easing.ease }
+                                    carouselIndex < index ? -WIDTH*0.5 : 0,
+                                    {
+                                      duration: 200, 
+                                      easing: Easing.ease,
+                                      reduceMotion: ReduceMotion.System
+                                     }
                                 );
                                   if(carouselIndex===index){
                                     return {
                                       transform: [
-                                          { translateX },
-                                          {scale}, 
+                                        { translateX },
+                                        {scale}, 
                                       ],
                                       marginLeft,
-                                      marginRight
+                                      marginRight,
+                                      curved
                                   };
-                                  }else if(carouselIndex<index){
+                                  }
+                                  else if(carouselIndex<index){
                                     return {
                                       transform: [
                                         {translateX},
                                         {scale},
                                       ],
+                                      // marginLeft,
                                       marginRight
                                     };
                                   } else if(carouselIndex>index){
@@ -258,6 +277,7 @@ const ParallaxCarousal = () => {
                                         {translateX},
                                         {scale},
                                       ],
+                                      // marginRight,
                                       marginLeft
                                     }
                                   }
