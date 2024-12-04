@@ -19,6 +19,8 @@ import Sudoku from "./screens/Sudoku";
 import RulesComponent from "./components/RulesComponent";
 import Animations from "./screens/Animations";
 import Carousal from "./screens/Carousal";
+import ParallaxCarousal from "./screens/ParallaxCarousal";
+// import Note from "./screens/Note";
 
 
 const Stack = createNativeStackNavigator();
@@ -26,7 +28,7 @@ const Stack = createNativeStackNavigator();
 const Router = () => {
     return (
         <NavigationContainer>
-            <Stack.Navigator initialRouteName='carousal' screenOptions={{ headerShown: false }}>
+            <Stack.Navigator initialRouteName='parallaxcarousal' screenOptions={{ headerShown: false }}>
                 <Stack.Screen name='splash' component={SplashScreen} />
                 <Stack.Screen name='login' component={Login} />
                 <Stack.Screen name='verification' component={Verification} />
@@ -47,6 +49,8 @@ const Router = () => {
                 <Stack.Screen name='rules' component={RulesComponent} />
                 <Stack.Screen name='animations' component={Animations} />
                 <Stack.Screen name='carousal' component={Carousal} />
+                <Stack.Screen name='parallaxcarousal' component={ParallaxCarousal} />
+                {/* <Stack.Screen name='note' component={Note} /> */}
             </Stack.Navigator>
         </NavigationContainer>
     )

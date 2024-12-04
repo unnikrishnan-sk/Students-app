@@ -1,27 +1,30 @@
 import React, { memo, useCallback, useEffect, useRef, useState } from 'react'
-import { FlatList, Image, Pressable, TouchableHighlight, View } from 'react-native'
+import { FlatList, Image, Pressable, ScrollView, TouchableHighlight, View } from 'react-native'
 import { images } from '../contants/dummyData'
 import { HEIGHT, WIDTH } from '../contants/dimensions'
-import Animated, { Easing, Extrapolation, interpolate, ReduceMotion, useAnimatedStyle, useSharedValue, withDecay, withRepeat, withSequence, withSpring, withTiming } from 'react-native-reanimated'
+import Animated, { Easing, Extrapolation, interpolate, ReduceMotion, useAnimatedStyle, useSharedValue, withDecay, withDelay, withRepeat, withSequence, withSpring, withTiming } from 'react-native-reanimated'
 import { setColors } from '../contants/colors'
 import CarousalItems from '../components/CarousalItems'
 
-const Carousal = () => {
+const ParallaxCarousal = () => {
 
     const sv = useSharedValue(0);
     const transformSharedValue = useSharedValue(0);
     const opacity = useSharedValue(0);
     const [paginationIndex,setPaginationIndex] = useState(0);
     const [repeat,setRepeat] = useState(false);
-    const [pause,setPause] = useState(true)
+    const [pause,setPause] = useState(false)
     const [lastOffset,setLastOffset] = useState(0);
     const [carouselIndex, setCarouselIndex] = useState(0)
     const carousalRef = useRef(null);
     const isScrolling = useRef(true);
     const scrollX = useSharedValue(0);
+    // const scrollAnim = useRef(new Animated.Value(0)).current;
 
     console.log("transformShare_state",transformSharedValue);
     console.log("sv",sv);
+    console.log("carousalIndex",carouselIndex);
+    
     
     
     console.log("isScrolling",isScrolling);
@@ -83,28 +86,7 @@ const Carousal = () => {
           inputRange,
           [-WIDTH*0.7,0,WIDTH*0.7],
     )
-      // }
-    // }else{
-    //   console.log("transformation Value undefined");
-    // }
   }
-    // const rotateValue = interpolate(
-    //   transformSharedValue.value,
-    //   [-100,0,360],
-    //   [-360,0,360],
-    //   Extrapolation.CLAMP
-    // )
-    
-    // }
-    // } 
-    // else {
-    //   transformSharedValue.value = withTiming(-10, {
-    //     duration: 4000,
-    //     easing: Easing.inOut(Easing.quad),
-    //     reduceMotion: ReduceMotion.System,
-    //   });
-    // }
-// }
 
     const AnimationFn = () => {
       // sv.value = withSequence(withTiming(10), withTiming(0));
@@ -193,90 +175,102 @@ const Carousal = () => {
       // isScrolling.current = true;
     }
 
-  
-
-  // const renderItem = ({ item, index }) => {
-  //   // Create animated style for each item dynamically
-  //   const transformStyle = useAnimatedStyle(() => {
-  //     const inputRange = [
-  //       (index - 1) * WIDTH,
-  //       index * WIDTH,
-  //       (index + 1) * WIDTH,
-  //     ];
-
-  //     const translateX = interpolate(
-  //       transformSharedValue.value,
-  //       inputRange,
-  //       [-WIDTH * 0.7, 0, WIDTH * 0.7],
-  //       Extrapolation.CLAMP
-  //     );
-
-  //     return {
-  //       transform: [{ translateX }],
-  //     };
-  //   });
-  // }
-
-//   const parallaxAnimatedStyle = (index) => useAnimatedStyle(() => {
-//     return {
-//         transform: [
-//           { scale: withTiming(paginationIndex === index ? 1 : .7, { easing: Easing.ease }) }],
-//         marginLeft: withTiming(paginationIndex < index ? WIDTH * -.65 : 0, { easing: Easing.ease }),
-//         marginRight: withTiming(paginationIndex > index ? WIDTH * -.65 : 0, { easing: Easing.ease })
-//     };
-// })
-
-
   return (
-    <View style={{
-      borderWidth: 1,
-      alignItems: 'center',
-      // height: HEIGHT,
-      justifyContent: 'center'
-    }}>
-    <Animated.View style={[{
-      borderWidth: 1,
-      // height: HEIGHT*0.8,
-      // width: WIDTH*0.75,
-      // alignItems: 'center',
-      // justifyContent: 'center'
-    },
-    // transformEverySlide(index)
-    // parallaxStyle
-    ]}>
-      <FlatList onScroll={onScroll} 
-      horizontal ref={carousalRef} 
-      initialScrollIndex={paginationIndex} 
-      getItemLayout={getItemLayout} 
-      pagingEnabled 
-      onScrollBeginDrag={onScrollBeginDrag} 
-      onScrollEndDrag={onScrollEndDrag} 
-      showsVerticalScrollIndicator={false} decelerationRate="fast" 
-      data={images} 
-      centerContent={true}
-      showsHorizontalScrollIndicator={false} 
-      onViewableItemsChanged={onViewableItemsChanged.current}
-      viewabilityConfig={viewabilityConfig}
-        renderItem={({item,index}) => 
-          <TouchableHighlight onPress={()=>onImagePress()} style={{borderColor: 'green'}}>
-            <Animated.View style={[{
-              borderWidth: 1,
-            },
-            // parallaxAnimatedStyle(index)
-            useAnimatedStyle(() => {
-              return {
-                  transform: [
-                    { scale: withTiming(paginationIndex === index ? 1 : .7, { easing: Easing.ease }) }],
-                  marginLeft: withTiming(paginationIndex < index ? WIDTH * -.65 : 0, { easing: Easing.ease }),
-                  marginRight: withTiming(paginationIndex > index ? WIDTH * -.65 : 0, { easing: Easing.ease })
-              };
-          })
-          ]}>
-            <CarousalItems data={item} paginationIndex={paginationIndex} animatedOpacityStyle={animatedOpacityStyle} />
-            </Animated.View>
-          </TouchableHighlight>
-        } keyExtractor={item => item?.id}/>
-        <View style={{ 
+    <View>
+        <ScrollView horizontal={true}
+            initialScrollIndex={2}
+            pagingEnabled
+            showsHorizontalScrollIndicator={false}
+            onScroll={(event) => {
+                const offsetX = event.nativeEvent.contentOffset.x;
+                // console.log("offsetX",offsetX);
+                const index = Math.round(offsetX / WIDTH);
+                setCarouselIndex(index)
+            }}
+            centerContent={true}
+            style={{}}
+            getItemLayout={(data, index) => {
+                return { length: 110, offset: WIDTH * 1 * index, index };
+            }}
+            contentContainerStyle={{}}
+            scrollToEnd={true}>
+            {images.map((item, index) => {
+                    console.log("item=>", item.id)
+                    return (
+                        <View 
+                        key={item.id }
+                        style={{ 
+                            // borderWidth:1, 
+                            alignItems:'center',
+                            justifyContent:'center', 
+                            alignSelf: "center", width: WIDTH, height: HEIGHT * 0.8, }}>
+                            <Animated.View style={[{ borderRadius: HEIGHT*0.01, backgroundColor: setColors.white, marginTop: HEIGHT * 0.11, alignSelf: "center", }, useAnimatedStyle(() => {
+                                const inputRange = [
+                                    (index - 1.5) * WIDTH,
+                                    index * WIDTH,
+                                    (index - 1.5) * WIDTH,
+                                ];
+                                const translateX = interpolate(
+                                  scrollX.value,
+                                  inputRange,
+                                  [0, 0, 0],
+                                  // carouselIndex === index ? [0, 0, 0] : carouselIndex > index ? [WIDTH * -0.3, 0, WIDTH * 0.2] : [WIDTH * -0.2, 0, WIDTH * 0.3], 
+                                  Extrapolation.CLAMP
+                                );
+                                // const scale = carouselIndex === index
+                                // ? withTiming(1, { duration: 200, easing: Easing.ease })
+                                // : withTiming(0.8, { duration: 200, easing: Easing.ease });
+                                const scale = withTiming(carouselIndex === index ? 1 : 0.8, {
+                                    duration: 300,
+                                    easing: Easing.ease,
+                                });
+                                const leadInScale = carouselIndex === index 
+                                ? withTiming(1, { duration: 100, easing: Easing.ease })
+                                : withTiming(0.7, { duration: 100, easing: Easing.ease})
+                                const marginLeft = withTiming(
+                                    carouselIndex > index ? WIDTH * -0.5 : 0,
+                                    {duration: 300, easing: Easing.ease }
+                                );
+                                const marginRight = withTiming(
+                                    carouselIndex < index ? WIDTH * -0.5 : 0,
+                                    {duration: 300, easing: Easing.ease }
+                                );
+                                  if(carouselIndex===index){
+                                    return {
+                                      transform: [
+                                          { translateX },
+                                          {scale}, 
+                                      ],
+                                      marginLeft,
+                                      marginRight
+                                  };
+                                  }else if(carouselIndex<index){
+                                    return {
+                                      transform: [
+                                        {translateX},
+                                        {scale},
+                                      ],
+                                      marginRight
+                                    };
+                                  } else if(carouselIndex>index){
+                                    return{
+                                      transform: [
+                                        {translateX},
+                                        {scale},
+                                      ],
+                                      marginLeft
+                                    }
+                                  }
+                                
+                            }),]} >
+                                <CarousalItems id={item.id} image={item.image}/>
+                            </Animated.View>
+                        </View>
+                    )
+                })
+            }
+        </ScrollView>
+         {/* <View style={{ 
           // borderWidth: 1, 
           flexDirection: 'row', 
           alignItems: 'center', 
@@ -284,38 +278,29 @@ const Carousal = () => {
           position: 'absolute', 
           alignSelf: 'center',
           top: HEIGHT*0.75 }}>
-          {images.map((item,index)=>{
-        return (
+          {images.map((item,index)=>(
           <Pressable 
           key={item.id}
           onPress={()=>handleDotPress(index)}>
-            {/* <Animated.View style={[index === paginationIndex ? animatedStyle : {}]}> */}
-          <Image 
+          <Animated.Image 
           style={
             {
             borderWidth: 1,
-            height: index===paginationIndex? HEIGHT*0.08:HEIGHT*0.045, 
-            width: index===paginationIndex? HEIGHT*0.08:HEIGHT*0.045,
+            height: index===carouselIndex? HEIGHT*0.08:HEIGHT*0.045, 
+            width: index===carouselIndex? HEIGHT*0.08:HEIGHT*0.045,
             marginLeft: item.id===0? 0 :WIDTH*0.015,
             borderRadius:HEIGHT*0.01,
             marginBottom: HEIGHT*0.01
           }
         }
           source={item?.image}>
-          </Image>
-          {/* </Animated.View> */}
+          </Animated.Image>
           </Pressable>
-          
-            // <Pressable
-            // onPress={()=>handleDotPress(index)}
-            // key={item.id}
-            // style={{ height: HEIGHT*0.015, width: HEIGHT*0.015, borderRadius:HEIGHT*0.04, marginLeft: item.id===0? 0 :WIDTH*0.01, backgroundColor: index===paginationIndex?setColors.black:setColors.white }}></Pressable>
             )
-          })}
-        </View>
-    </Animated.View>
+          )}
+        </View>  */}
     </View>
-  )
+    )
 }
 
-export default Carousal
+export default ParallaxCarousal

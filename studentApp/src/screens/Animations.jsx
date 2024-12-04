@@ -103,12 +103,13 @@ const Animations = () => {
          autoPlay={true}
          data={images}
          ref={carousalRef}
+         mode='parallax'
         //  onProgressChange={sv}
          onScrollEnd={()=>onPressPagination(carousalRef)}
         //  onScrollBegin={()=>onPressPagination(carousalRef)}
         //  onScrollBegin={()=>setPaginationIndex(ref)}
         //  viewabilityConfigCallbackPairs={viewabilityConfigCallbackPairs.current}
-         scrollAnimationDuration={100}
+         scrollAnimationDuration={1000}
         //  onSnapToItem={(index) => console.log('current index:', index,paginationIndex)}
                 renderItem={({ index, item }) => (
                     <View
